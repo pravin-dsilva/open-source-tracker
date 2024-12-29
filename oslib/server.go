@@ -118,7 +118,7 @@ func GenerateReport(users []string, token string) {
 		log.Fatalf("Error rendering template: %v", err)
 	}
 
-	if err := os.WriteFile("docs/dashboard.html", buf.Bytes(), 0644); err != nil {
+	if err := os.WriteFile("docs/index.html", buf.Bytes(), 0644); err != nil {
 		log.Fatalf("Error saving HTML file: %v", err)
 	}
 
