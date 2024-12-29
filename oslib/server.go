@@ -18,7 +18,7 @@ func GenerateReport(users []string, token string) {
 		}
 		if i < len(users)-1 {
 			log.Printf("Sleeping for 30 seconds to avoid rate-limiting")
-			time.Sleep(10 * time.Second)
+			time.Sleep(30 * time.Second)
 		}
 		
 	}
