@@ -17,7 +17,7 @@ func GenerateReport(users []string, token string) {
 			"open_prs":        FetchOpenPRs(user, token),
 		}
 		if i < len(users)-1 {
-			log.Printf("Sleeping for 10 seconds to avoid rate-limiting")
+			log.Printf("Sleeping for 30 seconds to avoid rate-limiting")
 			time.Sleep(10 * time.Second)
 		}
 		
