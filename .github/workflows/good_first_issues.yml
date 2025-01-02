@@ -2,7 +2,7 @@ name: Update Good First Issues
 
 on:
   schedule:
-    - cron: '0 * * * *'  # Runs every 30 minutes
+    - cron: '0 * * * *'  # Runs every hour
   workflow_dispatch: 
 
 jobs:
