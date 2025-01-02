@@ -19,6 +19,8 @@ jobs:
           go-version: '1.23'
 
       - name: Generate Good First Issues
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: go run main.go --good-first-issues
 
       - name: Deploy to GitHub Pages
