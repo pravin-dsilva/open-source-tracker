@@ -6,8 +6,8 @@ import (
 )
 
 type Config struct {
-	Users        []string `json:"users"`
-	Repositories []string `json:"repositories"`
+	Users []string `json:"users"`
+	Orgs []string `json:"orgs"`
 }
 
 func LoadConfig(filename string) (*Config, error) {

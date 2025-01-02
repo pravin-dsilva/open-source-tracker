@@ -1,24 +1,29 @@
 package main
 
 import (
+	"flag"
 	"log"
 	"os"
 	"oslib/oslib"
 )
 
 func main() {
+	showGoodFirstIssues := flag.Bool("good-first-issues", false, "Fetch only good first issues")
+	flag.Parse()
 
 	configPath := "config.json"
-	config, error := oslib.LoadConfig(configPath)
-
-	if error != nil {
-		log.Fatalf("Error loading config: %v", error)
+	config, err := oslib.LoadConfig(configPath)
+	if err != nil {
+		log.Fatalf("Error loading config: %v", err)
 	}
 
 	githubToken := os.Getenv("GITHUB_TOKEN")
 	if githubToken == "" {
 		log.Fatal("Environment variable GITHUB_TOKEN is required")
 	}
-
-	oslib.GenerateReport(config.Users, githubToken)
+	if *showGoodFirstIssues {
+		oslib.GenerateGoodFirstIssuesReport(config.Orgs, githubToken)
+	} else {
+		oslib.GenerateReport(config.Users, githubToken)
+	}
 }

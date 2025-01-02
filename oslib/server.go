@@ -4,9 +4,70 @@ import (
 	"bytes"
 	"log"
 	"os"
+	"sort"
 	"text/template"
 	"time"
 )
+func GenerateGoodFirstIssuesReport(orgs []string, token string) {
+    var goodFirstIssues []Issue
+
+    for _, org := range orgs {
+        goodFirstIssues = append(goodFirstIssues, FetchGoodFirstIssues(org, token)...)
+    }
+
+    sort.Slice(goodFirstIssues, func(i, j int) bool {
+        return goodFirstIssues[i].CreatedAt > goodFirstIssues[j].CreatedAt
+    })
+
+    tmpl := template.Must(template.New("goodFirstIssues").Parse(`
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Good First Issues</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body class="container mt-5">
+        <h1 class="mb-4">Good First Issues</h1>
+        {{ if . }}
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Repository</th>
+                    <th>URL</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                {{ range . }}
+                <tr>
+                    <td>{{ .Title }}</td>
+                    <td>{{ .Repo }}</td>
+                    <td><a href="{{ .URL }}" target="_blank">{{ .URL }}</a></td>
+                    <td>{{ .CreatedAt }}</td>
+                </tr>
+                {{ end }}
+            </tbody>
+        </table>
+        {{ else }}
+        <p>No good first issues found</p>
+        {{ end }}
+    </body>
+    </html>
+    `))
+
+    var buf bytes.Buffer
+    if err := tmpl.Execute(&buf, goodFirstIssues); err != nil {
+        log.Fatalf("Error rendering template: %v", err)
+    }
+
+    // Write the HTML file
+    if err := os.WriteFile("docs/good_first_issues.html", buf.Bytes(), 0644); err != nil {
+        log.Fatalf("Error saving HTML file: %v", err)
+    }
+
+    log.Println("HTML report for good first issues generated and saved to good_first_issues.html")
+}
 
 func GenerateReport(users []string, token string) {
 	data := make(map[string]map[string][]Issue)
@@ -109,6 +170,10 @@ func GenerateReport(users []string, token string) {
 			</div>
 			{{ end }}
 		</div>
+
+		</tbody>
+	</table>
+</div>
 	</body>
 	</html>
 	`))
@@ -118,7 +183,7 @@ func GenerateReport(users []string, token string) {
 		log.Fatalf("Error rendering template: %v", err)
 	}
 
-	if err := os.WriteFile("docs/index.html", buf.Bytes(), 0644); err != nil {
+	if err := os.WriteFile("docs/user_dashboard.html", buf.Bytes(), 0644); err != nil {
 		log.Fatalf("Error saving HTML file: %v", err)
 	}
 

@@ -30,47 +30,60 @@ func FetchOpenPRs(username, token string) []Issue {
 	return fetchGitHubData(fmt.Sprintf("https://api.github.com/search/issues?q=author:%s+is:pr+is:open", username), token)
 }
 
+
 func fetchGitHubData(apiURL, token string) []Issue {
-	client := &http.Client{}
-	req, err := http.NewRequest("GET", apiURL, nil)
-	if err != nil {
-		log.Fatalf("Failed to create request: %v", err)
-	}
-	req.Header.Set("Authorization", "token "+token)
+    client := &http.Client{}
+    req, err := http.NewRequest("GET", apiURL, nil)
+    if err != nil {
+        log.Fatalf("Failed to create request: %v", err)
+    }
+    req.Header.Set("Authorization", "token "+token)
 
-	resp, err := client.Do(req)
-	if err != nil {
-		log.Fatalf("Failed to fetch data: %v", err)
-	}
-	defer resp.Body.Close()
+    resp, err := client.Do(req)
+    if err != nil {
+        log.Fatalf("Failed to fetch data: %v", err)
+    }
+    defer resp.Body.Close()
 
-	if resp.StatusCode != http.StatusOK {
-		log.Fatalf("GitHub API returned status: %s", resp.Status)
-	}
+    log.Printf("GitHub API URL: %s, Status Code: %d", apiURL, resp.StatusCode)
+    log.Printf("Rate Limit Remaining: %s, Rate Limit Reset: %s",
+        resp.Header.Get("X-RateLimit-Remaining"),
+        resp.Header.Get("X-RateLimit-Reset"),
+    )
 
-	body, err := ioutil.ReadAll(resp.Body)
-	if err != nil {
-		log.Fatalf("Failed to read response body: %v", err)
-	}
+    if resp.StatusCode != http.StatusOK {
+        body, _ := ioutil.ReadAll(resp.Body)
+        log.Fatalf("GitHub API returned status: %s. Body: %s", resp.Status, string(body))
+    }
 
-	var result struct {
-		Items []Issue `json:"items"`
-	}
-	if err := json.Unmarshal(body, &result); err != nil {
-		log.Fatalf("Failed to unmarshal response: %v", err)
-	}
+    body, err := ioutil.ReadAll(resp.Body)
+    if err != nil {
+        log.Fatalf("Failed to read response body: %v", err)
+    }
+    //log.Printf("GitHub API Response: %s", string(body))
 
-	for i := range result.Items {
-		repoParts := strings.Split(result.Items[i].Repo, "/")
-		if len(repoParts) >= 2 {
-			result.Items[i].Repo = repoParts[len(repoParts)-1]
-		}
-	}
-    
+    var result struct {
+        Items []Issue `json:"items"`
+    }
+    if err := json.Unmarshal(body, &result); err != nil {
+        log.Fatalf("Failed to unmarshal response: %v. Body: %s", err, string(body))
+    }
+
+    for i := range result.Items {
+        repoParts := strings.Split(result.Items[i].Repo, "/")
+        if len(repoParts) >= 2 {
+            result.Items[i].Repo = repoParts[len(repoParts)-1]
+        }
+    }
 	//Sorting
 	sort.Slice(result.Items, func(i, j int) bool {
 		return result.Items[i].CreatedAt > result.Items[j].CreatedAt
 	})
 
-	return result.Items
+    return result.Items
+}
+
+func FetchGoodFirstIssues(org, token string) []Issue {
+	apiURL := fmt.Sprintf("https://api.github.com/search/issues?q=org:%s+label:%q+is:issue+is:open", org, "good+first+issue")
+	return fetchGitHubData(apiURL, token)
 }
