@@ -89,7 +89,7 @@ func fetchGitHubData(apiURL, token string) []Issue {
 	return nil
 }
 
-func FetchGoodFirstIssues(org, token string) []Issue {
-	apiURL := fmt.Sprintf("https://api.github.com/search/issues?q=org:%s+label:%q+is:issue+is:open", org, "good+first+issue")
+func FetchIssues(org, token string, label string) []Issue {
+	apiURL := fmt.Sprintf("https://api.github.com/search/issues?q=org:%s+label:%q+is:issue+is:open", org, label)
 	return fetchGitHubData(apiURL, token)
 }

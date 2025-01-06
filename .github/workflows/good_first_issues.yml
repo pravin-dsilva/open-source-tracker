@@ -21,7 +21,7 @@ jobs:
       - name: Generate Good First Issues
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        run: go run main.go --good-first-issues
+        run: go run main.go --issues
 
       - name: Deploy to GitHub Pages
         run: |

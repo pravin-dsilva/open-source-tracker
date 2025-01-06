@@ -8,7 +8,7 @@ import (
 )
 
 func main() {
-	showGoodFirstIssues := flag.Bool("good-first-issues", false, "Fetch only good first issues")
+	showIssues := flag.Bool("issues", false, "Fetch only good first issues")
 	flag.Parse()
 
 	configPath := "config.json"
@@ -21,8 +21,8 @@ func main() {
 	if githubToken == "" {
 		log.Fatal("Environment variable GITHUB_TOKEN is required")
 	}
-	if *showGoodFirstIssues {
-		oslib.GenerateGoodFirstIssuesReport(config.Orgs, githubToken)
+	if *showIssues {
+		oslib.GenerateIssuesReport(config.Orgs, githubToken, config.Labels)
 	} else {
 		oslib.GenerateReport(config.Users, githubToken)
 	}

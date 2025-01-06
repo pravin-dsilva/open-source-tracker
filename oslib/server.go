@@ -8,15 +8,16 @@ import (
 	"text/template"
 	"time"
 )
-func GenerateGoodFirstIssuesReport(orgs []string, token string) {
-    var goodFirstIssues []Issue
+func GenerateIssuesReport(orgs []string, token string, labels []string) {
+	for _, label := range labels {
+	var Issues []Issue
 
     for _, org := range orgs {
-        goodFirstIssues = append(goodFirstIssues, FetchGoodFirstIssues(org, token)...)
+        Issues = append(Issues, FetchIssues(org, token, label)...)
     }
 
-    sort.Slice(goodFirstIssues, func(i, j int) bool {
-        return goodFirstIssues[i].CreatedAt > goodFirstIssues[j].CreatedAt
+    sort.Slice(Issues, func(i, j int) bool {
+        return Issues[i].CreatedAt > Issues[j].CreatedAt
     })
 
     tmpl := template.Must(template.New("goodFirstIssues").Parse(`
@@ -57,18 +58,24 @@ func GenerateGoodFirstIssuesReport(orgs []string, token string) {
     `))
 
     var buf bytes.Buffer
-    if err := tmpl.Execute(&buf, goodFirstIssues); err != nil {
+    if err := tmpl.Execute(&buf, Issues); err != nil {
         log.Fatalf("Error rendering template: %v", err)
     }
 
-    // Write the HTML file
-    if err := os.WriteFile("docs/good_first_issues.html", buf.Bytes(), 0644); err != nil {
-        log.Fatalf("Error saving HTML file: %v", err)
+    var outputFile string
+    if label == "good+first+issue" {
+        outputFile = "docs/good_first_issues.html"
+    } else if label == "help+wanted" {
+        outputFile = "docs/help_wanted.html"
     }
 
-    log.Println("HTML report for good first issues generated and saved to good_first_issues.html")
+    if err := os.WriteFile(outputFile, buf.Bytes(), 0644); err != nil {
+        log.Fatalf("Error saving HTML file (%s): %v", outputFile, err)
+    }
+ 
+    log.Println("HTML report is generated")
 }
-
+}
 func GenerateReport(users []string, token string) {
 	data := make(map[string]map[string][]Issue)
 	for i, user := range users {
