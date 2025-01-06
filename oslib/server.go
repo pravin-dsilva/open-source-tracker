@@ -24,11 +24,11 @@ func GenerateIssuesReport(orgs []string, token string, labels []string) {
     <!DOCTYPE html>
     <html>
     <head>
-        <title>Good First Issues</title>
+        <title>Issues</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     </head>
     <body class="container mt-5">
-        <h1 class="mb-4">Good First Issues</h1>
+        <h1 class="mb-4">Issues</h1>
         {{ if . }}
         <table class="table table-striped">
             <thead>
@@ -51,7 +51,7 @@ func GenerateIssuesReport(orgs []string, token string, labels []string) {
             </tbody>
         </table>
         {{ else }}
-        <p>No good first issues found</p>
+        <p>No issues found</p>
         {{ end }}
     </body>
     </html>
