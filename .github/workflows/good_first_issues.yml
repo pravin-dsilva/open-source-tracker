@@ -27,6 +27,6 @@ jobs:
         run: |
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
-          git add docs/good_first_issues.html
-          git commit -m "Update Good First Issues"
+          git add docs/*
+          git commit -m "Update Issues"
           git push
