@@ -112,6 +112,13 @@
 							<tbody>
 								
 								<tr>
+									<td>ibmcloud-powervs: podvm image build fails with package not found</td>
+									<td>cloud-api-adaptor</td>
+									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/issues/2338" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/issues/2338</a></td>
+									<td>2025-03-19T13:43:41Z</td>
+								</tr>
+								
+								<tr>
 									<td>Update trouble shooting guide with instructions to debug CCM issues</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2250" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2250</a></td>
@@ -201,6 +208,20 @@
 							<tbody>
 								
 								<tr>
+									<td>ibmcloud-powervs: fix podvm image build</td>
+									<td>cloud-api-adaptor</td>
+									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/2339" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/2339</a></td>
+									<td>2025-03-19T14:15:07Z</td>
+								</tr>
+								
+								<tr>
+									<td>Refactor the boskos flow in periodic-kubernetes-containerd-conformance-test-ppc64le job</td>
+									<td>test-infra</td>
+									<td><a href="https://github.com/ppc64le-cloud/test-infra/pull/545" target="_blank">https://github.com/ppc64le-cloud/test-infra/pull/545</a></td>
+									<td>2025-03-19T10:26:41Z</td>
+								</tr>
+								
+								<tr>
 									<td>Update CAPIBM PowerVS jobs to mount IBM Cloud credentials secret</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/ppc64le-cloud/test-infra/pull/488" target="_blank">https://github.com/ppc64le-cloud/test-infra/pull/488</a></td>
@@ -236,13 +257,6 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
-								
-								<tr>
-									<td>The CORS GEP-1767 is still marked Provisional and should be marked Experimental in v1.3.0</td>
-									<td>gateway-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/gateway-api/issues/3678" target="_blank">https://github.com/kubernetes-sigs/gateway-api/issues/3678</a></td>
-									<td>2025-03-13T02:29:48Z</td>
-								</tr>
 								
 								<tr>
 									<td>VPA: document behavior for Requests & Limits</td>
@@ -309,20 +323,6 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
-								
-								<tr>
-									<td>CORS GEP-1767 is marked Experimental</td>
-									<td>gateway-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/gateway-api/pull/3683" target="_blank">https://github.com/kubernetes-sigs/gateway-api/pull/3683</a></td>
-									<td>2025-03-17T22:55:33Z</td>
-								</tr>
-								
-								<tr>
-									<td>Reverting to previous of offset allocation for power</td>
-									<td>ceph</td>
-									<td><a href="https://github.com/ceph/ceph/pull/62248" target="_blank">https://github.com/ceph/ceph/pull/62248</a></td>
-									<td>2025-03-14T03:05:35Z</td>
-								</tr>
 								
 								<tr>
 									<td>Support for systypes w.r.t zones</td>
@@ -571,7 +571,7 @@
 									<td>[WIP][DNM] Add support for updating oom_score_adj</td>
 									<td>runc</td>
 									<td><a href="https://github.com/opencontainers/runc/pull/4669" target="_blank">https://github.com/opencontainers/runc/pull/4669</a></td>
-									<td>2025-03-14T20:37:55Z</td>
+									<td>2025-03-19T08:01:46Z</td>
 								</tr>
 								
 								<tr>
@@ -692,17 +692,17 @@
 							<tbody>
 								
 								<tr>
+									<td>WIP - Adding job with new S2S cluster profile</td>
+									<td>release</td>
+									<td><a href="https://github.com/openshift/release/pull/62995" target="_blank">https://github.com/openshift/release/pull/62995</a></td>
+									<td>2025-03-19T15:02:38Z</td>
+								</tr>
+								
+								<tr>
 									<td>[WIP]: remove feature set and feature gate to debug 4.19 powervs testcase issue</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/62830" target="_blank">https://github.com/openshift/release/pull/62830</a></td>
 									<td>2025-03-17T19:18:21Z</td>
-								</tr>
-								
-								<tr>
-									<td> MULTIARCH-5360 Adding boskos config for ppc64le S2S zone</td>
-									<td>release</td>
-									<td><a href="https://github.com/openshift/release/pull/62767" target="_blank">https://github.com/openshift/release/pull/62767</a></td>
-									<td>2025-03-18T09:36:09Z</td>
 								</tr>
 								
 								<tr>
@@ -723,7 +723,7 @@
 									<td>Create region-zone-sysType hierarchy</td>
 									<td>installer</td>
 									<td><a href="https://github.com/openshift/installer/pull/9330" target="_blank">https://github.com/openshift/installer/pull/9330</a></td>
-									<td>2024-12-19T18:07:25Z</td>
+									<td>2025-03-20T01:01:03Z</td>
 								</tr>
 								
 							</tbody>
@@ -793,10 +793,17 @@
 							<tbody>
 								
 								<tr>
+									<td>post-cluster-api-provider-ibmcloud-push-images job is failing</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2261" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2261</a></td>
+									<td>2025-03-19T14:30:46Z</td>
+								</tr>
+								
+								<tr>
 									<td>unknown manifests in the release fat manifest</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2194" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2194</a></td>
-									<td>2025-02-18T04:55:54Z</td>
+									<td>2025-03-19T09:55:24Z</td>
 								</tr>
 								
 							</tbody>
@@ -836,13 +843,6 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
-								
-								<tr>
-									<td>Bump go to v1.23</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2258" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2258</a></td>
-									<td>2025-03-18T15:35:42Z</td>
-								</tr>
 								
 								<tr>
 									<td>ignition v2 fix</td>
@@ -918,7 +918,7 @@
 									<td>Umbrella issue: Onboarding ppc64le build cluster to k8s community's Prow</td>
 									<td>k8s.io</td>
 									<td><a href="https://github.com/kubernetes/k8s.io/issues/7888" target="_blank">https://github.com/kubernetes/k8s.io/issues/7888</a></td>
-									<td>2025-03-17T17:49:18Z</td>
+									<td>2025-03-19T04:54:44Z</td>
 								</tr>
 								
 								<tr>
@@ -1271,13 +1271,6 @@
 							<tbody>
 								
 								<tr>
-									<td>auto label issues depending on OS</td>
-									<td>kubespray</td>
-									<td><a href="https://github.com/kubernetes-sigs/kubespray/issues/11873" target="_blank">https://github.com/kubernetes-sigs/kubespray/issues/11873</a></td>
-									<td>2025-01-10T10:27:26Z</td>
-								</tr>
-								
-								<tr>
 									<td>PowerVS create infra expects transit gateway location even when we pass existing transit gateway </td>
 									<td>hypershift</td>
 									<td><a href="https://github.com/openshift/hypershift/issues/5061" target="_blank">https://github.com/openshift/hypershift/issues/5061</a></td>
@@ -1298,6 +1291,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>OCPBUGS-53309: Update dependencies to k8s 1.32</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/110" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/110</a></td>
+									<td>2025-03-19T15:52:52Z</td>
+								</tr>
 								
 								<tr>
 									<td>OCPBUGS-51818: Bump golang x/crypto to fix CVE-2025-22869</td>
@@ -1412,13 +1412,6 @@
 								</tr>
 								
 								<tr>
-									<td>Add Auto-Labeling of Issues Based on OS Selection</td>
-									<td>kubespray</td>
-									<td><a href="https://github.com/kubernetes-sigs/kubespray/pull/11880" target="_blank">https://github.com/kubernetes-sigs/kubespray/pull/11880</a></td>
-									<td>2025-03-06T07:48:58Z</td>
-								</tr>
-								
-								<tr>
 									<td>Sync CI Jobs with Default Transit Gateway Update by Removing power-edge-router Flag</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/60507" target="_blank">https://github.com/openshift/release/pull/60507</a></td>
@@ -1494,6 +1487,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Cluster provisioning fails when BootVolume Name is specified</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2260" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2260</a></td>
+									<td>2025-03-19T08:23:15Z</td>
+								</tr>
 								
 								<tr>
 									<td>Disable HTTP/2 by Default for Metrics endpoint to Mitigate CVE Risks</td>
@@ -2322,34 +2322,6 @@
 								</tr>
 								
 								<tr>
-									<td>Feat: Explore the usage of region-zone mapping to allow deprecation of the `powervs-region` flag.</td>
-									<td>kubetest2-plugins</td>
-									<td><a href="https://github.com/ppc64le-cloud/kubetest2-plugins/issues/210" target="_blank">https://github.com/ppc64le-cloud/kubetest2-plugins/issues/210</a></td>
-									<td>2025-02-03T07:44:46Z</td>
-								</tr>
-								
-								<tr>
-									<td>Feat: Allow additional system types for deployment using powervs-utils.</td>
-									<td>kubetest2-plugins</td>
-									<td><a href="https://github.com/ppc64le-cloud/kubetest2-plugins/issues/209" target="_blank">https://github.com/ppc64le-cloud/kubetest2-plugins/issues/209</a></td>
-									<td>2025-02-03T07:43:12Z</td>
-								</tr>
-								
-								<tr>
-									<td>Extend functionalities from ppc64le-cloud/powervs-utils</td>
-									<td>kubetest2-plugins</td>
-									<td><a href="https://github.com/ppc64le-cloud/kubetest2-plugins/issues/208" target="_blank">https://github.com/ppc64le-cloud/kubetest2-plugins/issues/208</a></td>
-									<td>2025-02-03T07:47:10Z</td>
-								</tr>
-								
-								<tr>
-									<td>Reorganise project structure</td>
-									<td>kubetest2-plugins</td>
-									<td><a href="https://github.com/ppc64le-cloud/kubetest2-plugins/issues/194" target="_blank">https://github.com/ppc64le-cloud/kubetest2-plugins/issues/194</a></td>
-									<td>2024-12-05T04:03:28Z</td>
-								</tr>
-								
-								<tr>
 									<td>Enable installation of go on ppc64/ppc64le systems</td>
 									<td>setup-go</td>
 									<td><a href="https://github.com/actions/setup-go/issues/517" target="_blank">https://github.com/actions/setup-go/issues/517</a></td>
@@ -2376,17 +2348,24 @@
 							<tbody>
 								
 								<tr>
-									<td>Use ansible/terraform modules over go/exec</td>
+									<td>Include CentOS environments for disabling selinux</td>
 									<td>provider-ibmcloud-test-infra</td>
-									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/8" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/8</a></td>
-									<td>2025-03-18T14:02:33Z</td>
+									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/11" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/11</a></td>
+									<td>2025-03-19T17:47:25Z</td>
 								</tr>
 								
 								<tr>
-									<td>Deprecate region flag and determine from zone.</td>
+									<td>Introduce etcd unit and integration tests jobs for ppc64le architecture</td>
+									<td>test-infra</td>
+									<td><a href="https://github.com/kubernetes/test-infra/pull/34543" target="_blank">https://github.com/kubernetes/test-infra/pull/34543</a></td>
+									<td>2025-03-19T18:45:32Z</td>
+								</tr>
+								
+								<tr>
+									<td>Use ansible/terraform modules over go/exec</td>
 									<td>provider-ibmcloud-test-infra</td>
-									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/5" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/5</a></td>
-									<td>2025-03-18T16:51:04Z</td>
+									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/8" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/8</a></td>
+									<td>2025-03-19T12:12:37Z</td>
 								</tr>
 								
 								<tr>
@@ -2641,6 +2620,13 @@
 							<tbody>
 								
 								<tr>
+									<td>post-cluster-api-provider-ibmcloud-push-images job is failing</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2261" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2261</a></td>
+									<td>2025-03-19T14:30:46Z</td>
+								</tr>
+								
+								<tr>
 									<td>Create prow jobs</td>
 									<td>provider-ibmcloud-test-infra</td>
 									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/issues/2" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/issues/2</a></td>
@@ -2665,7 +2651,7 @@
 									<td>unknown manifests in the release fat manifest</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2194" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2194</a></td>
-									<td>2025-02-18T04:55:54Z</td>
+									<td>2025-03-19T09:55:24Z</td>
 								</tr>
 								
 								<tr>
@@ -2843,13 +2829,6 @@
 									<td>2024-10-11T18:03:13Z</td>
 								</tr>
 								
-								<tr>
-									<td>Bump kubebuilder-tools version used in the hack scripts</td>
-									<td>cluster-api-provider-powervs</td>
-									<td><a href="https://github.com/openshift/cluster-api-provider-powervs/issues/23" target="_blank">https://github.com/openshift/cluster-api-provider-powervs/issues/23</a></td>
-									<td>2022-01-05T10:13:24Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -3017,7 +2996,23 @@
 				<div id="collapse-pkenchap" class="accordion-collapse collapse" aria-labelledby="heading-pkenchap" data-bs-parent="#usersAccordion">
 					<div class="accordion-body">
 						<h3 style="background-color: #d1e7dd;">Assigned Issues</h3>
-						<p>No assigned issues</p>
+						
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>unknown manifests in the release fat manifest</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2194" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2194</a></td>
+									<td>2025-03-19T09:55:24Z</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						
 
 						<h3 style="background-color: #ffeeba;">Created Issues</h3>
 						
@@ -3130,7 +3125,7 @@
 									<td>Update karpenter_scheduler_unschedulable_pods_count</td>
 									<td>karpenter</td>
 									<td><a href="https://github.com/kubernetes-sigs/karpenter/pull/2006" target="_blank">https://github.com/kubernetes-sigs/karpenter/pull/2006</a></td>
-									<td>2025-03-04T21:38:56Z</td>
+									<td>2025-03-20T00:13:13Z</td>
 								</tr>
 								
 								<tr>
@@ -3203,7 +3198,7 @@
 									<td>[Do Not Merge] test pr</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/61554" target="_blank">https://github.com/openshift/release/pull/61554</a></td>
-									<td>2025-02-17T10:22:17Z</td>
+									<td>2025-03-19T11:10:01Z</td>
 								</tr>
 								
 							</tbody>
@@ -3295,7 +3290,7 @@
 									<td>Support OLM v1</td>
 									<td>rsct-operator</td>
 									<td><a href="https://github.com/ocp-power-automation/rsct-operator/issues/104" target="_blank">https://github.com/ocp-power-automation/rsct-operator/issues/104</a></td>
-									<td>2025-03-17T05:25:58Z</td>
+									<td>2025-03-19T05:51:42Z</td>
 								</tr>
 								
 								<tr>
@@ -3351,6 +3346,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Set the AllNamespaces installation mode to true</td>
+									<td>rsct-operator</td>
+									<td><a href="https://github.com/ocp-power-automation/rsct-operator/pull/105" target="_blank">https://github.com/ocp-power-automation/rsct-operator/pull/105</a></td>
+									<td>2025-03-19T05:46:30Z</td>
+								</tr>
 								
 								<tr>
 									<td>Fixing the README</td>
@@ -3517,13 +3519,6 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
-								
-								<tr>
-									<td>MULTIARCH-5364: Rebase ibm-powervs-block-csi-driver with upstream</td>
-									<td>ibm-powervs-block-csi-driver</td>
-									<td><a href="https://github.com/openshift/ibm-powervs-block-csi-driver/pull/97" target="_blank">https://github.com/openshift/ibm-powervs-block-csi-driver/pull/97</a></td>
-									<td>2025-03-17T15:33:18Z</td>
-								</tr>
 								
 								<tr>
 									<td>Correct postgres port while running postgres for clair</td>
