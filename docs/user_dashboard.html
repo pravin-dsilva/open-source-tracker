@@ -37,13 +37,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Adding vllm buildkite job for IBM Power</td>
-									<td>vllm</td>
-									<td><a href="https://github.com/vllm-project/vllm/pull/16679" target="_blank">https://github.com/vllm-project/vllm/pull/16679</a></td>
-									<td>2025-04-16T22:04:13Z</td>
-								</tr>
-								
-								<tr>
 									<td>Adding pytest for Pixtral-12B-Base-2409</td>
 									<td>model-serving-tests</td>
 									<td><a href="https://github.com/tarukumar/model-serving-tests/pull/15" target="_blank">https://github.com/tarukumar/model-serving-tests/pull/15</a></td>
@@ -259,10 +252,17 @@
 							<tbody>
 								
 								<tr>
+									<td>:bug: Set min length validation to 0 for Bootstrap token</td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/12107" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/12107</a></td>
+									<td>2025-04-17T12:00:25Z</td>
+								</tr>
+								
+								<tr>
 									<td>ibmcloud-powervs: install oras and modify copy-files.sh for image build</td>
 									<td>cloud-api-adaptor</td>
 									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/2366" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/2366</a></td>
-									<td>2025-04-15T15:27:57Z</td>
+									<td>2025-04-17T07:56:22Z</td>
 								</tr>
 								
 								<tr>
@@ -612,6 +612,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Adopt CAPI v2beta2 status changes and respective controller changes for IBMPowerVSCluster</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2312" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2312</a></td>
+									<td>2025-04-17T06:37:07Z</td>
+								</tr>
+								
+								<tr>
 									<td>[WIP][DNM] Add support for updating oom_score_adj</td>
 									<td>runc</td>
 									<td><a href="https://github.com/opencontainers/runc/pull/4669" target="_blank">https://github.com/opencontainers/runc/pull/4669</a></td>
@@ -736,17 +743,10 @@
 							<tbody>
 								
 								<tr>
-									<td>Adding multiple lease for ppc64le S2S zone</td>
-									<td>release</td>
-									<td><a href="https://github.com/openshift/release/pull/63927" target="_blank">https://github.com/openshift/release/pull/63927</a></td>
-									<td>2025-04-16T17:01:19Z</td>
-								</tr>
-								
-								<tr>
 									<td>WIP - Adding job with new S2S cluster profile</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/62995" target="_blank">https://github.com/openshift/release/pull/62995</a></td>
-									<td>2025-04-16T13:18:00Z</td>
+									<td>2025-04-17T15:38:03Z</td>
 								</tr>
 								
 								<tr>
@@ -871,7 +871,7 @@
 									<td>Fix trivy scan flow</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2310" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2310</a></td>
-									<td>2025-04-16T06:17:34Z</td>
+									<td>2025-04-17T14:27:11Z</td>
 								</tr>
 								
 								<tr>
@@ -948,7 +948,7 @@
 									<td>Umbrella issue: Addition of prow jobs to run on ppc64le arch</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/kubernetes/test-infra/issues/34636" target="_blank">https://github.com/kubernetes/test-infra/issues/34636</a></td>
-									<td>2025-04-08T06:10:52Z</td>
+									<td>2025-04-17T08:33:19Z</td>
 								</tr>
 								
 								<tr>
@@ -1492,6 +1492,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>block PRs to sample-controller repo</td>
+									<td>test-infra</td>
+									<td><a href="https://github.com/kubernetes/test-infra/pull/34691" target="_blank">https://github.com/kubernetes/test-infra/pull/34691</a></td>
+									<td>2025-04-17T05:59:30Z</td>
+								</tr>
+								
+								<tr>
+									<td>Added contribution info to sample-controller README</td>
+									<td>kubernetes</td>
+									<td><a href="https://github.com/kubernetes/kubernetes/pull/131340" target="_blank">https://github.com/kubernetes/kubernetes/pull/131340</a></td>
+									<td>2025-04-17T20:22:30Z</td>
+								</tr>
 								
 								<tr>
 									<td>fixed doc rendering issues</td>
@@ -2360,7 +2374,7 @@
 									<td>[WIP]Use ansible/terraform modules over go/exec</td>
 									<td>provider-ibmcloud-test-infra</td>
 									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/8" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/8</a></td>
-									<td>2025-04-15T15:49:56Z</td>
+									<td>2025-04-17T20:27:25Z</td>
 								</tr>
 								
 								<tr>
@@ -2585,14 +2599,14 @@
 									<td>switch to gopkg.in/yaml.v3</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/kubernetes/test-infra/issues/33971" target="_blank">https://github.com/kubernetes/test-infra/issues/33971</a></td>
-									<td>2025-03-18T07:39:48Z</td>
+									<td>2025-04-17T18:47:35Z</td>
 								</tr>
 								
 								<tr>
 									<td>Managed cluster</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/1405" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/1405</a></td>
-									<td>2025-04-16T06:17:41Z</td>
+									<td>2025-04-17T13:47:50Z</td>
 								</tr>
 								
 							</tbody>
@@ -2772,7 +2786,7 @@
 									<td>Managed cluster</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/1405" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/1405</a></td>
-									<td>2025-04-16T06:17:41Z</td>
+									<td>2025-04-17T13:47:50Z</td>
 								</tr>
 								
 								<tr>
@@ -2913,14 +2927,14 @@
 									<td>[WIP] Update cron schedules for mce-power-conformance workflow</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/63757" target="_blank">https://github.com/openshift/release/pull/63757</a></td>
-									<td>2025-04-16T17:01:41Z</td>
+									<td>2025-04-17T09:32:14Z</td>
 								</tr>
 								
 								<tr>
 									<td>[WIP]MULTIARCH-5178:Add conformance tests in CI for agent based HyperShift heterogeneous Power and X86 NodePools</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/60982" target="_blank">https://github.com/openshift/release/pull/60982</a></td>
-									<td>2025-04-16T14:11:24Z</td>
+									<td>2025-04-17T08:35:12Z</td>
 								</tr>
 								
 								<tr>
@@ -3283,6 +3297,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Adding Ministral-3B-Instruct model</td>
+									<td>model-serving-tests</td>
+									<td><a href="https://github.com/tarukumar/model-serving-tests/pull/17" target="_blank">https://github.com/tarukumar/model-serving-tests/pull/17</a></td>
+									<td>2025-04-17T05:35:51Z</td>
+								</tr>
 								
 								<tr>
 									<td>Adding mistralai/Ministral-8B-Instruct-2410 model</td>
