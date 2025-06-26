@@ -292,6 +292,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Enabling caching instead buffered read and write for BlueFS files</td>
+									<td>ceph</td>
+									<td><a href="https://github.com/GunaKKIBM/ceph/pull/2" target="_blank">https://github.com/GunaKKIBM/ceph/pull/2</a></td>
+									<td>2025-06-25T08:06:27Z</td>
+								</tr>
+								
+								<tr>
 									<td>Sending volume create request with capacity in GB</td>
 									<td>ibm-vpc-file-csi-driver</td>
 									<td><a href="https://github.com/IBM/ibm-vpc-file-csi-driver/pull/74" target="_blank">https://github.com/IBM/ibm-vpc-file-csi-driver/pull/74</a></td>
@@ -410,6 +417,20 @@
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2286" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2286</a></td>
 									<td>2025-04-07T11:01:57Z</td>
+								</tr>
+								
+								<tr>
+									<td>New Linter: timestamps</td>
+									<td>kube-api-linter</td>
+									<td><a href="https://github.com/kubernetes-sigs/kube-api-linter/issues/26" target="_blank">https://github.com/kubernetes-sigs/kube-api-linter/issues/26</a></td>
+									<td>2025-06-25T11:51:41Z</td>
+								</tr>
+								
+								<tr>
+									<td>New Linter: nodurations</td>
+									<td>kube-api-linter</td>
+									<td><a href="https://github.com/kubernetes-sigs/kube-api-linter/issues/24" target="_blank">https://github.com/kubernetes-sigs/kube-api-linter/issues/24</a></td>
+									<td>2025-06-25T18:09:43Z</td>
 								</tr>
 								
 								<tr>
@@ -591,10 +612,17 @@
 							<tbody>
 								
 								<tr>
+									<td>Add notimestamp linter</td>
+									<td>kube-api-linter</td>
+									<td><a href="https://github.com/kubernetes-sigs/kube-api-linter/pull/105" target="_blank">https://github.com/kubernetes-sigs/kube-api-linter/pull/105</a></td>
+									<td>2025-06-25T18:57:47Z</td>
+								</tr>
+								
+								<tr>
 									<td>:seedling: Add default registry in kubevirt tilt file</td>
 									<td>cluster-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/12390" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/12390</a></td>
-									<td>2025-06-23T17:31:36Z</td>
+									<td>2025-06-25T12:27:07Z</td>
 								</tr>
 								
 								<tr>
@@ -767,7 +795,7 @@
 									<td>WIP - Adding job with new S2S cluster profile</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/62995" target="_blank">https://github.com/openshift/release/pull/62995</a></td>
-									<td>2025-06-24T18:13:35Z</td>
+									<td>2025-06-25T19:07:28Z</td>
 								</tr>
 								
 							</tbody>
@@ -912,41 +940,6 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
-								
-								<tr>
-									<td>[Flaking Test] [sig-node] Probing container with readiness probe should not be ready before initial delay and never restart [NodeConformance] [Conformance]</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/132426" target="_blank">https://github.com/kubernetes/kubernetes/issues/132426</a></td>
-									<td>2025-06-24T12:49:39Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Flaking Test] [sig-node] Container Runtime blackbox test when starting a container that exits should run with the expected status [NodeConformance] [Conformance]</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/132425" target="_blank">https://github.com/kubernetes/kubernetes/issues/132425</a></td>
-									<td>2025-06-23T14:51:58Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Flaking Test] [sig-node] ContainerLogPath [NodeConformance] Pod with a container printed log to stdout should print log to correct cri log path</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/132207" target="_blank">https://github.com/kubernetes/kubernetes/issues/132207</a></td>
-									<td>2025-06-11T05:46:16Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Flaking Test] [sig-node] [NodeConformance] Containers Lifecycle when Running a pod with init containers and regular containers, restartPolicy=Always when the init container is updated with a new image should not restart the init container if the image is updated during initialization</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/132185" target="_blank">https://github.com/kubernetes/kubernetes/issues/132185</a></td>
-									<td>2025-06-09T18:45:48Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Flaking Test] [sig-node] Hostname of Pod [NodeConformance] a pod without FQDN is not affected by SetHostnameAsFQDN field</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/132030" target="_blank">https://github.com/kubernetes/kubernetes/issues/132030</a></td>
-									<td>2025-06-04T17:14:44Z</td>
-								</tr>
 								
 								<tr>
 									<td>Explore yaml linting trigger as part of k8s-prow jobs</td>
@@ -1376,7 +1369,7 @@
 									<td>[WIP] Sync CI Jobs with Default Transit Gateway Update by Removing power-edge-router Flag</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/60507" target="_blank">https://github.com/openshift/release/pull/60507</a></td>
-									<td>2025-06-24T07:20:22Z</td>
+									<td>2025-06-25T13:58:28Z</td>
 								</tr>
 								
 							</tbody>
@@ -1406,7 +1399,7 @@
 									<td>[Pod Level Resources] Pod-level resource validation fails when container-level is set for other resource</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/132449" target="_blank">https://github.com/kubernetes/kubernetes/issues/132449</a></td>
-									<td>2025-06-24T06:25:51Z</td>
+									<td>2025-06-25T17:58:12Z</td>
 								</tr>
 								
 								<tr>
@@ -1470,7 +1463,7 @@
 									<td>Added link check and fixed broken links in doc</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2399" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2399</a></td>
-									<td>2025-06-24T09:00:46Z</td>
+									<td>2025-06-25T13:25:47Z</td>
 								</tr>
 								
 								<tr>
@@ -1613,7 +1606,7 @@
 									<td>Proposal to use tags for tracking PowerVS cluster resources</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2364" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2364</a></td>
-									<td>2025-06-24T06:09:19Z</td>
+									<td>2025-06-25T04:11:03Z</td>
 								</tr>
 								
 								<tr>
@@ -2396,7 +2389,7 @@
 									<td>Update the base images for nginx and nginx-new images</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/131894" target="_blank">https://github.com/kubernetes/kubernetes/pull/131894</a></td>
-									<td>2025-05-22T09:10:39Z</td>
+									<td>2025-06-25T03:27:07Z</td>
 								</tr>
 								
 								<tr>
@@ -2703,7 +2696,7 @@
 									<td>Failure cluster [cdc39e50...]: TestCancelEviction/slice-deleted</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/131072" target="_blank">https://github.com/kubernetes/kubernetes/issues/131072</a></td>
-									<td>2025-03-26T17:47:58Z</td>
+									<td>2025-06-25T06:09:11Z</td>
 								</tr>
 								
 								<tr>
@@ -2951,13 +2944,6 @@
 							<tbody>
 								
 								<tr>
-									<td>OCPBUGS-49812: Sanitize PowerVS image name to comply with updated naming standards</td>
-									<td>hypershift</td>
-									<td><a href="https://github.com/openshift/hypershift/pull/6249" target="_blank">https://github.com/openshift/hypershift/pull/6249</a></td>
-									<td>2025-06-24T11:46:34Z</td>
-								</tr>
-								
-								<tr>
 									<td>change prow job crd config</td>
 									<td>k8s-prow-guide</td>
 									<td><a href="https://github.com/Neha-dot-Yadav/k8s-prow-guide/pull/5" target="_blank">https://github.com/Neha-dot-Yadav/k8s-prow-guide/pull/5</a></td>
@@ -3081,14 +3067,14 @@
 									<td>MULTIARCH-5365: Implement local PodPlacementConfig API</td>
 									<td>multiarch-tuning-operator</td>
 									<td><a href="https://github.com/outrigger-project/multiarch-tuning-operator/pull/652" target="_blank">https://github.com/outrigger-project/multiarch-tuning-operator/pull/652</a></td>
-									<td>2025-06-23T11:32:01Z</td>
+									<td>2025-06-25T08:38:26Z</td>
 								</tr>
 								
 								<tr>
 									<td>MULTIARCH-5196: p-px debug dhcpd failure</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/65547" target="_blank">https://github.com/openshift/release/pull/65547</a></td>
-									<td>2025-06-24T08:58:03Z</td>
+									<td>2025-06-25T11:41:03Z</td>
 								</tr>
 								
 							</tbody>
@@ -3355,6 +3341,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Add Dockerfile.lmes-job.ppc64le</td>
+									<td>lm-evaluation-harness</td>
+									<td><a href="https://github.com/red-hat-data-services/lm-evaluation-harness/pull/147" target="_blank">https://github.com/red-hat-data-services/lm-evaluation-harness/pull/147</a></td>
+									<td>2025-06-25T16:22:52Z</td>
+								</tr>
 								
 								<tr>
 									<td>Setting temperature to 0 and updating the snapshots for phi-3-mini-44 model</td>
