@@ -12,9 +12,9 @@ import (
 )
 
 type Issue struct {
-	Title string `json:"title"`
-	URL   string `json:"html_url"`
-	Repo  string `json:"repository_url"`
+	Title     string `json:"title"`
+	URL       string `json:"html_url"`
+	Repo      string `json:"repository_url"`
 	CreatedAt string `json:"created_at"`
 	UpdatedAt string `json:"updated_at"`
 }
@@ -31,7 +31,15 @@ func FetchOpenPRs(username, token string) []Issue {
 	return fetchGitHubData(fmt.Sprintf("https://api.github.com/search/issues?q=author:%s+is:pr+is:open", username), token)
 }
 
-
+func FetchClosedPRs(username, token string) []Issue {
+	oneYearAgo := time.Now().AddDate(-1, 0, 0).Format("2006-01-02")
+	apiURL := fmt.Sprintf(
+		"https://api.github.com/search/issues?q=author:%s+is:pr+is:closed+closed:>=%s",
+		username,
+		oneYearAgo,
+	)
+	return fetchGitHubData(apiURL, token)
+}
 
 func fetchGitHubData(apiURL, token string) []Issue {
 	client := &http.Client{}

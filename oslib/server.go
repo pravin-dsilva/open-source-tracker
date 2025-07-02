@@ -8,19 +8,20 @@ import (
 	"text/template"
 	"time"
 )
+
 func GenerateIssuesReport(orgs []string, token string, labels []string) {
 	for _, label := range labels {
-	var Issues []Issue
+		var Issues []Issue
 
-    for _, org := range orgs {
-        Issues = append(Issues, FetchIssues(org, token, label)...)
-    }
+		for _, org := range orgs {
+			Issues = append(Issues, FetchIssues(org, token, label)...)
+		}
 
-    sort.Slice(Issues, func(i, j int) bool {
-        return Issues[i].CreatedAt > Issues[j].CreatedAt
-    })
+		sort.Slice(Issues, func(i, j int) bool {
+			return Issues[i].CreatedAt > Issues[j].CreatedAt
+		})
 
-    tmpl := template.Must(template.New("goodFirstIssues").Parse(`
+		tmpl := template.Must(template.New("goodFirstIssues").Parse(`
     <!DOCTYPE html>
     <html>
     <head>
@@ -57,24 +58,24 @@ func GenerateIssuesReport(orgs []string, token string, labels []string) {
     </html>
     `))
 
-    var buf bytes.Buffer
-    if err := tmpl.Execute(&buf, Issues); err != nil {
-        log.Fatalf("Error rendering template: %v", err)
-    }
+		var buf bytes.Buffer
+		if err := tmpl.Execute(&buf, Issues); err != nil {
+			log.Fatalf("Error rendering template: %v", err)
+		}
 
-    var outputFile string
-    if label == "good+first+issue" {
-        outputFile = "docs/good_first_issues.html"
-    } else if label == "help+wanted" {
-        outputFile = "docs/help_wanted.html"
-    }
+		var outputFile string
+		if label == "good+first+issue" {
+			outputFile = "docs/good_first_issues.html"
+		} else if label == "help+wanted" {
+			outputFile = "docs/help_wanted.html"
+		}
 
-    if err := os.WriteFile(outputFile, buf.Bytes(), 0644); err != nil {
-        log.Fatalf("Error saving HTML file (%s): %v", outputFile, err)
-    }
- 
-    log.Println("HTML report is generated")
-}
+		if err := os.WriteFile(outputFile, buf.Bytes(), 0644); err != nil {
+			log.Fatalf("Error saving HTML file (%s): %v", outputFile, err)
+		}
+
+		log.Println("HTML report is generated")
+	}
 }
 func GenerateReport(users []string, token string) {
 	data := make(map[string]map[string][]Issue)
@@ -83,14 +84,14 @@ func GenerateReport(users []string, token string) {
 			"assigned_issues": FetchAssignedIssues(user, token),
 			"created_issues":  FetchCreatedIssues(user, token),
 			"open_prs":        FetchOpenPRs(user, token),
+			"closed_prs":      FetchClosedPRs(user, token),
 		}
 		if i < len(users)-1 {
 			log.Printf("Sleeping for 30 seconds to avoid rate-limiting")
 			time.Sleep(30 * time.Second)
 		}
-		
-	}
 
+	}
 
 	tmpl := template.Must(template.New("dashboard").Parse(`
 	<!DOCTYPE html>
@@ -172,6 +173,24 @@ func GenerateReport(users []string, token string) {
 							</tbody>
 						</table>
 						{{ else }}<p>No open PRs</p>{{ end }}
+						<h3 style="background-color: #f8d7da;">Closed PRs (past 1 year)</h3>
+						{{ if $data.closed_prs }}
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
+							</thead>
+							<tbody>
+								{{ range $issue := $data.closed_prs }}
+								<tr>
+									<td>{{ $issue.Title }}</td>
+									<td>{{ $issue.Repo }}</td>
+									<td><a href="{{ $issue.URL }}" target="_blank">{{ $issue.URL }}</a></td>
+									<td>{{ $issue.UpdatedAt }}</td>
+								</tr>
+								{{ end }}
+							</tbody>
+						</table>
+						{{ else }}<p>No closed PRs</p>{{ end }}
 					</div>
 				</div>
 			</div>
