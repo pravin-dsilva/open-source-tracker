@@ -1,4 +1,4 @@
-name: Update User Issues
+name: monthlyreport
 
 on:
   schedule:
@@ -28,5 +28,5 @@ jobs:
           git config user.name "GitHub Actions"
           git config user.email "actions@github.com"
           git add docs/team_achievements.html
-          git commit -m "Update User Issues"
+          git commit -m "Update monthly report"
           git push
