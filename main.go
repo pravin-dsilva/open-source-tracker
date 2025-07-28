@@ -9,6 +9,7 @@ import (
 
 func main() {
 	showIssues := flag.Bool("issues", false, "Fetch only good first issues")
+	showMonthlyReport := flag.Bool("monthlyreport", false, "Fetch only good first issues")
 	flag.Parse()
 
 	configPath := "config.json"
@@ -23,6 +24,8 @@ func main() {
 	}
 	if *showIssues {
 		oslib.GenerateIssuesReport(config.Orgs, githubToken, config.Labels)
+	} else if *showMonthlyReport {
+		oslib.GenerateTeamAchievements(config.Users, githubToken)
 	} else {
 		oslib.GenerateReport(config.Users, githubToken)
 	}

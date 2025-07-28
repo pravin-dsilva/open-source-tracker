@@ -19,6 +19,11 @@ type Issue struct {
 	UpdatedAt string `json:"updated_at"`
 }
 
+func FetchClosedIssues(username, token string) []Issue {
+	apiURL := fmt.Sprintf("https://api.github.com/search/issues?q=author:%s+is:issue+is:closed", username)
+	return fetchGitHubData(apiURL, token)
+}
+
 func FetchAssignedIssues(username, token string) []Issue {
 	return fetchGitHubData(fmt.Sprintf("https://api.github.com/search/issues?q=assignee:%s+is:issue+is:open", username), token)
 }

@@ -5,6 +5,7 @@ import (
 	"log"
 	"os"
 	"sort"
+	"strings"
 	"text/template"
 	"time"
 )
@@ -214,4 +215,127 @@ func GenerateReport(users []string, token string) {
 	}
 
 	log.Println("HTML report generated and saved to dashboard.html")
+}
+
+func GenerateTeamAchievements(users []string, token string) {
+	activityMap := FetchMonthlyActivity(users, token)
+	groupedData, months := GroupMonthlyActivity(activityMap)
+
+	funcMap := template.FuncMap{
+		"formatDate": func(t time.Time) string {
+			return t.Format("Jan 2")
+		},
+		"badgeClass": func(action string) string {
+			switch action {
+			case "created_issue_open":
+				return "primary"
+			case "created_issue_closed":
+				return "info"
+			case "opened_pr":
+				return "warning"
+			case "closed_pr":
+				return "success"
+			default:
+				return "secondary"
+			}
+		},
+		"actionLabel": func(action string) string {
+			switch action {
+			case "created_issue_open":
+				return "Created Issue (Open)"
+			case "created_issue_closed":
+				return "Created Issue (Closed)"
+			case "opened_pr":
+				return "Opened PR"
+			case "closed_pr":
+				return "Closed PR"
+			default:
+				return action
+			}
+		},
+		"filterByAction": func(acts []Activity, action string) []Activity {
+			var filtered []Activity
+			for _, a := range acts {
+				if a.Action == action {
+					filtered = append(filtered, a)
+				}
+			}
+			return filtered
+		},
+		"escapeID": func(s string) string {
+			safe := strings.ReplaceAll(s, "@", "_")
+			safe = strings.ReplaceAll(safe, ".", "_")
+			safe = strings.ReplaceAll(safe, "/", "_")
+			return safe
+		},
+	}
+
+	tmpl := template.Must(template.New("teamAchievements").Funcs(funcMap).Parse(`
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Team Achievements</title>
+	<meta charset="utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body class="container mt-5">
+	<h1 class="mb-4">Team Achievements by Month</h1>
+
+	{{ range .Months }}
+		{{ $month := . }}
+		<h2 class="mt-4">{{ $month }}</h2>
+
+		{{ range $user, $activities := index $.Data $month }}
+			<div class="card mb-2">
+				<div class="card-header">
+					<h5 class="mb-0">
+						<button class="btn btn-link text-decoration-none" data-bs-toggle="collapse" data-bs-target="#collapse-{{ $month }}-{{ $user | escapeID }}" aria-expanded="false" aria-controls="collapse-{{ $month }}-{{ $user | escapeID }}">
+							{{ $user }}
+						</button>
+					</h5>
+					<div class="mt-2">
+						<span class="badge bg-primary">Open Issues: {{ len (filterByAction $activities "created_issue_open") }}</span>
+						<span class="badge bg-info text-dark">Closed Issues: {{ len (filterByAction $activities "created_issue_closed") }}</span>
+						<span class="badge bg-warning text-dark">Opened PRs: {{ len (filterByAction $activities "opened_pr") }}</span>
+						<span class="badge bg-success">Closed PRs: {{ len (filterByAction $activities "closed_pr") }}</span>
+					</div>
+				</div>
+				<div id="collapse-{{ $month }}-{{ $user | escapeID }}" class="collapse">
+					<ul class="list-group list-group-flush">
+						{{ range $a := $activities }}
+						<li class="list-group-item">
+							<span class="badge bg-{{ badgeClass $a.Action }}">{{ actionLabel $a.Action }}</span>
+							<a href="{{ $a.URL }}" target="_blank">{{ $a.Title }}</a>
+							<span class="text-muted">in {{ $a.Repo }} on {{ formatDate $a.Timestamp }}</span>
+						</li>
+						{{ end }}
+					</ul>
+				</div>
+			</div>
+		{{ end }}
+
+	{{ end }}
+</body>
+</html>
+`))
+
+	data := struct {
+		Data   map[string]map[string][]Activity
+		Months []string
+	}{
+		Data:   groupedData,
+		Months: months,
+	}
+
+	var buf bytes.Buffer
+	if err := tmpl.Execute(&buf, data); err != nil {
+		log.Fatalf("Error rendering template: %v", err)
+	}
+
+	if err := os.WriteFile("docs/team_achievements.html", buf.Bytes(), 0644); err != nil {
+		log.Fatalf("Error saving HTML file: %v", err)
+	}
+
+	log.Println("Team achievements dashboard generated: docs/team_achievements.html")
 }
