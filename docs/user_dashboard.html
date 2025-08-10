@@ -3074,6 +3074,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Allow retries for Control Plane handlers to be customized or fixed at higher values</td>
+									<td>kubespray</td>
+									<td><a href="https://github.com/kubernetes-sigs/kubespray/issues/12448" target="_blank">https://github.com/kubernetes-sigs/kubespray/issues/12448</a></td>
+									<td>2025-08-09T14:41:49Z</td>
+								</tr>
+								
+								<tr>
 									<td>Test GitHub Actions scaffolded and fix them if required</td>
 									<td>kubebuilder</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/4977" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/4977</a></td>
@@ -3092,13 +3099,6 @@
 									<td>kubebuilder</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/4960" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/4960</a></td>
 									<td>2025-07-26T18:57:31Z</td>
-								</tr>
-								
-								<tr>
-									<td>Cilium Egress Gateway in values.yaml.j2</td>
-									<td>kubespray</td>
-									<td><a href="https://github.com/kubernetes-sigs/kubespray/issues/12363" target="_blank">https://github.com/kubernetes-sigs/kubespray/issues/12363</a></td>
-									<td>2025-07-03T07:00:14Z</td>
 								</tr>
 								
 							</tbody>
@@ -3131,6 +3131,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Make control plane health check retries configurable</td>
+									<td>kubespray</td>
+									<td><a href="https://github.com/kubernetes-sigs/kubespray/pull/12452" target="_blank">https://github.com/kubernetes-sigs/kubespray/pull/12452</a></td>
+									<td>2025-08-09T16:45:43Z</td>
+								</tr>
 								
 								<tr>
 									<td>[release-4.14] OCPBUGS-51816: CVE-2025-22869 Update golang.org/x/crypto to patched OpenShift fork</td>
@@ -3168,13 +3175,6 @@
 								</tr>
 								
 								<tr>
-									<td>Add support for enabling Cilium Egress Gateway in values.yaml.j2</td>
-									<td>kubespray</td>
-									<td><a href="https://github.com/kubernetes-sigs/kubespray/pull/12372" target="_blank">https://github.com/kubernetes-sigs/kubespray/pull/12372</a></td>
-									<td>2025-07-30T07:35:21Z</td>
-								</tr>
-								
-								<tr>
 									<td>[release-4.16] OCPBUGS-51818: CVE-2025-22869 Update golang.org/x/crypto to patched OpenShift fork</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/openshift/cluster-api-provider-ibmcloud/pull/109" target="_blank">https://github.com/openshift/cluster-api-provider-ibmcloud/pull/109</a></td>
@@ -3205,6 +3205,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Move split image filesystem FEATURE STATE note to Filesystem signals section for clarity</td>
+									<td>website</td>
+									<td><a href="https://github.com/kubernetes/website/pull/51852" target="_blank">https://github.com/kubernetes/website/pull/51852</a></td>
+									<td>2025-08-09T09:07:44Z</td>
+								</tr>
 								
 								<tr>
 									<td>[release-4.18] OCPBUGS-51825: CVE-2025-22869 Update golang.org/x/crypto to patched OpenShift fork</td>
@@ -3274,6 +3281,13 @@
 									<td>website</td>
 									<td><a href="https://github.com/etcd-io/website/pull/1037" target="_blank">https://github.com/etcd-io/website/pull/1037</a></td>
 									<td>2025-08-07T10:18:06Z</td>
+								</tr>
+								
+								<tr>
+									<td>Add support for enabling Cilium Egress Gateway in values.yaml.j2</td>
+									<td>kubespray</td>
+									<td><a href="https://github.com/kubernetes-sigs/kubespray/pull/12372" target="_blank">https://github.com/kubernetes-sigs/kubespray/pull/12372</a></td>
+									<td>2025-08-09T13:46:12Z</td>
 								</tr>
 								
 								<tr>
@@ -3400,20 +3414,6 @@
 									<td>machine-api-provider-powervs</td>
 									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/105" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/105</a></td>
 									<td>2025-04-09T07:47:56Z</td>
-								</tr>
-								
-								<tr>
-									<td>OCPBUGS-51335: Fix for CVE-2024-45338 in golang.org/x/net/html in release-4.15</td>
-									<td>machine-api-provider-powervs</td>
-									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/104" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/104</a></td>
-									<td>2025-04-09T07:44:12Z</td>
-								</tr>
-								
-								<tr>
-									<td>OCPBUGS-51293: Fix for CVE-2024-45338 in golang.org/x/net/html in release-4.16</td>
-									<td>machine-api-provider-powervs</td>
-									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/103" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/103</a></td>
-									<td>2025-04-09T07:34:32Z</td>
 								</tr>
 								
 							</tbody>
@@ -3642,13 +3642,6 @@
 								</tr>
 								
 								<tr>
-									<td>Fixed race condition in additional volumes reconciliation</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2337" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2337</a></td>
-									<td>2025-05-19T06:26:59Z</td>
-								</tr>
-								
-								<tr>
 									<td>Added contribution info to sample-controller README</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/131340" target="_blank">https://github.com/kubernetes/kubernetes/pull/131340</a></td>
@@ -3720,6 +3713,13 @@
 									<td>website</td>
 									<td><a href="https://github.com/kubernetes/website/pull/50938" target="_blank">https://github.com/kubernetes/website/pull/50938</a></td>
 									<td>2025-05-17T11:37:14Z</td>
+								</tr>
+								
+								<tr>
+									<td>Fixed race condition in additional volumes reconciliation</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2337" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2337</a></td>
+									<td>2025-08-09T13:37:35Z</td>
 								</tr>
 								
 								<tr>
@@ -4604,13 +4604,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Design Improvements[UTs]: Restructure and re-use helper functions</td>
-									<td>kubebuilder</td>
-									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/4971" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/4971</a></td>
-									<td>2025-08-04T02:41:27Z</td>
-								</tr>
-								
-								<tr>
 									<td>[Help Wanted] - Increase the coverage of unit tests</td>
 									<td>kubebuilder</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/4925" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/4925</a></td>
@@ -4629,23 +4622,7 @@
 						
 
 						<h3 style="background-color: #ffeeba;">Created Issues</h3>
-						
-						<table class="table table-striped">
-							<thead>
-								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
-							</thead>
-							<tbody>
-								
-								<tr>
-									<td>Design Improvements[UTs]: Restructure and re-use helper functions</td>
-									<td>kubebuilder</td>
-									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/4971" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/4971</a></td>
-									<td>2025-08-04T02:41:27Z</td>
-								</tr>
-								
-							</tbody>
-						</table>
-						
+						<p>No created issues</p>
 
 						<h3 style="background-color: #f8d7da;">Open PRs</h3>
 						<p>No open PRs</p>
@@ -8516,6 +8493,20 @@
 							<tbody>
 								
 								<tr>
+									<td>Rebase ibm-powervs-block-csi-driver with upstream</td>
+									<td>ibm-powervs-block-csi-driver</td>
+									<td><a href="https://github.com/openshift/ibm-powervs-block-csi-driver/pull/105" target="_blank">https://github.com/openshift/ibm-powervs-block-csi-driver/pull/105</a></td>
+									<td>2025-08-09T15:56:58Z</td>
+								</tr>
+								
+								<tr>
+									<td>prow job for release-0.10 branch</td>
+									<td>test-infra</td>
+									<td><a href="https://github.com/kubernetes/test-infra/pull/35290" target="_blank">https://github.com/kubernetes/test-infra/pull/35290</a></td>
+									<td>2025-08-09T09:58:21Z</td>
+								</tr>
+								
+								<tr>
 									<td>format</td>
 									<td>windows-operational-readiness</td>
 									<td><a href="https://github.com/yussufsh/windows-operational-readiness/pull/1" target="_blank">https://github.com/yussufsh/windows-operational-readiness/pull/1</a></td>
@@ -8546,6 +8537,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Upgrade k8s deps and go versions on main</td>
+									<td>ibm-powervs-block-csi-driver</td>
+									<td><a href="https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/940" target="_blank">https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/940</a></td>
+									<td>2025-08-09T09:44:37Z</td>
+								</tr>
 								
 								<tr>
 									<td>Fix sync issue related to Path Traversal</td>
@@ -8748,13 +8746,6 @@
 									<td>terraform-provider-ignition</td>
 									<td><a href="https://github.com/community-terraform-providers/terraform-provider-ignition/pull/90" target="_blank">https://github.com/community-terraform-providers/terraform-provider-ignition/pull/90</a></td>
 									<td>2025-03-10T09:55:49Z</td>
-								</tr>
-								
-								<tr>
-									<td>Upgrade go version</td>
-									<td>terraform-provider-ignition</td>
-									<td><a href="https://github.com/community-terraform-providers/terraform-provider-ignition/pull/88" target="_blank">https://github.com/community-terraform-providers/terraform-provider-ignition/pull/88</a></td>
-									<td>2025-03-10T09:26:16Z</td>
 								</tr>
 								
 							</tbody>
