@@ -20,6 +20,13 @@
             <tbody>
                 
                 <tr>
+                    <td>kubectl describe suffers from N+1 query problem when falling back to prefix search, causing performance issues</td>
+                    <td>kubectl</td>
+                    <td><a href="https://github.com/kubernetes/kubectl/issues/1769" target="_blank">https://github.com/kubernetes/kubectl/issues/1769</a></td>
+                    <td>2025-08-12T08:26:24Z</td>
+                </tr>
+                
+                <tr>
                     <td>Improve test coverage for desired_state.go for MP upgrades</td>
                     <td>cluster-api</td>
                     <td><a href="https://github.com/kubernetes-sigs/cluster-api/issues/12614" target="_blank">https://github.com/kubernetes-sigs/cluster-api/issues/12614</a></td>
@@ -31,6 +38,20 @@
                     <td>cluster-api-provider-ibmcloud</td>
                     <td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2458" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2458</a></td>
                     <td>2025-08-11T13:46:41Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[pt-br] Localize content/pt-br/docs/concepts/architecture/garbage-collection.md</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51880" target="_blank">https://github.com/kubernetes/website/issues/51880</a></td>
+                    <td>2025-08-11T03:37:27Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Deprecate UpdateMode "Auto" in VPA</td>
+                    <td>autoscaler</td>
+                    <td><a href="https://github.com/kubernetes/autoscaler/issues/8424" target="_blank">https://github.com/kubernetes/autoscaler/issues/8424</a></td>
+                    <td>2025-08-09T14:06:41Z</td>
                 </tr>
                 
                 <tr>
@@ -48,10 +69,24 @@
                 </tr>
                 
                 <tr>
+                    <td>Update the reference doc generation guide with info about the kubelet</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51843" target="_blank">https://github.com/kubernetes/website/issues/51843</a></td>
+                    <td>2025-08-08T14:41:11Z</td>
+                </tr>
+                
+                <tr>
                     <td>Conformance: Rename Infra Namespace</td>
                     <td>gateway-api-inference-extension</td>
                     <td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/1315" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/1315</a></td>
                     <td>2025-08-06T19:38:13Z</td>
+                </tr>
+                
+                <tr>
+                    <td>VPA: Pod memory limit exceeds recommendation and namespace quotas</td>
+                    <td>autoscaler</td>
+                    <td><a href="https://github.com/kubernetes/autoscaler/issues/8401" target="_blank">https://github.com/kubernetes/autoscaler/issues/8401</a></td>
+                    <td>2025-08-03T16:16:24Z</td>
                 </tr>
                 
                 <tr>
@@ -69,6 +104,48 @@
                 </tr>
                 
                 <tr>
+                    <td>Rebuild the monitoring stack</td>
+                    <td>k8s.io</td>
+                    <td><a href="https://github.com/kubernetes/k8s.io/issues/8351" target="_blank">https://github.com/kubernetes/k8s.io/issues/8351</a></td>
+                    <td>2025-07-30T07:02:08Z</td>
+                </tr>
+                
+                <tr>
+                    <td>fix "update-amd-gpu-device-plugin-version"</td>
+                    <td>minikube</td>
+                    <td><a href="https://github.com/kubernetes/minikube/issues/21195" target="_blank">https://github.com/kubernetes/minikube/issues/21195</a></td>
+                    <td>2025-07-29T20:30:00Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[Flaking Test] UT k8s.io/apiserver/pkg/storage: cacher</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/133273" target="_blank">https://github.com/kubernetes/kubernetes/issues/133273</a></td>
+                    <td>2025-07-29T11:53:08Z</td>
+                </tr>
+                
+                <tr>
+                    <td>List available endpoints for kube-proxy's /statusz</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/133185" target="_blank">https://github.com/kubernetes/kubernetes/issues/133185</a></td>
+                    <td>2025-07-24T18:00:35Z</td>
+                </tr>
+                
+                <tr>
+                    <td>List available endpoints for kubelet's /statusz</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/133184" target="_blank">https://github.com/kubernetes/kubernetes/issues/133184</a></td>
+                    <td>2025-07-24T17:59:18Z</td>
+                </tr>
+                
+                <tr>
+                    <td>List available endpoints for kube-controller-manager's /statusz </td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/133182" target="_blank">https://github.com/kubernetes/kubernetes/issues/133182</a></td>
+                    <td>2025-07-24T17:53:56Z</td>
+                </tr>
+                
+                <tr>
                     <td>Feature Request: Add `IfNotExistsAction` to Machinery</td>
                     <td>kubebuilder</td>
                     <td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/4960" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/4960</a></td>
@@ -83,10 +160,80 @@
                 </tr>
                 
                 <tr>
+                    <td>document how to use ValidatingAdmissionPolicy to replace kubernetes-sigs/externalip-webhook</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51689" target="_blank">https://github.com/kubernetes/website/issues/51689</a></td>
+                    <td>2025-07-22T13:42:30Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[ja] Translate content/en/docs/tasks/tls/managing-tls-in-a-cluster.md into Japanese</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51637" target="_blank">https://github.com/kubernetes/website/issues/51637</a></td>
+                    <td>2025-07-17T14:34:06Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[ja] Translate content/en/docs/tasks/administer-cluster/decrypt-data.md into Japanese</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51636" target="_blank">https://github.com/kubernetes/website/issues/51636</a></td>
+                    <td>2025-07-17T14:28:52Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[ja] Translate content/en/docs/tasks/administer-cluster/encrypt-data.md into Japanese</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51635" target="_blank">https://github.com/kubernetes/website/issues/51635</a></td>
+                    <td>2025-07-17T14:27:26Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[ja] translate content/en/docs/tasks/administer-cluster/kms-provider.md into Japanese</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51634" target="_blank">https://github.com/kubernetes/website/issues/51634</a></td>
+                    <td>2025-07-17T14:25:07Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[ja] translate content/en/tasks/administer-cluster/kubelet-in-userns/ into japaneses</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51633" target="_blank">https://github.com/kubernetes/website/issues/51633</a></td>
+                    <td>2025-07-17T14:20:06Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[ja] Translate content/en/blog/2025-07-03-devices-failure-handling into Japanese</td>
+                    <td>website</td>
+                    <td><a href="https://github.com/kubernetes/website/issues/51632" target="_blank">https://github.com/kubernetes/website/issues/51632</a></td>
+                    <td>2025-07-17T14:13:22Z</td>
+                </tr>
+                
+                <tr>
+                    <td>need a conformance test for named ports in Services</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/132954" target="_blank">https://github.com/kubernetes/kubernetes/issues/132954</a></td>
+                    <td>2025-07-15T11:11:07Z</td>
+                </tr>
+                
+                <tr>
                     <td>[Help Wanted] - Increase the coverage of unit tests</td>
                     <td>kubebuilder</td>
                     <td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/4925" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/4925</a></td>
                     <td>2025-07-13T19:34:06Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Cache NodeInfo for Kubelet admission</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/132858" target="_blank">https://github.com/kubernetes/kubernetes/issues/132858</a></td>
+                    <td>2025-07-10T03:37:55Z</td>
+                </tr>
+                
+                <tr>
+                    <td>nice to have: Support VirtualBox on Arm64 Macos</td>
+                    <td>minikube</td>
+                    <td><a href="https://github.com/kubernetes/minikube/issues/21029" target="_blank">https://github.com/kubernetes/minikube/issues/21029</a></td>
+                    <td>2025-07-03T20:54:32Z</td>
                 </tr>
                 
                 <tr>
@@ -195,10 +342,38 @@
                 </tr>
                 
                 <tr>
+                    <td>DeleteOptions decode error returns 5xx error</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/132359" target="_blank">https://github.com/kubernetes/kubernetes/issues/132359</a></td>
+                    <td>2025-06-17T15:16:09Z</td>
+                </tr>
+                
+                <tr>
                     <td>Update EPP Protocol Spec</td>
                     <td>gateway-api-inference-extension</td>
                     <td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/994" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/994</a></td>
                     <td>2025-06-16T18:47:26Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Clean up circular dependencies around the kubelet's admitHandlers and the container runtime</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/132298" target="_blank">https://github.com/kubernetes/kubernetes/issues/132298</a></td>
+                    <td>2025-06-13T20:32:48Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Minikube start fails for nvidia gpus in compute only/ headless mode</td>
+                    <td>minikube</td>
+                    <td><a href="https://github.com/kubernetes/minikube/issues/20934" target="_blank">https://github.com/kubernetes/minikube/issues/20934</a></td>
+                    <td>2025-06-12T19:29:24Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[cluster-autoscaler] Use git tags instead of syncing CA version with k8s version in cluster-autoscaler/hack/update-deps.sh</td>
+                    <td>autoscaler</td>
+                    <td><a href="https://github.com/kubernetes/autoscaler/issues/8240" target="_blank">https://github.com/kubernetes/autoscaler/issues/8240</a></td>
+                    <td>2025-06-12T11:41:45Z</td>
                 </tr>
                 
                 <tr>
@@ -223,10 +398,45 @@
                 </tr>
                 
                 <tr>
+                    <td>API can be streamlined: assume same key for some `EnvVarSource`</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/132195" target="_blank">https://github.com/kubernetes/kubernetes/issues/132195</a></td>
+                    <td>2025-06-09T16:15:58Z</td>
+                </tr>
+                
+                <tr>
                     <td>The normalized_time_per_output_token_seconds metrics is not recorded</td>
                     <td>gateway-api-inference-extension</td>
                     <td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/939" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/939</a></td>
                     <td>2025-06-09T02:25:11Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Quiet `git worktree add` in `hack/verify-govulncheck.sh`</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/132153" target="_blank">https://github.com/kubernetes/kubernetes/issues/132153</a></td>
+                    <td>2025-06-06T17:18:57Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Kubelet metrics definitions?</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/131986" target="_blank">https://github.com/kubernetes/kubernetes/issues/131986</a></td>
+                    <td>2025-05-27T15:43:29Z</td>
+                </tr>
+                
+                <tr>
+                    <td>docker credential JSON: validate non UTF-8 characters</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/131982" target="_blank">https://github.com/kubernetes/kubernetes/issues/131982</a></td>
+                    <td>2025-05-27T14:06:46Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Implement checking apiserver memory limit below threshold in list benchmarks</td>
+                    <td>kubernetes</td>
+                    <td><a href="https://github.com/kubernetes/kubernetes/issues/131885" target="_blank">https://github.com/kubernetes/kubernetes/issues/131885</a></td>
+                    <td>2025-05-21T11:57:50Z</td>
                 </tr>
                 
             </tbody>
