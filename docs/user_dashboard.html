@@ -300,13 +300,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Update cluster class templates with latest API changes</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2459" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2459</a></td>
-									<td>2025-08-13T13:05:10Z</td>
-								</tr>
-								
-								<tr>
 									<td>Resource group in VPC v2 flow is not handled properly</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2445" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2445</a></td>
@@ -426,6 +419,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Update cluster class templates with v1beta2 API changes</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2468" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2468</a></td>
+									<td>2025-08-24T16:33:08Z</td>
+								</tr>
 								
 								<tr>
 									<td>Update CAPIBM verify job to run pre-requisite steps for dind</td>
@@ -630,13 +630,6 @@
 									<td>2025-05-28T07:07:29Z</td>
 								</tr>
 								
-								<tr>
-									<td>Update cluster-api to v1.10.2</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2369" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2369</a></td>
-									<td>2025-05-28T06:47:09Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -737,7 +730,7 @@
 									<td>Enabling caching instead buffered read and write for BlueFS files</td>
 									<td>ceph</td>
 									<td><a href="https://github.com/GunaKKIBM/ceph/pull/2" target="_blank">https://github.com/GunaKKIBM/ceph/pull/2</a></td>
-									<td>2025-06-25T08:06:27Z</td>
+									<td>2025-08-24T08:27:00Z</td>
 								</tr>
 								
 								<tr>
@@ -1014,7 +1007,7 @@
 									<td>Update capibmadm cli tool installation guide</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2367" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2367</a></td>
-									<td>2025-05-26T16:09:54Z</td>
+									<td>2025-08-24T16:23:01Z</td>
 								</tr>
 								
 								<tr>
@@ -2170,7 +2163,7 @@
 									<td>Refactor and rewrite Python scripts in releng/ in Go</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/kubernetes/test-infra/issues/29390" target="_blank">https://github.com/kubernetes/test-infra/issues/29390</a></td>
-									<td>2025-07-17T11:14:10Z</td>
+									<td>2025-08-24T01:41:13Z</td>
 								</tr>
 								
 							</tbody>
@@ -5951,13 +5944,6 @@
 									<td>2025-08-20T10:43:30Z</td>
 								</tr>
 								
-								<tr>
-									<td>[Testing][UI][Admin] Feedback from Hamburger menu for admin personna does not work</td>
-									<td>pac</td>
-									<td><a href="https://github.com/PDeXchange/pac/issues/384" target="_blank">https://github.com/PDeXchange/pac/issues/384</a></td>
-									<td>2025-08-07T11:21:56Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -6020,24 +6006,10 @@
 								</tr>
 								
 								<tr>
-									<td>[Testing][UI][Admin] Selecting Catalog from Admin Personna, raises a warning</td>
-									<td>pac</td>
-									<td><a href="https://github.com/PDeXchange/pac/issues/386" target="_blank">https://github.com/PDeXchange/pac/issues/386</a></td>
-									<td>2025-07-10T09:16:43Z</td>
-								</tr>
-								
-								<tr>
 									<td>[Testing][UI][Admin] UI should be resized after selecting the Hamburger menu in admin personna</td>
 									<td>pac</td>
 									<td><a href="https://github.com/PDeXchange/pac/issues/385" target="_blank">https://github.com/PDeXchange/pac/issues/385</a></td>
 									<td>2025-07-10T09:16:54Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Testing][UI][Admin] Feedback from Hamburger menu for admin personna does not work</td>
-									<td>pac</td>
-									<td><a href="https://github.com/PDeXchange/pac/issues/384" target="_blank">https://github.com/PDeXchange/pac/issues/384</a></td>
-									<td>2025-08-07T11:21:56Z</td>
 								</tr>
 								
 								<tr>
@@ -6139,6 +6111,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Remove Quota Warning in Admin Catalog</td>
+									<td>pac-ui</td>
+									<td><a href="https://github.com/PDeXchange/pac-ui/pull/95" target="_blank">https://github.com/PDeXchange/pac-ui/pull/95</a></td>
+									<td>2025-08-24T16:37:35Z</td>
+								</tr>
+								
+								<tr>
+									<td>Load images from assets, TnC from pac-support and Register page fix</td>
+									<td>pac-ui</td>
+									<td><a href="https://github.com/PDeXchange/pac-ui/pull/94" target="_blank">https://github.com/PDeXchange/pac-ui/pull/94</a></td>
+									<td>2025-08-24T16:39:34Z</td>
+								</tr>
 								
 								<tr>
 									<td>Automate Bronze groupID request upon new onboarding</td>
@@ -6336,20 +6322,6 @@
 									<td>2025-07-09T03:40:41Z</td>
 								</tr>
 								
-								<tr>
-									<td>FIxing panic if user does not exist</td>
-									<td>pac</td>
-									<td><a href="https://github.com/PDeXchange/pac/pull/379" target="_blank">https://github.com/PDeXchange/pac/pull/379</a></td>
-									<td>2025-07-08T14:05:01Z</td>
-								</tr>
-								
-								<tr>
-									<td>client-go, kubectl: Replace deprecated ErrWaitTimeout with recommended method</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/pull/132718" target="_blank">https://github.com/kubernetes/kubernetes/pull/132718</a></td>
-									<td>2025-07-24T15:01:07Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -6414,13 +6386,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Remove reference of isv-graphics.s3.us-south.cloud-object-storage.appdomain.cloud link</td>
-									<td>pac</td>
-									<td><a href="https://github.com/PDeXchange/pac/issues/435" target="_blank">https://github.com/PDeXchange/pac/issues/435</a></td>
-									<td>2025-08-19T09:54:14Z</td>
-								</tr>
-								
-								<tr>
 									<td>Bump the pause image</td>
 									<td>provider-ibmcloud-test-infra</td>
 									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/issues/45" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/issues/45</a></td>
@@ -6474,13 +6439,6 @@
 									<td>k8s-ansible</td>
 									<td><a href="https://github.com/ppc64le-cloud/k8s-ansible/issues/94" target="_blank">https://github.com/ppc64le-cloud/k8s-ansible/issues/94</a></td>
 									<td>2025-04-02T12:19:18Z</td>
-								</tr>
-								
-								<tr>
-									<td>Failure cluster [cdc39e50...]: TestCancelEviction/slice-deleted</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/131072" target="_blank">https://github.com/kubernetes/kubernetes/issues/131072</a></td>
-									<td>2025-07-25T06:24:53Z</td>
 								</tr>
 								
 								<tr>
@@ -6621,6 +6579,20 @@
 									<td>pac</td>
 									<td><a href="https://github.com/PDeXchange/pac/issues/72" target="_blank">https://github.com/PDeXchange/pac/issues/72</a></td>
 									<td>2024-02-22T06:16:58Z</td>
+								</tr>
+								
+								<tr>
+									<td>Multiline justification field for the request</td>
+									<td>pac</td>
+									<td><a href="https://github.com/PDeXchange/pac/issues/75" target="_blank">https://github.com/PDeXchange/pac/issues/75</a></td>
+									<td>2023-09-16T05:52:44Z</td>
+								</tr>
+								
+								<tr>
+									<td>what happens when vm delete fails?</td>
+									<td>pac</td>
+									<td><a href="https://github.com/PDeXchange/pac/issues/52" target="_blank">https://github.com/PDeXchange/pac/issues/52</a></td>
+									<td>2023-09-16T05:44:15Z</td>
 								</tr>
 								
 							</tbody>
