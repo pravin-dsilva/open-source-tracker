@@ -37,13 +37,6 @@
 							<tbody>
 								
 								<tr>
-									<td>update konflux dockerfile for runtime-datascience image</td>
-									<td>notebooks</td>
-									<td><a href="https://github.com/red-hat-data-services/notebooks/pull/1538" target="_blank">https://github.com/red-hat-data-services/notebooks/pull/1538</a></td>
-									<td>2025-09-12T09:59:43Z</td>
-								</tr>
-								
-								<tr>
 									<td>Test PR to check konflux build on ppc64le [no changes]</td>
 									<td>data-science-pipelines-operator</td>
 									<td><a href="https://github.com/red-hat-data-services/data-science-pipelines-operator/pull/525" target="_blank">https://github.com/red-hat-data-services/data-science-pipelines-operator/pull/525</a></td>
@@ -54,7 +47,7 @@
 									<td>Update Runtime Datascience Dockerfile with ppc64le changes</td>
 									<td>notebooks</td>
 									<td><a href="https://github.com/red-hat-data-services/notebooks/pull/1511" target="_blank">https://github.com/red-hat-data-services/notebooks/pull/1511</a></td>
-									<td>2025-09-05T12:53:45Z</td>
+									<td>2025-09-16T16:12:00Z</td>
 								</tr>
 								
 								<tr>
@@ -76,10 +69,24 @@
 							<tbody>
 								
 								<tr>
+									<td>ppc64le(runtime/datascience): fix `pyarrow` installation (brought in by `feast`) by adding a dedicated builder stage</td>
+									<td>notebooks</td>
+									<td><a href="https://github.com/opendatahub-io/notebooks/pull/2488" target="_blank">https://github.com/opendatahub-io/notebooks/pull/2488</a></td>
+									<td>2025-09-16T16:19:55Z</td>
+								</tr>
+								
+								<tr>
 									<td>enable pull/push pipelines for datascience images on ppc64le</td>
 									<td>konflux-central</td>
 									<td><a href="https://github.com/red-hat-data-services/konflux-central/pull/516" target="_blank">https://github.com/red-hat-data-services/konflux-central/pull/516</a></td>
 									<td>2025-09-08T13:14:22Z</td>
+								</tr>
+								
+								<tr>
+									<td>ppc64le(runtime-datascience): sync odh-io/notebooks changes into Dockerfile.konflux.cpu</td>
+									<td>notebooks</td>
+									<td><a href="https://github.com/red-hat-data-services/notebooks/pull/1538" target="_blank">https://github.com/red-hat-data-services/notebooks/pull/1538</a></td>
+									<td>2025-09-16T14:54:25Z</td>
 								</tr>
 								
 								<tr>
@@ -269,20 +276,6 @@
 									<td>model-serving-tests</td>
 									<td><a href="https://github.com/tarukumar/model-serving-tests/pull/11" target="_blank">https://github.com/tarukumar/model-serving-tests/pull/11</a></td>
 									<td>2025-04-25T11:44:29Z</td>
-								</tr>
-								
-								<tr>
-									<td>Adding tinyllama-1B-chat model</td>
-									<td>model-serving-tests</td>
-									<td><a href="https://github.com/tarukumar/model-serving-tests/pull/10" target="_blank">https://github.com/tarukumar/model-serving-tests/pull/10</a></td>
-									<td>2025-04-25T11:42:48Z</td>
-								</tr>
-								
-								<tr>
-									<td>copying kubectl-rook-ceph-binary to bin</td>
-									<td>ocs-upi-kvm</td>
-									<td><a href="https://github.com/ocp-power-automation/ocs-upi-kvm/pull/192" target="_blank">https://github.com/ocp-power-automation/ocs-upi-kvm/pull/192</a></td>
-									<td>2025-03-04T04:20:58Z</td>
 								</tr>
 								
 							</tbody>
@@ -734,7 +727,7 @@
 									<td>Watch secondary resources owned by the operator</td>
 									<td>etcd-operator</td>
 									<td><a href="https://github.com/etcd-io/etcd-operator/issues/183" target="_blank">https://github.com/etcd-io/etcd-operator/issues/183</a></td>
-									<td>2025-09-10T16:00:06Z</td>
+									<td>2025-09-16T18:30:36Z</td>
 								</tr>
 								
 								<tr>
@@ -1518,7 +1511,7 @@
 									<td>Debug s2s issue</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/68742" target="_blank">https://github.com/openshift/release/pull/68742</a></td>
-									<td>2025-09-08T13:48:35Z</td>
+									<td>2025-09-16T08:58:59Z</td>
 								</tr>
 								
 								<tr>
@@ -1990,6 +1983,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Bump kyverno to v3.5.1</td>
+									<td>k8s.io</td>
+									<td><a href="https://github.com/kubernetes/k8s.io/pull/8512" target="_blank">https://github.com/kubernetes/k8s.io/pull/8512</a></td>
+									<td>2025-09-16T18:16:14Z</td>
+								</tr>
+								
+								<tr>
 									<td>Fix capibmadm download links</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2496" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2496</a></td>
@@ -2190,13 +2190,6 @@
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2349" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2349</a></td>
 									<td>2025-05-12T06:43:16Z</td>
-								</tr>
-								
-								<tr>
-									<td>revert additionalVolumes from templates</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2342" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2342</a></td>
-									<td>2025-05-06T05:33:30Z</td>
 								</tr>
 								
 							</tbody>
@@ -3015,7 +3008,7 @@
 									<td>🐛  make ENVTEST_K8S_VERSION respect go.mod replace directives</td>
 									<td>kubebuilder</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/pull/5096" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/pull/5096</a></td>
-									<td>2025-09-15T09:05:37Z</td>
+									<td>2025-09-16T10:29:16Z</td>
 								</tr>
 								
 								<tr>
@@ -3161,7 +3154,7 @@
 									<td>List available endpoints for kube-proxy's /statusz</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/133185" target="_blank">https://github.com/kubernetes/kubernetes/issues/133185</a></td>
-									<td>2025-09-14T17:31:02Z</td>
+									<td>2025-09-16T17:43:06Z</td>
 								</tr>
 								
 							</tbody>
@@ -3652,7 +3645,7 @@
 									<td>Readded support for additional disks</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2448" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2448</a></td>
-									<td>2025-09-10T15:48:44Z</td>
+									<td>2025-09-16T16:27:41Z</td>
 								</tr>
 								
 								<tr>
@@ -3666,7 +3659,7 @@
 									<td>Added linkchecker and fixed broken links</td>
 									<td>kubespray</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubespray/pull/12107" target="_blank">https://github.com/kubernetes-sigs/kubespray/pull/12107</a></td>
-									<td>2025-07-08T01:12:16Z</td>
+									<td>2025-09-16T11:47:42Z</td>
 								</tr>
 								
 							</tbody>
@@ -4008,13 +4001,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Add measurement to check memory usage in benchmark list job</td>
-									<td>perf-tests</td>
-									<td><a href="https://github.com/kubernetes/perf-tests/pull/3574" target="_blank">https://github.com/kubernetes/perf-tests/pull/3574</a></td>
-									<td>2025-09-11T09:22:02Z</td>
-								</tr>
-								
-								<tr>
 									<td>Implement sending mixed traffic (json,proto)</td>
 									<td>perf-tests</td>
 									<td><a href="https://github.com/kubernetes/perf-tests/pull/3478" target="_blank">https://github.com/kubernetes/perf-tests/pull/3478</a></td>
@@ -4039,7 +4025,7 @@
 									<td>Tag PowerVS Cluster resources</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2324" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2324</a></td>
-									<td>2025-08-17T06:56:55Z</td>
+									<td>2025-09-16T07:54:43Z</td>
 								</tr>
 								
 								<tr>
@@ -4066,6 +4052,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Add measurement to check memory usage in benchmark list job</td>
+									<td>perf-tests</td>
+									<td><a href="https://github.com/kubernetes/perf-tests/pull/3574" target="_blank">https://github.com/kubernetes/perf-tests/pull/3574</a></td>
+									<td>2025-09-16T11:04:12Z</td>
+								</tr>
 								
 								<tr>
 									<td>update affiliation for Arshadd-b</td>
@@ -4327,7 +4320,7 @@
 									<td>Need to manually delete generated files before running `make generate`</td>
 									<td>gateway-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/gateway-api/issues/4077" target="_blank">https://github.com/kubernetes-sigs/gateway-api/issues/4077</a></td>
-									<td>2025-09-12T13:26:15Z</td>
+									<td>2025-09-16T14:54:08Z</td>
 								</tr>
 								
 								<tr>
@@ -4787,7 +4780,7 @@
 									<td>Getting BackendNotFound error on following Getting Started guide</td>
 									<td>gateway-api-inference-extension</td>
 									<td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/1591" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/1591</a></td>
-									<td>2025-09-15T20:31:17Z</td>
+									<td>2025-09-16T14:25:01Z</td>
 								</tr>
 								
 								<tr>
@@ -4834,7 +4827,7 @@
 									<td>Revert image digest usage</td>
 									<td>project-pim</td>
 									<td><a href="https://github.com/IBM/project-pim/pull/27" target="_blank">https://github.com/IBM/project-pim/pull/27</a></td>
-									<td>2025-09-11T07:07:57Z</td>
+									<td>2025-09-16T06:47:41Z</td>
 								</tr>
 								
 								<tr>
@@ -5090,7 +5083,7 @@
 									<td>ICMP limitation</td>
 									<td>gvisor-tap-vsock</td>
 									<td><a href="https://github.com/containers/gvisor-tap-vsock/issues/428" target="_blank">https://github.com/containers/gvisor-tap-vsock/issues/428</a></td>
-									<td>2025-09-13T08:48:26Z</td>
+									<td>2025-09-16T22:53:35Z</td>
 								</tr>
 								
 								<tr>
@@ -5577,13 +5570,6 @@
 								</tr>
 								
 								<tr>
-									<td>Add parser for etcd API benchmarks</td>
-									<td>perf-tests</td>
-									<td><a href="https://github.com/kubernetes/perf-tests/pull/3592" target="_blank">https://github.com/kubernetes/perf-tests/pull/3592</a></td>
-									<td>2025-09-15T13:47:43Z</td>
-								</tr>
-								
-								<tr>
 									<td>OCPBUGS-59974:Update builder image's golang version to 1.23</td>
 									<td>ibm-powervs-block-csi-driver</td>
 									<td><a href="https://github.com/openshift/ibm-powervs-block-csi-driver/pull/103" target="_blank">https://github.com/openshift/ibm-powervs-block-csi-driver/pull/103</a></td>
@@ -5690,6 +5676,13 @@
 									<td>provider-ibmcloud-test-infra</td>
 									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/51" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/51</a></td>
 									<td>2025-09-12T02:39:38Z</td>
+								</tr>
+								
+								<tr>
+									<td>Add parser for etcd API benchmarks</td>
+									<td>perf-tests</td>
+									<td><a href="https://github.com/kubernetes/perf-tests/pull/3592" target="_blank">https://github.com/kubernetes/perf-tests/pull/3592</a></td>
+									<td>2025-09-16T13:36:17Z</td>
 								</tr>
 								
 								<tr>
@@ -5858,13 +5851,6 @@
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/132249" target="_blank">https://github.com/kubernetes/kubernetes/pull/132249</a></td>
 									<td>2025-06-13T05:19:53Z</td>
-								</tr>
-								
-								<tr>
-									<td>Bump ipc-utils base image to alpine:3.22</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/pull/132247" target="_blank">https://github.com/kubernetes/kubernetes/pull/132247</a></td>
-									<td>2025-06-13T05:19:45Z</td>
 								</tr>
 								
 							</tbody>
@@ -6277,6 +6263,13 @@
 							<tbody>
 								
 								<tr>
+									<td>🌱 (CLI - Alpha) Introduce Mockable getExecutablePath for Testing in Generate</td>
+									<td>kubebuilder</td>
+									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/pull/5102" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/pull/5102</a></td>
+									<td>2025-09-16T02:27:43Z</td>
+								</tr>
+								
+								<tr>
 									<td>Minor manifests and Readme fix under examples dir</td>
 									<td>ibm-powervs-block-csi-driver</td>
 									<td><a href="https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/982" target="_blank">https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/982</a></td>
@@ -6287,7 +6280,7 @@
 									<td>🌱 (CLI) Add unit tests for cli alpha generate.go</td>
 									<td>kubebuilder</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/pull/5074" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/pull/5074</a></td>
-									<td>2025-09-16T01:16:53Z</td>
+									<td>2025-09-16T14:41:03Z</td>
 								</tr>
 								
 								<tr>
@@ -6552,7 +6545,7 @@
 									<td>Update the BASEIMAGEs to the latest version for test/images</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/131874" target="_blank">https://github.com/kubernetes/kubernetes/issues/131874</a></td>
-									<td>2025-09-15T03:24:18Z</td>
+									<td>2025-09-16T17:48:35Z</td>
 								</tr>
 								
 								<tr>
@@ -6662,7 +6655,7 @@
 									<td>Update the BASEIMAGEs to the latest version for test/images</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/131874" target="_blank">https://github.com/kubernetes/kubernetes/issues/131874</a></td>
-									<td>2025-09-15T03:24:18Z</td>
+									<td>2025-09-16T17:48:35Z</td>
 								</tr>
 								
 								<tr>
