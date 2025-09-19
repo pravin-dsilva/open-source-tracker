@@ -1,5 +1,45 @@
 {
-    "users": [ "AaruniAggarwal", "srivastav-abhishek", "aman4433", "Amulyam24", "anshuman-agarwala", "arshadd-b", "bkhadars", "carmal891", "cmallikarjunah", "dharaneeshvrd", "GunaKKIBM", "hasan4791", "irapandey", "Karthik-K-N", "KeerthanaAP", "kishen-v", "manalilatkar", "manju956", "mkumatag", "neha-dot-yadav", "Niharika0306", "Prajyot-Parab", "pkenchap", "Rajalakshmi-Girish", "pjsharath28", "Shilpa-Gokul", "sudeeshjohn", "varad-ahirwadkar", "yussufsh", "Shubhamag12", "anandkarra", "mayuka-c" ],
-    "orgs": [ "ppc64le-cloud", "kubernetes", "kubernetes-sigs" ],
-    "labels": ["help+wanted", "good+first+issue"]
+  "users": [
+    "AaruniAggarwal",
+    "aman4433",
+    "Amulyam24",
+    "anandkarra",
+    "anshuman-agarwala",
+    "arshadd-b",
+    "bkhadars",
+    "carmal891",
+    "cmallikarjunah",
+    "dharaneeshvrd",
+    "GunaKKIBM",
+    "hasan4791",
+    "irapandey",
+    "Karthik-K-N",
+    "KeerthanaAP",
+    "kishen-v",
+    "manalilatkar",
+    "manju956",
+    "mayuka-c",
+    "mkumatag",
+    "neha-dot-yadav",
+    "Niharika0306",
+    "pkenchap",
+    "pjsharath28",
+    "Rajalakshmi-Girish",
+    "Shilpa-Gokul",
+    "Shubhamag12",
+    "shwetha-s-poojary",
+    "srivastav-abhishek",
+    "sudeeshjohn",
+    "varad-ahirwadkar",
+    "yussufsh"
+  ],
+  "orgs": [
+    "ppc64le-cloud",
+    "kubernetes",
+    "kubernetes-sigs"
+  ],
+  "labels": [
+    "help+wanted",
+    "good+first+issue"
+  ]
 }
