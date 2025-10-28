@@ -6,8 +6,8 @@ import (
 )
 
 type Config struct {
-	Users []string `json:"users"`
-	Orgs []string `json:"orgs"`
+	Users  []string `json:"users"`
+	Orgs   []string `json:"orgs"`
 	Labels []string `json:"labels"`
 }
 

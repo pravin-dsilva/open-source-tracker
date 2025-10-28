@@ -10,6 +10,7 @@ import (
 func main() {
 	showIssues := flag.Bool("issues", false, "Fetch only good first issues")
 	showMonthlyReport := flag.Bool("monthlyreport", false, "Fetch only good first issues")
+	showKubernetes := flag.Bool("kubernetes", false, "Fetch only kubernetes contributions")
 	flag.Parse()
 
 	configPath := "config.json"
@@ -26,7 +27,10 @@ func main() {
 		oslib.GenerateIssuesReport(config.Orgs, githubToken, config.Labels)
 	} else if *showMonthlyReport {
 		oslib.GenerateTeamAchievements(config.Users, githubToken)
+	} else if *showKubernetes {
+		oslib.GenerateKubernetesContributions(config.Users, githubToken)
 	} else {
 		oslib.GenerateReport(config.Users, githubToken)
 	}
+
 }
