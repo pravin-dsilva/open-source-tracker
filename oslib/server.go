@@ -343,17 +343,75 @@ func GenerateTeamAchievements(users []string, token string) {
 func GenerateKubernetesContributions(users []string, token string) {
 	data := FetchKubernetesPRs(users, token)
 
-	tmpl := template.Must(template.New("k8sTable").Parse(`
+	// Define the color palette (rotates if more repos than colors)
+	colors := []string{
+		"primary", "success", "info", "warning", "danger", "secondary", "dark",
+	}
+
+	// Build a map: repoName -> assigned color index
+	repoColorMap := make(map[string]string)
+	colorIndex := 0
+
+	// Pass function to template for consistent repo color assignment
+	tmpl := template.Must(template.New("k8sRepoColor").Funcs(template.FuncMap{
+		"assignColor": func(repo string) string {
+			if color, exists := repoColorMap[repo]; exists {
+				return color
+			}
+			color := colors[colorIndex%len(colors)]
+			repoColorMap[repo] = color
+			colorIndex++
+			return color
+		},
+	}).Parse(`
 <!DOCTYPE html>
 <html>
 <head>
 	<title>Kubernetes PR Contributions</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
 	<style>
-		body { font-size: 0.95rem; }
+		body { font-size: 0.95rem; background-color: #f8f9fa; }
 		table td, table th { vertical-align: top; }
-		.pr-link { font-size: 0.8rem; margin-right: 6px; display: inline-block; text-decoration: none; }
-		.pr-link:hover { text-decoration: underline; }
+		.pr-btn {
+			font-size: 0.75rem;
+			padding: 2px 6px;
+			border-radius: 0.4rem;
+			margin: 2px;
+			text-decoration: none;
+		}
+		.pr-btn:hover { opacity: 0.85; text-decoration: underline; }
+
+		.username-container {
+			position: relative;
+			display: inline-block;
+		}
+		.contributor-popup {
+			display: none;
+			position: absolute;
+			top: 25px;
+			left: 0;
+			z-index: 100;
+			width: 350px;
+			height: 480px;
+			border: 2px solid #ccc;
+			border-radius: 0.5rem;
+			overflow: hidden;
+			box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+			background-color: white;
+		}
+		.username-container:hover .contributor-popup {
+			display: block;
+		}
+		.username-link {
+			color: #0d6efd;
+			text-decoration: none;
+			font-weight: 600;
+			cursor: pointer;
+		}
+		.username-link:hover {
+			text-decoration: underline;
+			color: #084298;
+		}
 	</style>
 </head>
 <body class="container mt-5">
@@ -372,11 +430,21 @@ func GenerateKubernetesContributions(users []string, token string) {
 		<tbody>
 			{{ range $user, $prs := . }}
 			<tr>
-				<td><strong>{{$user}}</strong></td>
+				<td>
+					<div class="username-container">
+						<span class="username-link">{{ $user }}</span>
+						<div class="contributor-popup">
+							<iframe src="https://contribcard.clotributor.dev/{{ $user }}" 
+							        width="100%" height="100%" frameborder="0"></iframe>
+						</div>
+					</div>
+				</td>
 				<td>
 					{{ if $prs }}
-						{{ range $i, $pr := $prs }}
-							<a href="{{ $pr.URL }}" target="_blank" class="pr-link">{{ printf "[%s]" $pr.Repo }}</a>
+						{{ range $pr := $prs }}
+							<a href="{{ $pr.URL }}" target="_blank"
+							   class="btn btn-{{ assignColor $pr.Repo }} pr-btn"
+							   title="{{ $pr.Title }}">{{ $pr.Repo }}</a>
 						{{ end }}
 					{{ else }}
 						<em>No PRs</em>
@@ -399,5 +467,5 @@ func GenerateKubernetesContributions(users []string, token string) {
 		log.Fatalf("Error writing HTML file: %v", err)
 	}
 
-	log.Println("Generated compact Kubernetes PR table: docs/kubernetes_contributions.html")
+	log.Println("Generated Kubernetes PR dashboard with consistent repo-based colors and hover popups: docs/kubernetes_contributions.html")
 }
