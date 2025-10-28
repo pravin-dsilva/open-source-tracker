@@ -339,3 +339,65 @@ func GenerateTeamAchievements(users []string, token string) {
 
 	log.Println("Team achievements dashboard generated: docs/team_achievements.html")
 }
+
+func GenerateKubernetesContributions(users []string, token string) {
+	data := FetchKubernetesPRs(users, token)
+
+	tmpl := template.Must(template.New("k8sTable").Parse(`
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Kubernetes PR Contributions</title>
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+	<style>
+		body { font-size: 0.95rem; }
+		table td, table th { vertical-align: top; }
+		.pr-link { font-size: 0.8rem; margin-right: 6px; display: inline-block; text-decoration: none; }
+		.pr-link:hover { text-decoration: underline; }
+	</style>
+</head>
+<body class="container mt-5">
+	<h1 class="mb-4">Kubernetes PR Contributions</h1>
+	<div class="mb-3">
+		<a href="user_dashboard.html" class="btn btn-secondary">← Back to Dashboard</a>
+	</div>
+
+	<table class="table table-bordered table-sm align-middle">
+		<thead class="table-light">
+			<tr>
+				<th style="width: 20%;">User</th>
+				<th>Pull Requests</th>
+			</tr>
+		</thead>
+		<tbody>
+			{{ range $user, $prs := . }}
+			<tr>
+				<td><strong>{{$user}}</strong></td>
+				<td>
+					{{ if $prs }}
+						{{ range $i, $pr := $prs }}
+							<a href="{{ $pr.URL }}" target="_blank" class="pr-link">{{ printf "[%s]" $pr.Repo }}</a>
+						{{ end }}
+					{{ else }}
+						<em>No PRs</em>
+					{{ end }}
+				</td>
+			</tr>
+			{{ end }}
+		</tbody>
+	</table>
+</body>
+</html>
+`))
+
+	var buf bytes.Buffer
+	if err := tmpl.Execute(&buf, data); err != nil {
+		log.Fatalf("Error rendering Kubernetes contributions UI: %v", err)
+	}
+
+	if err := os.WriteFile("docs/kubernetes_contributions.html", buf.Bytes(), 0644); err != nil {
+		log.Fatalf("Error writing HTML file: %v", err)
+	}
+
+	log.Println("Generated compact Kubernetes PR table: docs/kubernetes_contributions.html")
+}
