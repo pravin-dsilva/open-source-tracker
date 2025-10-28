@@ -1,4 +1,4 @@
-name: Update User Issues
+name: Update K8s Contributions
 
 on:
   schedule:
