@@ -461,10 +461,17 @@
 							<tbody>
 								
 								<tr>
-									<td>github: fix architecture mapping while publishing images for ppc64le</td>
+									<td>github: avoid using short circuit evaluation in workflow</td>
 									<td>guest-components</td>
-									<td><a href="https://github.com/confidential-containers/guest-components/pull/1172" target="_blank">https://github.com/confidential-containers/guest-components/pull/1172</a></td>
-									<td>2025-11-10T14:33:37Z</td>
+									<td><a href="https://github.com/confidential-containers/guest-components/pull/1179" target="_blank">https://github.com/confidential-containers/guest-components/pull/1179</a></td>
+									<td>2025-11-12T01:17:56Z</td>
+								</tr>
+								
+								<tr>
+									<td>github: run agent checks for Power on ppc64le instead of ubuntu-24.04-ppc64le</td>
+									<td>kata-containers</td>
+									<td><a href="https://github.com/kata-containers/kata-containers/pull/12069" target="_blank">https://github.com/kata-containers/kata-containers/pull/12069</a></td>
+									<td>2025-11-11T17:23:36Z</td>
 								</tr>
 								
 								<tr>
@@ -507,6 +514,20 @@
 							<tbody>
 								
 								<tr>
+									<td>github: install missing dependencies for ppc64le while building CDH and ASR</td>
+									<td>guest-components</td>
+									<td><a href="https://github.com/confidential-containers/guest-components/pull/1178" target="_blank">https://github.com/confidential-containers/guest-components/pull/1178</a></td>
+									<td>2025-11-11T12:09:16Z</td>
+								</tr>
+								
+								<tr>
+									<td>github: fix the arch mapping for ppc64le for CDH and ASR builds</td>
+									<td>guest-components</td>
+									<td><a href="https://github.com/confidential-containers/guest-components/pull/1177" target="_blank">https://github.com/confidential-containers/guest-components/pull/1177</a></td>
+									<td>2025-11-11T10:11:12Z</td>
+								</tr>
+								
+								<tr>
 									<td>Update README.md</td>
 									<td>guest-components</td>
 									<td><a href="https://github.com/Amulyam24/guest-components/pull/7" target="_blank">https://github.com/Amulyam24/guest-components/pull/7</a></td>
@@ -525,6 +546,13 @@
 									<td>guest-components</td>
 									<td><a href="https://github.com/Amulyam24/guest-components/pull/5" target="_blank">https://github.com/Amulyam24/guest-components/pull/5</a></td>
 									<td>2025-11-10T14:14:13Z</td>
+								</tr>
+								
+								<tr>
+									<td>github: fix architecture mapping while publishing images for ppc64le</td>
+									<td>guest-components</td>
+									<td><a href="https://github.com/confidential-containers/guest-components/pull/1172" target="_blank">https://github.com/confidential-containers/guest-components/pull/1172</a></td>
+									<td>2025-11-11T08:50:36Z</td>
 								</tr>
 								
 								<tr>
@@ -695,27 +723,6 @@
 									<td>2025-07-22T08:28:29Z</td>
 								</tr>
 								
-								<tr>
-									<td>Update cluster-api to v1.11.0-beta.0</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2436" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2436</a></td>
-									<td>2025-07-21T18:12:35Z</td>
-								</tr>
-								
-								<tr>
-									<td>Bump PowerVS CI machine image to k8s v1.33.1</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2435" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2435</a></td>
-									<td>2025-07-21T14:36:29Z</td>
-								</tr>
-								
-								<tr>
-									<td>Adopt v1beta2 conditions for IBM VPC cluster</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2429" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2429</a></td>
-									<td>2025-08-08T08:53:44Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -823,7 +830,7 @@
 									<td>os/bluestore: User-space cache for BlueFS</td>
 									<td>ceph</td>
 									<td><a href="https://github.com/ceph/ceph/pull/66128" target="_blank">https://github.com/ceph/ceph/pull/66128</a></td>
-									<td>2025-11-10T10:09:06Z</td>
+									<td>2025-11-11T13:37:34Z</td>
 								</tr>
 								
 								<tr>
@@ -1457,7 +1464,7 @@
 									<td>Debug s2s issue</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/68742" target="_blank">https://github.com/openshift/release/pull/68742</a></td>
-									<td>2025-11-07T20:10:27Z</td>
+									<td>2025-11-11T09:54:12Z</td>
 								</tr>
 								
 								<tr>
@@ -1733,7 +1740,23 @@
 						<p>No created issues</p>
 
 						<h3 style="background-color: #f8d7da;">Open PRs</h3>
-						<p>No open PRs</p>
+						
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>upgrade carbon-ai-chat library to 0.5.1</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/15" target="_blank">https://github.com/IBM/project-ai-services/pull/15</a></td>
+									<td>2025-11-11T15:26:33Z</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						
 						<h3 style="background-color: #f8d7da;">Closed PRs (past 1 year)</h3>
 						
 						<table class="table table-striped">
@@ -1741,6 +1764,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>upgrade carbon-ai-chat to 0.5.1</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/9" target="_blank">https://github.com/IBM/project-ai-services/pull/9</a></td>
+									<td>2025-11-11T12:45:20Z</td>
+								</tr>
 								
 								<tr>
 									<td>Add affiliation for Niharika0306</td>
@@ -1804,6 +1834,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>[Failing Test] [sig-node] ImageVolume should succeed with pod and pull policy of Always [MinimumKubeletVersion:1.35]</td>
+									<td>kubernetes</td>
+									<td><a href="https://github.com/kubernetes/kubernetes/issues/135247" target="_blank">https://github.com/kubernetes/kubernetes/issues/135247</a></td>
+									<td>2025-11-11T13:37:00Z</td>
+								</tr>
 								
 								<tr>
 									<td>[Failing Test] [sig-node] Container Runtime Conformance Test container runtime conformance blackbox test when running a container with a new image should be able to pull from private registry with credential provider</td>
@@ -2823,6 +2860,27 @@
 							<tbody>
 								
 								<tr>
+									<td>Add subcommand for application logs</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/16" target="_blank">https://github.com/IBM/project-ai-services/pull/16</a></td>
+									<td>2025-11-11T16:18:41Z</td>
+								</tr>
+								
+								<tr>
+									<td>Modify pod execution workflow</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/13" target="_blank">https://github.com/IBM/project-ai-services/pull/13</a></td>
+									<td>2025-11-11T15:23:17Z</td>
+								</tr>
+								
+								<tr>
+									<td>Restructure application directory</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/11" target="_blank">https://github.com/IBM/project-ai-services/pull/11</a></td>
+									<td>2025-11-11T15:21:30Z</td>
+								</tr>
+								
+								<tr>
 									<td>Enable nophase rule for Kube API Linter</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/134842" target="_blank">https://github.com/kubernetes/kubernetes/pull/134842</a></td>
@@ -2846,6 +2904,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Implement application logs</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/10" target="_blank">https://github.com/IBM/project-ai-services/pull/10</a></td>
+									<td>2025-11-11T09:31:21Z</td>
+								</tr>
 								
 								<tr>
 									<td>Remove deprecated pkg `grpc.WithBlock()`</td>
@@ -2938,7 +3003,7 @@
 									<td>OCPCLOUD-3097: Bump k8s 1.34</td>
 									<td>machine-api-provider-powervs</td>
 									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/130" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/130</a></td>
-									<td>2025-11-10T14:51:39Z</td>
+									<td>2025-11-11T06:54:03Z</td>
 								</tr>
 								
 								<tr>
@@ -3733,13 +3798,6 @@
 							<tbody>
 								
 								<tr>
-									<td>🌱 [WIP] [Do not review] Debugging Objects with Changed Resource Versions issue</td>
-									<td>cluster-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/12801" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/12801</a></td>
-									<td>2025-10-27T14:50:24Z</td>
-								</tr>
-								
-								<tr>
 									<td>Implement sending mixed traffic (json,proto)</td>
 									<td>perf-tests</td>
 									<td><a href="https://github.com/kubernetes/perf-tests/pull/3478" target="_blank">https://github.com/kubernetes/perf-tests/pull/3478</a></td>
@@ -3825,6 +3883,13 @@
 									<td>cluster-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/12828" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/12828</a></td>
 									<td>2025-10-09T05:19:06Z</td>
+								</tr>
+								
+								<tr>
+									<td>🌱 [WIP] [Do not review] Debugging Objects with Changed Resource Versions issue</td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/12801" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/12801</a></td>
+									<td>2025-11-11T17:10:51Z</td>
 								</tr>
 								
 								<tr>
@@ -4544,6 +4609,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Add port as an arg for RAG backend server</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/8" target="_blank">https://github.com/IBM/project-ai-services/pull/8</a></td>
+									<td>2025-11-11T06:55:46Z</td>
+								</tr>
+								
+								<tr>
 									<td>Add patch for torchvision to avoid licensing issue on docling build</td>
 									<td>build-scripts</td>
 									<td><a href="https://github.com/ppc64le/build-scripts/pull/7481" target="_blank">https://github.com/ppc64le/build-scripts/pull/7481</a></td>
@@ -5032,6 +5104,20 @@
 							<tbody>
 								
 								<tr>
+									<td>RAG Setup doc</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/12" target="_blank">https://github.com/IBM/project-ai-services/pull/12</a></td>
+									<td>2025-11-11T11:09:13Z</td>
+								</tr>
+								
+								<tr>
+									<td>air-gapped-env tutorial</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/6" target="_blank">https://github.com/IBM/project-ai-services/pull/6</a></td>
+									<td>2025-11-11T10:59:26Z</td>
+								</tr>
+								
+								<tr>
 									<td>Making powervc-certificate optional</td>
 									<td>ocp4-playbooks-extras</td>
 									<td><a href="https://github.com/ocp-power-automation/ocp4-playbooks-extras/pull/86" target="_blank">https://github.com/ocp-power-automation/ocp4-playbooks-extras/pull/86</a></td>
@@ -5261,7 +5347,7 @@
 									<td>Fix broken link to CSI spec</td>
 									<td>external-resizer</td>
 									<td><a href="https://github.com/kubernetes-csi/external-resizer/pull/543" target="_blank">https://github.com/kubernetes-csi/external-resizer/pull/543</a></td>
-									<td>2025-11-03T12:00:44Z</td>
+									<td>2025-11-11T15:09:49Z</td>
 								</tr>
 								
 								<tr>
@@ -5275,7 +5361,7 @@
 									<td>Improve time taken to create/delete volumes</td>
 									<td>ibm-powervs-block-csi-driver</td>
 									<td><a href="https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/997" target="_blank">https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/997</a></td>
-									<td>2025-10-28T09:24:26Z</td>
+									<td>2025-11-11T15:53:32Z</td>
 								</tr>
 								
 								<tr>
@@ -5860,10 +5946,10 @@
 							<tbody>
 								
 								<tr>
-									<td>Show host ports info for each pod in `application ps`</td>
+									<td>Implement printing next steps at the end of application create</td>
 									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/4" target="_blank">https://github.com/IBM/project-ai-services/pull/4</a></td>
-									<td>2025-11-10T16:29:23Z</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/14" target="_blank">https://github.com/IBM/project-ai-services/pull/14</a></td>
+									<td>2025-11-11T15:50:14Z</td>
 								</tr>
 								
 								<tr>
@@ -5883,6 +5969,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Show host ports info for each pod in `application ps`</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/4" target="_blank">https://github.com/IBM/project-ai-services/pull/4</a></td>
+									<td>2025-11-11T02:12:42Z</td>
+								</tr>
 								
 								<tr>
 									<td>Remove "Liveness" application template</td>
@@ -7244,13 +7337,6 @@
 							<tbody>
 								
 								<tr>
-									<td>[WIP] fix UI CVEs</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/5" target="_blank">https://github.com/IBM/project-ai-services/pull/5</a></td>
-									<td>2025-11-10T16:48:34Z</td>
-								</tr>
-								
-								<tr>
 									<td>kube-webhook-certgen image for ppc64le</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/ppc64le-cloud/test-infra/pull/578" target="_blank">https://github.com/ppc64le-cloud/test-infra/pull/578</a></td>
@@ -7309,6 +7395,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Port create-react-app to vite</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/7" target="_blank">https://github.com/IBM/project-ai-services/pull/7</a></td>
+									<td>2025-11-11T10:49:29Z</td>
+								</tr>
+								
+								<tr>
+									<td>fix UI CVEs</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/5" target="_blank">https://github.com/IBM/project-ai-services/pull/5</a></td>
+									<td>2025-11-11T04:07:03Z</td>
+								</tr>
 								
 								<tr>
 									<td>Automated cherry pick of #134440: integration test volume: fix restarting of watch</td>
@@ -7578,7 +7678,7 @@
 									<td>Enable notimestamp rule for Kube API Linter</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/134966" target="_blank">https://github.com/kubernetes/kubernetes/pull/134966</a></td>
-									<td>2025-11-07T23:07:41Z</td>
+									<td>2025-11-11T09:46:30Z</td>
 								</tr>
 								
 								<tr>
@@ -8371,7 +8471,7 @@
 									<td>Option to ignore deleting the bootstrap node</td>
 									<td>openshift-install-power</td>
 									<td><a href="https://github.com/ocp-power-automation/openshift-install-power/pull/233" target="_blank">https://github.com/ocp-power-automation/openshift-install-power/pull/233</a></td>
-									<td>2025-11-10T23:47:52Z</td>
+									<td>2025-11-11T23:47:53Z</td>
 								</tr>
 								
 								<tr>
