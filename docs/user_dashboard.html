@@ -53,6 +53,20 @@
 							<tbody>
 								
 								<tr>
+									<td>Fixing mismatch openssl version issue</td>
+									<td>fms-guardrails-orchestrator</td>
+									<td><a href="https://github.com/red-hat-data-services/fms-guardrails-orchestrator/pull/126" target="_blank">https://github.com/red-hat-data-services/fms-guardrails-orchestrator/pull/126</a></td>
+									<td>2026-01-23T12:45:20Z</td>
+								</tr>
+								
+								<tr>
+									<td>Fixing mismatch openssl version issue</td>
+									<td>guardrails-detectors</td>
+									<td><a href="https://github.com/red-hat-data-services/guardrails-detectors/pull/197" target="_blank">https://github.com/red-hat-data-services/guardrails-detectors/pull/197</a></td>
+									<td>2026-01-23T10:53:43Z</td>
+								</tr>
+								
+								<tr>
 									<td>Test PR to check konflux build on ppc64le</td>
 									<td>kube-auth-proxy</td>
 									<td><a href="https://github.com/red-hat-data-services/kube-auth-proxy/pull/22" target="_blank">https://github.com/red-hat-data-services/kube-auth-proxy/pull/22</a></td>
@@ -815,7 +829,23 @@
 						<p>No created issues</p>
 
 						<h3 style="background-color: #f8d7da;">Open PRs</h3>
-						<p>No open PRs</p>
+						
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>Combine GetServiceInstance and GetInstanceByName methods</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2604" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2604</a></td>
+									<td>2026-01-23T09:59:13Z</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						
 						<h3 style="background-color: #f8d7da;">Closed PRs (past 1 year)</h3>
 						
 						<table class="table table-striped">
@@ -865,7 +895,7 @@
 									<td>Return all health errors instead of just the first one</td>
 									<td>etcd-operator</td>
 									<td><a href="https://github.com/etcd-io/etcd-operator/issues/265" target="_blank">https://github.com/etcd-io/etcd-operator/issues/265</a></td>
-									<td>2026-01-19T02:58:07Z</td>
+									<td>2026-01-23T10:36:51Z</td>
 								</tr>
 								
 								<tr>
@@ -956,6 +986,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Return all health errors instead</td>
+									<td>etcd-operator</td>
+									<td><a href="https://github.com/etcd-io/etcd-operator/pull/274" target="_blank">https://github.com/etcd-io/etcd-operator/pull/274</a></td>
+									<td>2026-01-23T10:14:15Z</td>
+								</tr>
+								
+								<tr>
 									<td>DocGenerator POC</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/GunaKKIBM/kubernetes/pull/1" target="_blank">https://github.com/GunaKKIBM/kubernetes/pull/1</a></td>
@@ -966,7 +1003,7 @@
 									<td>Verify OwnerReference</td>
 									<td>etcd-operator</td>
 									<td><a href="https://github.com/etcd-io/etcd-operator/pull/268" target="_blank">https://github.com/etcd-io/etcd-operator/pull/268</a></td>
-									<td>2026-01-22T11:35:04Z</td>
+									<td>2026-01-23T06:43:06Z</td>
 								</tr>
 								
 								<tr>
@@ -1287,17 +1324,24 @@
 							<tbody>
 								
 								<tr>
+									<td>Refactor NewTestContext to return Context instead of TContext</td>
+									<td>kubernetes</td>
+									<td><a href="https://github.com/kubernetes/kubernetes/pull/136459" target="_blank">https://github.com/kubernetes/kubernetes/pull/136459</a></td>
+									<td>2026-01-23T11:27:41Z</td>
+								</tr>
+								
+								<tr>
 									<td>Remove usage of deprecated functions from ktesting package</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/136341" target="_blank">https://github.com/kubernetes/kubernetes/pull/136341</a></td>
-									<td>2026-01-22T11:52:30Z</td>
+									<td>2026-01-23T06:33:13Z</td>
 								</tr>
 								
 								<tr>
 									<td>:warning: Add PowerVS v1beta3 types</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2602" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2602</a></td>
-									<td>2026-01-22T19:09:55Z</td>
+									<td>2026-01-23T05:46:02Z</td>
 								</tr>
 								
 								<tr>
@@ -1345,6 +1389,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Refactor NewTestContext and instead use ktesting.Init</td>
+									<td>kubernetes</td>
+									<td><a href="https://github.com/kubernetes/kubernetes/pull/136449" target="_blank">https://github.com/kubernetes/kubernetes/pull/136449</a></td>
+									<td>2026-01-23T10:59:15Z</td>
+								</tr>
 								
 								<tr>
 									<td>Remove previously added print statement for test debug </td>
@@ -1549,13 +1600,6 @@
 									<td>2025-11-28T13:43:09Z</td>
 								</tr>
 								
-								<tr>
-									<td>:seedling: Check for error before checking reconcile result</td>
-									<td>cluster-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/12935" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/12935</a></td>
-									<td>2025-11-03T15:12:22Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -1649,7 +1693,7 @@
 									<td>NO-JIRA: Add TechPreviewNoUpgrade job for IBM Power</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/73496" target="_blank">https://github.com/openshift/release/pull/73496</a></td>
-									<td>2026-01-22T13:38:25Z</td>
+									<td>2026-01-23T17:02:05Z</td>
 								</tr>
 								
 								<tr>
@@ -2576,6 +2620,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Replace lon04 DC with new region in boskos on ibm ppc64le</td>
+									<td>k8s.io</td>
+									<td><a href="https://github.com/kubernetes/k8s.io/pull/9002" target="_blank">https://github.com/kubernetes/k8s.io/pull/9002</a></td>
+									<td>2026-01-23T08:55:30Z</td>
+								</tr>
+								
+								<tr>
 									<td>Remove Job openshift-install-power-build-and-push-on-release</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/ppc64le-cloud/test-infra/pull/588" target="_blank">https://github.com/ppc64le-cloud/test-infra/pull/588</a></td>
@@ -2642,7 +2693,7 @@
 									<td>Add new workspace to boskos on ibm ppc64le</td>
 									<td>k8s.io</td>
 									<td><a href="https://github.com/kubernetes/k8s.io/pull/8716" target="_blank">https://github.com/kubernetes/k8s.io/pull/8716</a></td>
-									<td>2025-10-31T09:00:09Z</td>
+									<td>2026-01-23T08:33:45Z</td>
 								</tr>
 								
 								<tr>
@@ -2768,7 +2819,7 @@
 									<td>Reduce refreshInterval for ibm jobs external secret prow-job-api-key</td>
 									<td>k8s.io</td>
 									<td><a href="https://github.com/kubernetes/k8s.io/pull/8245" target="_blank">https://github.com/kubernetes/k8s.io/pull/8245</a></td>
-									<td>2025-06-26T08:06:31Z</td>
+									<td>2026-01-23T08:33:48Z</td>
 								</tr>
 								
 								<tr>
@@ -2776,13 +2827,6 @@
 									<td>test-infra</td>
 									<td><a href="https://github.com/kubernetes/test-infra/pull/35040" target="_blank">https://github.com/kubernetes/test-infra/pull/35040</a></td>
 									<td>2025-06-26T04:36:33Z</td>
-								</tr>
-								
-								<tr>
-									<td>Job to run E2e slow tests on IBM powervs</td>
-									<td>test-infra</td>
-									<td><a href="https://github.com/kubernetes/test-infra/pull/35020" target="_blank">https://github.com/kubernetes/test-infra/pull/35020</a></td>
-									<td>2025-06-24T06:48:33Z</td>
 								</tr>
 								
 							</tbody>
@@ -2857,7 +2901,7 @@
 									<td>Add SNO and agent SNO jobs and change cron timings</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/67340" target="_blank">https://github.com/openshift/release/pull/67340</a></td>
-									<td>2026-01-08T18:21:01Z</td>
+									<td>2026-01-23T19:01:35Z</td>
 								</tr>
 								
 								<tr>
@@ -3340,14 +3384,7 @@
 									<td>Adding build script for antlr4-python3-runtime pkg</td>
 									<td>build-scripts</td>
 									<td><a href="https://github.com/ppc64le/build-scripts/pull/7725" target="_blank">https://github.com/ppc64le/build-scripts/pull/7725</a></td>
-									<td>2026-01-22T11:51:15Z</td>
-								</tr>
-								
-								<tr>
-									<td>Adding build script for docling-parse pkg</td>
-									<td>build-scripts</td>
-									<td><a href="https://github.com/ppc64le/build-scripts/pull/7703" target="_blank">https://github.com/ppc64le/build-scripts/pull/7703</a></td>
-									<td>2026-01-22T08:54:57Z</td>
+									<td>2026-01-23T12:54:02Z</td>
 								</tr>
 								
 								<tr>
@@ -3382,7 +3419,7 @@
 									<td>Adding build script for Tesserocr python package</td>
 									<td>build-scripts</td>
 									<td><a href="https://github.com/ppc64le/build-scripts/pull/7513" target="_blank">https://github.com/ppc64le/build-scripts/pull/7513</a></td>
-									<td>2026-01-22T08:50:48Z</td>
+									<td>2026-01-23T13:49:46Z</td>
 								</tr>
 								
 								<tr>
@@ -3409,6 +3446,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Adding build script for docling-parse pkg</td>
+									<td>build-scripts</td>
+									<td><a href="https://github.com/ppc64le/build-scripts/pull/7703" target="_blank">https://github.com/ppc64le/build-scripts/pull/7703</a></td>
+									<td>2026-01-23T11:51:34Z</td>
+								</tr>
 								
 								<tr>
 									<td>Fixing duplicate artifact names in license scan</td>
@@ -3611,13 +3655,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/56" target="_blank">https://github.com/IBM/project-ai-services/pull/56</a></td>
 									<td>2025-11-18T14:12:59Z</td>
-								</tr>
-								
-								<tr>
-									<td>Adding build script for pymupdf</td>
-									<td>build-scripts</td>
-									<td><a href="https://github.com/ppc64le/build-scripts/pull/7512" target="_blank">https://github.com/ppc64le/build-scripts/pull/7512</a></td>
-									<td>2026-01-08T05:19:12Z</td>
 								</tr>
 								
 							</tbody>
@@ -5759,9 +5796,6 @@
 						
 
 						<h3 style="background-color: #ffeeba;">Created Issues</h3>
-						<p>No created issues</p>
-
-						<h3 style="background-color: #f8d7da;">Open PRs</h3>
 						
 						<table class="table table-striped">
 							<thead>
@@ -5770,11 +5804,23 @@
 							<tbody>
 								
 								<tr>
-									<td>Adding RHAIIS check</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/272" target="_blank">https://github.com/IBM/project-ai-services/pull/272</a></td>
-									<td>2026-01-22T11:32:07Z</td>
+									<td>REQUEST: New membership for irapandey</td>
+									<td>org</td>
+									<td><a href="https://github.com/kubernetes/org/issues/6090" target="_blank">https://github.com/kubernetes/org/issues/6090</a></td>
+									<td>2026-01-23T15:48:36Z</td>
 								</tr>
+								
+							</tbody>
+						</table>
+						
+
+						<h3 style="background-color: #f8d7da;">Open PRs</h3>
+						
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
+							</thead>
+							<tbody>
 								
 								<tr>
 									<td>Added custom padding for help template</td>
@@ -5828,6 +5874,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Adding RHAIIS check</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/272" target="_blank">https://github.com/IBM/project-ai-services/pull/272</a></td>
+									<td>2026-01-23T03:55:28Z</td>
+								</tr>
 								
 								<tr>
 									<td>🌱 removing v1beta1 from admissionReviewVersions & conversionReviewVersions</td>
@@ -6069,7 +6122,7 @@
 									<td>[calico-node] Enable CGO builds for ppc64le</td>
 									<td>calico</td>
 									<td><a href="https://github.com/projectcalico/calico/pull/11707" target="_blank">https://github.com/projectcalico/calico/pull/11707</a></td>
-									<td>2026-01-23T01:10:33Z</td>
+									<td>2026-01-23T18:38:17Z</td>
 								</tr>
 								
 								<tr>
@@ -6098,13 +6151,6 @@
 									<td>perf-tests</td>
 									<td><a href="https://github.com/kubernetes/perf-tests/pull/3642" target="_blank">https://github.com/kubernetes/perf-tests/pull/3642</a></td>
 									<td>2026-01-14T13:34:21Z</td>
-								</tr>
-								
-								<tr>
-									<td>Add playbook to set SMT on worker nodes</td>
-									<td>provider-ibmcloud-test-infra</td>
-									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/54" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/54</a></td>
-									<td>2026-01-16T10:11:35Z</td>
 								</tr>
 								
 								<tr>
@@ -6357,6 +6403,13 @@
 								</tr>
 								
 								<tr>
+									<td>Add playbook to set SMT on worker nodes</td>
+									<td>provider-ibmcloud-test-infra</td>
+									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/54" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/54</a></td>
+									<td>2026-01-23T04:51:25Z</td>
+								</tr>
+								
+								<tr>
 									<td>WIP: Add make targets for benchmark operation tooling</td>
 									<td>etcd</td>
 									<td><a href="https://github.com/etcd-io/etcd/pull/20769" target="_blank">https://github.com/etcd-io/etcd/pull/20769</a></td>
@@ -6368,13 +6421,6 @@
 									<td>ibm-powervs-block-csi-driver</td>
 									<td><a href="https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/984" target="_blank">https://github.com/kubernetes-sigs/ibm-powervs-block-csi-driver/pull/984</a></td>
 									<td>2025-11-14T10:09:00Z</td>
-								</tr>
-								
-								<tr>
-									<td>Add tags for etcd-benchmark jobs to support reporting metrics on perfdash</td>
-									<td>test-infra</td>
-									<td><a href="https://github.com/kubernetes/test-infra/pull/35529" target="_blank">https://github.com/kubernetes/test-infra/pull/35529</a></td>
-									<td>2025-09-15T13:22:16Z</td>
 								</tr>
 								
 							</tbody>
@@ -6433,7 +6479,7 @@
 									<td>added scripts to create golden dataset along with README</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/269" target="_blank">https://github.com/IBM/project-ai-services/pull/269</a></td>
-									<td>2026-01-19T12:12:22Z</td>
+									<td>2026-01-23T13:18:02Z</td>
 								</tr>
 								
 								<tr>
@@ -7815,24 +7861,10 @@
 								</tr>
 								
 								<tr>
-									<td>Update Infra Creation of x86 VSI to Fetch Configs from Vault for Heterogenous Agent based Hypershift</td>
-									<td>release</td>
-									<td><a href="https://github.com/openshift/release/pull/60787" target="_blank">https://github.com/openshift/release/pull/60787</a></td>
-									<td>2025-01-23T09:44:47Z</td>
-								</tr>
-								
-								<tr>
 									<td>[WIP] TEST PR: Debug the 4.18 agents not moving to Joined state issue.</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/60523" target="_blank">https://github.com/openshift/release/pull/60523</a></td>
 									<td>2025-01-25T15:04:47Z</td>
-								</tr>
-								
-								<tr>
-									<td>HOSTEDCP-2232: Destroy DHCP Server before PowerVS Cloud Instance deletion</td>
-									<td>hypershift</td>
-									<td><a href="https://github.com/openshift/hypershift/pull/5227" target="_blank">https://github.com/openshift/hypershift/pull/5227</a></td>
-									<td>2025-01-23T19:26:53Z</td>
 								</tr>
 								
 							</tbody>
@@ -7862,7 +7894,7 @@
 									<td>Replace deprecated `https://github.com/google/btree`</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/136415" target="_blank">https://github.com/kubernetes/kubernetes/issues/136415</a></td>
-									<td>2026-01-22T18:13:52Z</td>
+									<td>2026-01-23T08:32:18Z</td>
 								</tr>
 								
 								<tr>
@@ -7909,7 +7941,7 @@
 									<td>Replace deprecated `https://github.com/google/btree`</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/136415" target="_blank">https://github.com/kubernetes/kubernetes/issues/136415</a></td>
-									<td>2026-01-22T18:13:52Z</td>
+									<td>2026-01-23T08:32:18Z</td>
 								</tr>
 								
 								<tr>
@@ -7942,7 +7974,7 @@
 									<td>apiserver: refactor btree usage to generics-based k8s.io/utils</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/136416" target="_blank">https://github.com/kubernetes/kubernetes/pull/136416</a></td>
-									<td>2026-01-22T11:02:25Z</td>
+									<td>2026-01-23T15:46:26Z</td>
 								</tr>
 								
 							</tbody>
@@ -8124,7 +8156,7 @@
 									<td>MULTIARCH-5766: p-px MTU reduced</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/71299" target="_blank">https://github.com/openshift/release/pull/71299</a></td>
-									<td>2026-01-22T17:41:21Z</td>
+									<td>2026-01-23T14:34:26Z</td>
 								</tr>
 								
 								<tr>
@@ -8379,6 +8411,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Restrict NodeReadinessRuleSpec.Taint to "readiness.k8s.io/" prefix</td>
+									<td>node-readiness-controller</td>
+									<td><a href="https://github.com/kubernetes-sigs/node-readiness-controller/issues/106" target="_blank">https://github.com/kubernetes-sigs/node-readiness-controller/issues/106</a></td>
+									<td>2026-01-23T05:28:36Z</td>
+								</tr>
+								
+								<tr>
 									<td>Update all guides to use a recent model</td>
 									<td>gateway-api-inference-extension</td>
 									<td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2151" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2151</a></td>
@@ -8432,14 +8471,14 @@
 									<td>Model replacement to Qwen3-32B</td>
 									<td>gateway-api-inference-extension</td>
 									<td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2189" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2189</a></td>
-									<td>2026-01-22T17:26:37Z</td>
+									<td>2026-01-23T08:43:38Z</td>
 								</tr>
 								
 								<tr>
 									<td>Monitoring support for K8s build cluster</td>
 									<td>provider-ibmcloud-test-infra</td>
 									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/56" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/56</a></td>
-									<td>2026-01-09T04:45:03Z</td>
+									<td>2026-01-23T14:53:12Z</td>
 								</tr>
 								
 								<tr>
@@ -8710,7 +8749,7 @@
 									<td>Validate pdfs and improve logging while ingesting docs</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/268" target="_blank">https://github.com/IBM/project-ai-services/pull/268</a></td>
-									<td>2026-01-22T08:32:20Z</td>
+									<td>2026-01-23T16:32:47Z</td>
 								</tr>
 								
 								<tr>
@@ -8731,7 +8770,7 @@
 									<td>[Model] Enable LoRA support for tower and connector in H2OVL</td>
 									<td>vllm</td>
 									<td><a href="https://github.com/vllm-project/vllm/pull/31696" target="_blank">https://github.com/vllm-project/vllm/pull/31696</a></td>
-									<td>2026-01-22T16:17:58Z</td>
+									<td>2026-01-23T11:21:22Z</td>
 								</tr>
 								
 								<tr>
@@ -9148,10 +9187,17 @@
 							<tbody>
 								
 								<tr>
+									<td>test file for datastore.go</td>
+									<td>gateway-api-inference-extension</td>
+									<td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2200" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2200</a></td>
+									<td>2026-01-23T13:36:54Z</td>
+								</tr>
+								
+								<tr>
 									<td>Preparedata timeout config</td>
 									<td>gateway-api-inference-extension</td>
 									<td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2111" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2111</a></td>
-									<td>2026-01-21T13:47:09Z</td>
+									<td>2026-01-23T02:03:54Z</td>
 								</tr>
 								
 								<tr>
@@ -9423,13 +9469,6 @@
 								</tr>
 								
 								<tr>
-									<td>Add TrustyAI LLM evaluation demo</td>
-									<td>ai-demos</td>
-									<td><a href="https://github.com/IBM/ai-demos/pull/1" target="_blank">https://github.com/IBM/ai-demos/pull/1</a></td>
-									<td>2026-01-22T10:06:10Z</td>
-								</tr>
-								
-								<tr>
 									<td>This is the test PR to check konflux build on ppc64le</td>
 									<td>trustyai-service-operator</td>
 									<td><a href="https://github.com/red-hat-data-services/trustyai-service-operator/pull/1530" target="_blank">https://github.com/red-hat-data-services/trustyai-service-operator/pull/1530</a></td>
@@ -9487,6 +9526,13 @@
 									<td>community-operators-prod</td>
 									<td><a href="https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/8547" target="_blank">https://github.com/redhat-openshift-ecosystem/community-operators-prod/pull/8547</a></td>
 									<td>2026-01-08T17:20:20Z</td>
+								</tr>
+								
+								<tr>
+									<td>Add TrustyAI LLM evaluation demo</td>
+									<td>ai-demos</td>
+									<td><a href="https://github.com/IBM/ai-demos/pull/1" target="_blank">https://github.com/IBM/ai-demos/pull/1</a></td>
+									<td>2026-01-23T09:56:26Z</td>
 								</tr>
 								
 								<tr>
@@ -9671,13 +9717,6 @@
 									<td>2025-06-17T08:24:40Z</td>
 								</tr>
 								
-								<tr>
-									<td>Add contribution guide</td>
-									<td>rsct-operator</td>
-									<td><a href="https://github.com/ocp-power-automation/rsct-operator/pull/119" target="_blank">https://github.com/ocp-power-automation/rsct-operator/pull/119</a></td>
-									<td>2025-05-30T05:52:49Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -9711,7 +9750,7 @@
 									<td>[release1.35]Automated cherry pick of #135567: Fix flaky TestApplyCRDuringCRDFinalization test</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/136387" target="_blank">https://github.com/kubernetes/kubernetes/pull/136387</a></td>
-									<td>2026-01-21T14:54:27Z</td>
+									<td>2026-01-23T06:24:50Z</td>
 								</tr>
 								
 								<tr>
@@ -9725,7 +9764,7 @@
 									<td>Skip Scale in versioned declarative validation fuzzing</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/136343" target="_blank">https://github.com/kubernetes/kubernetes/pull/136343</a></td>
-									<td>2026-01-22T11:34:34Z</td>
+									<td>2026-01-23T13:04:37Z</td>
 								</tr>
 								
 								<tr>
@@ -10084,14 +10123,14 @@
 									<td>Added build_script and build_info.json for tree-sitter-javascript</td>
 									<td>build-scripts</td>
 									<td><a href="https://github.com/ppc64le/build-scripts/pull/7765" target="_blank">https://github.com/ppc64le/build-scripts/pull/7765</a></td>
-									<td>2026-01-22T15:32:08Z</td>
+									<td>2026-01-23T12:22:19Z</td>
 								</tr>
 								
 								<tr>
 									<td>Remove container image information</td>
 									<td>openshift-install-power</td>
 									<td><a href="https://github.com/ocp-power-automation/openshift-install-power/pull/240" target="_blank">https://github.com/ocp-power-automation/openshift-install-power/pull/240</a></td>
-									<td>2026-01-22T20:08:06Z</td>
+									<td>2026-01-23T20:08:06Z</td>
 								</tr>
 								
 								<tr>
