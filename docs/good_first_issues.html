@@ -20,6 +20,97 @@
             <tbody>
                 
                 <tr>
+                    <td>frontend: pod/Details: Fix `react-hooks/rules-of-hooks` — `useTranslation` is called conditionally (after a guard). Move the hook call to the top of the component. File: `frontend/src/components/pod/Details.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5195" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5195</a></td>
+                    <td>2026-04-23T04:53:47Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: CustomResourceList: Fix `react-hooks/rules-of-hooks` — `React.useMemo` is called conditionally (2 instances). Refactor so hooks are always called unconditionally. File: `frontend/src/components/crd/CustomResourceList.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5194" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5194</a></td>
+                    <td>2026-04-23T04:53:39Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: CustomResourceInstancesList: Fix `react-hooks/rules-of-hooks` — `useNamespaces` is called inside a `.map()` callback, meaning the number of hook calls varies between renders. Extract the per-item logic into a separate component. File: `frontend/src/components/crd/CustomResourceInstancesList.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5193" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5193</a></td>
+                    <td>2026-04-23T04:53:34Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: configmap/Details: Fix `react-hooks/rules-of-hooks` — the `section()` helper function calls `React.useState`, `React.useRef`, and `React.useEffect` but is a plain function, not a component or hook. Rename to a PascalCase component (`Section`) or refactor to a custom hook. File: `frontend/src/components/configmap/Details.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5192" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5192</a></td>
+                    <td>2026-04-23T04:53:30Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: RollbackButton: Fix `react-hooks/rules-of-hooks` — `useState`, `useLocation`, `useTranslation`, `useEventCallback`, and `useCallback` are called conditionally (after a guard clause). Move all hook calls to the top of the component before any conditional returns. File: `frontend/src/components/common/Resource/RollbackButton.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5191" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5191</a></td>
+                    <td>2026-04-23T04:53:25Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: RestartButton: Fix `react-hooks/rules-of-hooks` — `useState`, `useLocation`, `useTranslation`, and `useEventCallback` are called conditionally (after a guard clause). Move all hook calls to the top of the component before any conditional returns. File: `frontend/src/components/common/Resource/RestartButton.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5190" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5190</a></td>
+                    <td>2026-04-23T04:53:21Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: Resource: Fix `react-hooks/rules-of-hooks` — 5 instances of `React.useMemo` and `React.useCallback` called after an early return in the `MainInfoSection`/`LivenessProbeItem` area. Move hooks above early returns or extract into a separate component. File: `frontend/src/components/common/Resource/Resource.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5189" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5189</a></td>
+                    <td>2026-04-23T04:53:15Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: PortForward: Fix `react-hooks/rules-of-hooks` — `React.useEffect` and `React.useMemo` are called conditionally. Refactor to call hooks unconditionally and conditionally use their results. File: `frontend/src/components/common/Resource/PortForward.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5188" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5188</a></td>
+                    <td>2026-04-23T04:53:10Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: AuthVisible: Fix `react-hooks/rules-of-hooks` — `useQuery` and `useEffect` are called after an early `return` statement, violating the rule that hooks must be called in the same order every render. Move hooks above all early returns. File: `frontend/src/components/common/Resource/AuthVisible.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5187" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5187</a></td>
+                    <td>2026-04-23T04:53:06Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: Dialog: Fix `react-hooks/rules-of-hooks` — `React.useCallback` is called conditionally inside the component. Refactor so hooks are always called in the same order regardless of props/state. File: `frontend/src/components/common/Dialog.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5186" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5186</a></td>
+                    <td>2026-04-23T04:53:01Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: PluginSettingsDetails.stories: Fix `react-hooks/rules-of-hooks` — the `testAutoSaveComponent` function uses `React.useState` but has a lowercase name. Rename to `TestAutoSaveComponent` (PascalCase) so React treats it as a component. File: `frontend/src/components/App/PluginSettings/PluginSettingsDetails.stories.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5185" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5185</a></td>
+                    <td>2026-04-23T04:52:19Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: AppContainer.stories: Fix `react-hooks/rules-of-hooks` — the `withEnv` decorator function calls `React.useEffect` but is not a React component or custom hook. Rename to `WithEnv` (PascalCase component) or `useWithEnv` (custom hook) so React recognizes it correctly. File: `frontend/src/components/App/AppContainer.stories.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5184" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5184</a></td>
+                    <td>2026-04-23T04:51:20Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Rule of hooks fixes needed (ubmrella issue)</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5183" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5183</a></td>
+                    <td>2026-04-23T04:50:53Z</td>
+                </tr>
+                
+                <tr>
                     <td>Non existent feature gate `EnableWorkloadWithJob` referenced in the doc</td>
                     <td>website</td>
                     <td><a href="https://github.com/kubernetes/website/issues/55476" target="_blank">https://github.com/kubernetes/website/issues/55476</a></td>
@@ -174,101 +265,10 @@
                 </tr>
                 
                 <tr>
-                    <td>**cluster/Chooser**: `frontend/src/components/cluster/Chooser.stories.tsx` - Fix empty DialogTitle h1 in Normal story</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4601" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4601</a></td>
-                    <td>2026-02-06T19:49:32Z</td>
-                </tr>
-                
-                <tr>
-                    <td>**AuthChooser**: `frontend/src/components/account/AuthChooser.stories.tsx` - Fix empty DialogTitle h1 in AnError story</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4600" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4600</a></td>
-                    <td>2026-02-06T19:49:28Z</td>
-                </tr>
-                
-                <tr>
-                    <td>**AuthChooser**: `frontend/src/components/account/AuthChooser.stories.tsx` - Fix empty DialogTitle h1 in BasicAuthChooser story</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4596" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4596</a></td>
-                    <td>2026-02-06T19:48:55Z</td>
-                </tr>
-                
-                <tr>
                     <td>tooling: run tests and linters with prow for srctl</td>
                     <td>sig-security</td>
                     <td><a href="https://github.com/kubernetes/sig-security/issues/175" target="_blank">https://github.com/kubernetes/sig-security/issues/175</a></td>
                     <td>2026-02-06T17:38:17Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Bug: Environment variable with valueFrom.secretKeyRef displays secret key name instead of actual value</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4555" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4555</a></td>
-                    <td>2026-02-05T03:26:13Z</td>
-                </tr>
-                
-                <tr>
-                    <td>service.beta.kubernetes.io/azure-shared-securityrule needs cleanup</td>
-                    <td>cloud-provider-azure</td>
-                    <td><a href="https://github.com/kubernetes-sigs/cloud-provider-azure/issues/9905" target="_blank">https://github.com/kubernetes-sigs/cloud-provider-azure/issues/9905</a></td>
-                    <td>2026-02-03T13:08:31Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Fix linter to update cilium ebpf dependency</td>
-                    <td>nat64</td>
-                    <td><a href="https://github.com/kubernetes-sigs/nat64/issues/63" target="_blank">https://github.com/kubernetes-sigs/nat64/issues/63</a></td>
-                    <td>2026-01-23T09:49:16Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Manual Force Shutdown</td>
-                    <td>karpenter</td>
-                    <td><a href="https://github.com/kubernetes-sigs/karpenter/issues/2815" target="_blank">https://github.com/kubernetes-sigs/karpenter/issues/2815</a></td>
-                    <td>2026-01-22T17:07:02Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Refactor the variables around the apiserver loadbalancer.</td>
-                    <td>kubespray</td>
-                    <td><a href="https://github.com/kubernetes-sigs/kubespray/issues/12883" target="_blank">https://github.com/kubernetes-sigs/kubespray/issues/12883</a></td>
-                    <td>2026-01-20T13:44:58Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Omit `NAMESPACE` column when querying resources in a single namespace</td>
-                    <td>gwctl</td>
-                    <td><a href="https://github.com/kubernetes-sigs/gwctl/issues/90" target="_blank">https://github.com/kubernetes-sigs/gwctl/issues/90</a></td>
-                    <td>2026-01-19T10:40:00Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Support retrieving multiple resource types in a single command</td>
-                    <td>gwctl</td>
-                    <td><a href="https://github.com/kubernetes-sigs/gwctl/issues/89" target="_blank">https://github.com/kubernetes-sigs/gwctl/issues/89</a></td>
-                    <td>2026-01-19T10:33:44Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Allow configurable timeouts for PrepareData plugins</td>
-                    <td>gateway-api-inference-extension</td>
-                    <td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2081" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2081</a></td>
-                    <td>2026-01-06T21:31:57Z</td>
-                </tr>
-                
-                <tr>
-                    <td>GCPCluster network and subnet fields are mutable but updates result in broken/inconsistent state</td>
-                    <td>cluster-api-provider-gcp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-gcp/issues/1576" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-gcp/issues/1576</a></td>
-                    <td>2025-12-24T20:12:51Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Implement DisruptionReasons for IBM Cloud provider</td>
-                    <td>karpenter-provider-ibm-cloud</td>
-                    <td><a href="https://github.com/kubernetes-sigs/karpenter-provider-ibm-cloud/issues/439" target="_blank">https://github.com/kubernetes-sigs/karpenter-provider-ibm-cloud/issues/439</a></td>
-                    <td>2025-12-17T22:24:19Z</td>
                 </tr>
                 
                 <tr>
