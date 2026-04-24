@@ -34,13 +34,6 @@
                 </tr>
                 
                 <tr>
-                    <td>frontend: configmap/Details: Fix `react-hooks/rules-of-hooks` — the `section()` helper function calls `React.useState`, `React.useRef`, and `React.useEffect` but is a plain function, not a component or hook. Rename to a PascalCase component (`Section`) or refactor to a custom hook. File: `frontend/src/components/configmap/Details.tsx`</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5192" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5192</a></td>
-                    <td>2026-04-23T04:53:30Z</td>
-                </tr>
-                
-                <tr>
                     <td>frontend: RollbackButton: Fix `react-hooks/rules-of-hooks` — `useState`, `useLocation`, `useTranslation`, `useEventCallback`, and `useCallback` are called conditionally (after a guard clause). Move all hook calls to the top of the component before any conditional returns. File: `frontend/src/components/common/Resource/RollbackButton.tsx`</td>
                     <td>headlamp</td>
                     <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5191" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5191</a></td>
@@ -248,6 +241,13 @@
                     <td>headlamp</td>
                     <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4601" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4601</a></td>
                     <td>2026-02-06T19:49:32Z</td>
+                </tr>
+                
+                <tr>
+                    <td>**AuthChooser**: `frontend/src/components/account/AuthChooser.stories.tsx` - Fix empty DialogTitle h1 in AnError story</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4600" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4600</a></td>
+                    <td>2026-02-06T19:49:28Z</td>
                 </tr>
                 
                 <tr>
