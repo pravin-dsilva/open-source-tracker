@@ -34,13 +34,6 @@
                 </tr>
                 
                 <tr>
-                    <td>frontend: RollbackButton: Fix `react-hooks/rules-of-hooks` — `useState`, `useLocation`, `useTranslation`, `useEventCallback`, and `useCallback` are called conditionally (after a guard clause). Move all hook calls to the top of the component before any conditional returns. File: `frontend/src/components/common/Resource/RollbackButton.tsx`</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5191" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5191</a></td>
-                    <td>2026-04-23T04:53:25Z</td>
-                </tr>
-                
-                <tr>
                     <td>frontend: RestartButton: Fix `react-hooks/rules-of-hooks` — `useState`, `useLocation`, `useTranslation`, and `useEventCallback` are called conditionally (after a guard clause). Move all hook calls to the top of the component before any conditional returns. File: `frontend/src/components/common/Resource/RestartButton.tsx`</td>
                     <td>headlamp</td>
                     <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5190" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5190</a></td>
@@ -66,20 +59,6 @@
                     <td>headlamp</td>
                     <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5187" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5187</a></td>
                     <td>2026-04-23T04:53:06Z</td>
-                </tr>
-                
-                <tr>
-                    <td>frontend: Dialog: Fix `react-hooks/rules-of-hooks` — `React.useCallback` is called conditionally inside the component. Refactor so hooks are always called in the same order regardless of props/state. File: `frontend/src/components/common/Dialog.tsx`</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5186" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5186</a></td>
-                    <td>2026-04-23T04:53:01Z</td>
-                </tr>
-                
-                <tr>
-                    <td>frontend: PluginSettingsDetails.stories: Fix `react-hooks/rules-of-hooks` — the `testAutoSaveComponent` function uses `React.useState` but has a lowercase name. Rename to `TestAutoSaveComponent` (PascalCase) so React treats it as a component. File: `frontend/src/components/App/PluginSettings/PluginSettingsDetails.stories.tsx`</td>
-                    <td>headlamp</td>
-                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5185" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5185</a></td>
-                    <td>2026-04-23T04:52:19Z</td>
                 </tr>
                 
                 <tr>
@@ -251,10 +230,31 @@
                 </tr>
                 
                 <tr>
+                    <td>**AuthChooser**: `frontend/src/components/account/AuthChooser.stories.tsx` - Fix empty DialogTitle h1 in BasicAuthChooser story</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4596" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4596</a></td>
+                    <td>2026-02-06T19:48:55Z</td>
+                </tr>
+                
+                <tr>
                     <td>tooling: run tests and linters with prow for srctl</td>
                     <td>sig-security</td>
                     <td><a href="https://github.com/kubernetes/sig-security/issues/175" target="_blank">https://github.com/kubernetes/sig-security/issues/175</a></td>
                     <td>2026-02-06T17:38:17Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Bug: Environment variable with valueFrom.secretKeyRef displays secret key name instead of actual value</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4555" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4555</a></td>
+                    <td>2026-02-05T03:26:13Z</td>
+                </tr>
+                
+                <tr>
+                    <td>service.beta.kubernetes.io/azure-shared-securityrule needs cleanup</td>
+                    <td>cloud-provider-azure</td>
+                    <td><a href="https://github.com/kubernetes-sigs/cloud-provider-azure/issues/9905" target="_blank">https://github.com/kubernetes-sigs/cloud-provider-azure/issues/9905</a></td>
+                    <td>2026-02-03T13:08:31Z</td>
                 </tr>
                 
                 <tr>
