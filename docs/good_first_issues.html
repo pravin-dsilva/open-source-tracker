@@ -8,7 +8,229 @@
     <body class="container mt-5">
         <h1 class="mb-4">Issues</h1>
         
-        <p>No issues found</p>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Title</th>
+                    <th>Repository</th>
+                    <th>URL</th>
+                    <th>Created At</th>
+                </tr>
+            </thead>
+            <tbody>
+                
+                <tr>
+                    <td>frontend: CustomResourceInstancesList: Fix `react-hooks/rules-of-hooks` — `useNamespaces` is called inside a `.map()` callback, meaning the number of hook calls varies between renders. Extract the per-item logic into a separate component. File: `frontend/src/components/crd/CustomResourceInstancesList.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5193" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5193</a></td>
+                    <td>2026-04-23T04:53:34Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: RestartButton: Fix `react-hooks/rules-of-hooks` — `useState`, `useLocation`, `useTranslation`, and `useEventCallback` are called conditionally (after a guard clause). Move all hook calls to the top of the component before any conditional returns. File: `frontend/src/components/common/Resource/RestartButton.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5190" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5190</a></td>
+                    <td>2026-04-23T04:53:21Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: Resource: Fix `react-hooks/rules-of-hooks` — 5 instances of `React.useMemo` and `React.useCallback` called after an early return in the `MainInfoSection`/`LivenessProbeItem` area. Move hooks above early returns or extract into a separate component. File: `frontend/src/components/common/Resource/Resource.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5189" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5189</a></td>
+                    <td>2026-04-23T04:53:15Z</td>
+                </tr>
+                
+                <tr>
+                    <td>frontend: AuthVisible: Fix `react-hooks/rules-of-hooks` — `useQuery` and `useEffect` are called after an early `return` statement, violating the rule that hooks must be called in the same order every render. Move hooks above all early returns. File: `frontend/src/components/common/Resource/AuthVisible.tsx`</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5187" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5187</a></td>
+                    <td>2026-04-23T04:53:06Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Rule of hooks fixes needed (ubmrella issue)</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/5183" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/5183</a></td>
+                    <td>2026-04-23T04:50:53Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Document DisaggregatedSet on the project website (site/)</td>
+                    <td>lws</td>
+                    <td><a href="https://github.com/kubernetes-sigs/lws/issues/806" target="_blank">https://github.com/kubernetes-sigs/lws/issues/806</a></td>
+                    <td>2026-04-07T07:49:19Z</td>
+                </tr>
+                
+                <tr>
+                    <td>requiredfields: not satisified by `ExactlyOneOf`/`AtLeastOneOf`</td>
+                    <td>kube-api-linter</td>
+                    <td><a href="https://github.com/kubernetes-sigs/kube-api-linter/issues/236" target="_blank">https://github.com/kubernetes-sigs/kube-api-linter/issues/236</a></td>
+                    <td>2026-03-25T00:16:17Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Concurrent access to multiCIDRRangeAllocator.cidrMap is not protected</td>
+                    <td>node-ipam-controller</td>
+                    <td><a href="https://github.com/kubernetes-sigs/node-ipam-controller/issues/86" target="_blank">https://github.com/kubernetes-sigs/node-ipam-controller/issues/86</a></td>
+                    <td>2026-03-10T09:58:42Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Ensure that EPP had CPU and Mem requests</td>
+                    <td>gateway-api-inference-extension</td>
+                    <td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2499" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2499</a></td>
+                    <td>2026-03-05T20:55:57Z</td>
+                </tr>
+                
+                <tr>
+                    <td>[Flow Control] Expand Flow Control capacity limits schema (resource.Quantity, maxRequests)</td>
+                    <td>gateway-api-inference-extension</td>
+                    <td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2486" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2486</a></td>
+                    <td>2026-03-04T22:32:43Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Add watch flag</td>
+                    <td>gwctl</td>
+                    <td><a href="https://github.com/kubernetes-sigs/gwctl/issues/110" target="_blank">https://github.com/kubernetes-sigs/gwctl/issues/110</a></td>
+                    <td>2026-02-27T14:35:58Z</td>
+                </tr>
+                
+                <tr>
+                    <td>DeleteMultipleButton (0% coverage) in `frontend/src/components/common/Resource/DeleteMultipleButton.tsx` - Create DeleteMultipleButton.stories.tsx with button enabled showing selection count, button disabled with no selection, batch delete confirmation dialog, delete progress indicator, and partial failure error state</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4691" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4691</a></td>
+                    <td>2026-02-12T12:32:02Z</td>
+                </tr>
+                
+                <tr>
+                    <td>UploadDialog (3.89% coverage) in `frontend/src/components/common/Resource/UploadDialog.tsx` - Create UploadDialog.stories.tsx with empty upload dialog, file selected state, upload progress loading bar, upload success, and upload error for network/file size/invalid format issues</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4690" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4690</a></td>
+                    <td>2026-02-12T12:31:57Z</td>
+                </tr>
+                
+                <tr>
+                    <td>PortForward (4.86% coverage) in `frontend/src/components/common/Resource/PortForward.tsx` - Create PortForward.stories.tsx with port forward form, connection pending loading state, connection established success, connection failed error state, and port already in use error</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4689" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4689</a></td>
+                    <td>2026-02-12T12:31:53Z</td>
+                </tr>
+                
+                <tr>
+                    <td>AddCluster (0% coverage) in `frontend/src/components/App/CreateCluster/AddCluster.tsx` - Create AddCluster.stories.tsx with empty form state, form validation errors, cluster connection test loading, connection test success/failure, and save cluster success</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4687" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4687</a></td>
+                    <td>2026-02-12T12:30:19Z</td>
+                </tr>
+                
+                <tr>
+                    <td>KubeConfigLoader (7.92% coverage) in `frontend/src/components/cluster/KubeConfigLoader.tsx` - Create KubeConfigLoader.stories.tsx with file upload drag-and-drop, file parsing loading state, invalid YAML error state, duplicate cluster error state, large file parsing timeout, and success with cluster list</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4686" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4686</a></td>
+                    <td>2026-02-12T12:30:14Z</td>
+                </tr>
+                
+                <tr>
+                    <td>AuthChooser (4.1% coverage) in `frontend/src/components/authchooser/index.tsx` - Enhance AuthChooser.stories.tsx with multiple auth methods display, auth method selection, loading state during auth flow, authentication failure error, and redirect after success</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4685" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4685</a></td>
+                    <td>2026-02-12T12:30:09Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Enhancement: Review and improve flag descriptions, examples, and CLI help for better UX</td>
+                    <td>kubebuilder</td>
+                    <td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/5446" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/5446</a></td>
+                    <td>2026-02-07T10:07:48Z</td>
+                </tr>
+                
+                <tr>
+                    <td>**cluster/Chooser**: `frontend/src/components/cluster/Chooser.stories.tsx` - Fix empty DialogTitle h1 in ManyClusters story</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4603" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4603</a></td>
+                    <td>2026-02-06T19:49:40Z</td>
+                </tr>
+                
+                <tr>
+                    <td>**cluster/Chooser**: `frontend/src/components/cluster/Chooser.stories.tsx` - Fix empty DialogTitle h1 in SingleCluster story</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4602" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4602</a></td>
+                    <td>2026-02-06T19:49:36Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Bug: Environment variable with valueFrom.secretKeyRef displays secret key name instead of actual value</td>
+                    <td>headlamp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/headlamp/issues/4555" target="_blank">https://github.com/kubernetes-sigs/headlamp/issues/4555</a></td>
+                    <td>2026-02-05T03:26:13Z</td>
+                </tr>
+                
+                <tr>
+                    <td>service.beta.kubernetes.io/azure-shared-securityrule needs cleanup</td>
+                    <td>cloud-provider-azure</td>
+                    <td><a href="https://github.com/kubernetes-sigs/cloud-provider-azure/issues/9905" target="_blank">https://github.com/kubernetes-sigs/cloud-provider-azure/issues/9905</a></td>
+                    <td>2026-02-03T13:08:31Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Fix linter to update cilium ebpf dependency</td>
+                    <td>nat64</td>
+                    <td><a href="https://github.com/kubernetes-sigs/nat64/issues/63" target="_blank">https://github.com/kubernetes-sigs/nat64/issues/63</a></td>
+                    <td>2026-01-23T09:49:16Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Manual Force Shutdown</td>
+                    <td>karpenter</td>
+                    <td><a href="https://github.com/kubernetes-sigs/karpenter/issues/2815" target="_blank">https://github.com/kubernetes-sigs/karpenter/issues/2815</a></td>
+                    <td>2026-01-22T17:07:02Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Refactor the variables around the apiserver loadbalancer.</td>
+                    <td>kubespray</td>
+                    <td><a href="https://github.com/kubernetes-sigs/kubespray/issues/12883" target="_blank">https://github.com/kubernetes-sigs/kubespray/issues/12883</a></td>
+                    <td>2026-01-20T13:44:58Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Omit `NAMESPACE` column when querying resources in a single namespace</td>
+                    <td>gwctl</td>
+                    <td><a href="https://github.com/kubernetes-sigs/gwctl/issues/90" target="_blank">https://github.com/kubernetes-sigs/gwctl/issues/90</a></td>
+                    <td>2026-01-19T10:40:00Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Support retrieving multiple resource types in a single command</td>
+                    <td>gwctl</td>
+                    <td><a href="https://github.com/kubernetes-sigs/gwctl/issues/89" target="_blank">https://github.com/kubernetes-sigs/gwctl/issues/89</a></td>
+                    <td>2026-01-19T10:33:44Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Allow configurable timeouts for PrepareData plugins</td>
+                    <td>gateway-api-inference-extension</td>
+                    <td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2081" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/issues/2081</a></td>
+                    <td>2026-01-06T21:31:57Z</td>
+                </tr>
+                
+                <tr>
+                    <td>GCPCluster network and subnet fields are mutable but updates result in broken/inconsistent state</td>
+                    <td>cluster-api-provider-gcp</td>
+                    <td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-gcp/issues/1576" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-gcp/issues/1576</a></td>
+                    <td>2025-12-24T20:12:51Z</td>
+                </tr>
+                
+                <tr>
+                    <td>Implement DisruptionReasons for IBM Cloud provider</td>
+                    <td>karpenter-provider-ibm-cloud</td>
+                    <td><a href="https://github.com/kubernetes-sigs/karpenter-provider-ibm-cloud/issues/439" target="_blank">https://github.com/kubernetes-sigs/karpenter-provider-ibm-cloud/issues/439</a></td>
+                    <td>2025-12-17T22:24:19Z</td>
+                </tr>
+                
+            </tbody>
+        </table>
         
     </body>
     </html>
