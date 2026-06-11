@@ -20,10 +20,17 @@
             <tbody>
                 
                 <tr>
-                    <td>(cleanup) Formatting is configured but never enforced in CI — add `make lint-fmt` and call it from `make verify-lint`</td>
+                    <td>(helm/v2-alpha) `kubebuilder edit` hangs forever if dist/install.yaml is malformed</td>
                     <td>kubebuilder</td>
-                    <td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/5743" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/5743</a></td>
-                    <td>2026-06-10T23:50:16Z</td>
+                    <td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/5750" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/5750</a></td>
+                    <td>2026-06-11T11:25:23Z</td>
+                </tr>
+                
+                <tr>
+                    <td>(helm/v2-alpha) `make helm-deploy` deploys image `":0.1.0"` when IMG is not set on the command line</td>
+                    <td>kubebuilder</td>
+                    <td><a href="https://github.com/kubernetes-sigs/kubebuilder/issues/5749" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/issues/5749</a></td>
+                    <td>2026-06-11T11:20:41Z</td>
                 </tr>
                 
                 <tr>
@@ -248,13 +255,6 @@
                     <td>kubespray</td>
                     <td><a href="https://github.com/kubernetes-sigs/kubespray/issues/12883" target="_blank">https://github.com/kubernetes-sigs/kubespray/issues/12883</a></td>
                     <td>2026-01-20T13:44:58Z</td>
-                </tr>
-                
-                <tr>
-                    <td>Omit `NAMESPACE` column when querying resources in a single namespace</td>
-                    <td>gwctl</td>
-                    <td><a href="https://github.com/kubernetes-sigs/gwctl/issues/90" target="_blank">https://github.com/kubernetes-sigs/gwctl/issues/90</a></td>
-                    <td>2026-01-19T10:40:00Z</td>
                 </tr>
                 
                 <tr>
