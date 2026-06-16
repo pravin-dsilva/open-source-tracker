@@ -554,13 +554,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Bump power-go-client to 1.16.0</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2807" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2807</a></td>
-									<td>2026-06-12T12:30:18Z</td>
-								</tr>
-								
-								<tr>
 									<td>Build device plugin and node-labeller images for ppc64le</td>
 									<td>k8s-device-plugin</td>
 									<td><a href="https://github.com/ROCm/k8s-device-plugin/pull/191" target="_blank">https://github.com/ROCm/k8s-device-plugin/pull/191</a></td>
@@ -578,7 +571,7 @@
 									<td>trigger: add /test-required command</td>
 									<td>prow</td>
 									<td><a href="https://github.com/kubernetes-sigs/prow/pull/735" target="_blank">https://github.com/kubernetes-sigs/prow/pull/735</a></td>
-									<td>2026-06-09T16:43:27Z</td>
+									<td>2026-06-15T10:24:04Z</td>
 								</tr>
 								
 								<tr>
@@ -633,6 +626,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Bump power-go-client to 1.16.0</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2807" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2807</a></td>
+									<td>2026-06-15T17:13:34Z</td>
+								</tr>
 								
 								<tr>
 									<td>PowerVS: adopt e2e to use IBMPOWERVS_WORKSPACE_ID</td>
@@ -835,13 +835,6 @@
 									<td>cloud-api-adaptor</td>
 									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/3006" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/3006</a></td>
 									<td>2026-05-08T05:38:46Z</td>
-								</tr>
-								
-								<tr>
-									<td>Fix e2e test scaling worker nodes</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2703" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2703</a></td>
-									<td>2026-04-12T06:56:06Z</td>
 								</tr>
 								
 							</tbody>
@@ -1624,10 +1617,17 @@
 							<tbody>
 								
 								<tr>
+									<td>:warning: Migrate ClusterClass changes e2e test from the docker to the in-memory backend</td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/13806" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/13806</a></td>
+									<td>2026-06-15T10:45:32Z</td>
+								</tr>
+								
+								<tr>
 									<td>⚠️ Update TransitGateway field as per PowerVS API enhancement</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2800" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2800</a></td>
-									<td>2026-06-12T13:48:12Z</td>
+									<td>2026-06-15T13:12:11Z</td>
 								</tr>
 								
 								<tr>
@@ -1690,7 +1690,7 @@
 									<td>KEP-3953: In-place Node Resource Resize</td>
 									<td>enhancements</td>
 									<td><a href="https://github.com/kubernetes/enhancements/pull/3955" target="_blank">https://github.com/kubernetes/enhancements/pull/3955</a></td>
-									<td>2026-06-13T03:52:39Z</td>
+									<td>2026-06-15T17:28:45Z</td>
 								</tr>
 								
 							</tbody>
@@ -2007,7 +2007,7 @@
 									<td>Add automation to streamline CAPI image creation process</td>
 									<td>provider-ibmcloud-test-infra</td>
 									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/106" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/106</a></td>
-									<td>2026-06-11T09:20:43Z</td>
+									<td>2026-06-15T06:29:37Z</td>
 								</tr>
 								
 								<tr>
@@ -3292,7 +3292,7 @@
 									<td>Add mermaid diagrams for all demo examples</td>
 									<td>dra-example-driver</td>
 									<td><a href="https://github.com/kubernetes-sigs/dra-example-driver/pull/211" target="_blank">https://github.com/kubernetes-sigs/dra-example-driver/pull/211</a></td>
-									<td>2026-06-10T05:12:26Z</td>
+									<td>2026-06-15T20:42:04Z</td>
 								</tr>
 								
 								<tr>
@@ -3452,7 +3452,7 @@
 									<td>Migrate 'Good First Migration' Immutable Fields to Declarative Validation</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/issues/136785" target="_blank">https://github.com/kubernetes/kubernetes/issues/136785</a></td>
-									<td>2026-05-20T23:57:50Z</td>
+									<td>2026-06-15T23:57:19Z</td>
 								</tr>
 								
 								<tr>
@@ -3478,17 +3478,10 @@
 							<tbody>
 								
 								<tr>
-									<td>add --insecure flag to catalog login cmd</td>
+									<td>return proper errors codes from catalog API calls</td>
 									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/935" target="_blank">https://github.com/IBM/project-ai-services/pull/935</a></td>
-									<td>2026-06-12T09:55:19Z</td>
-								</tr>
-								
-								<tr>
-									<td>migrate create CLI cmd to use catalog API</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/928" target="_blank">https://github.com/IBM/project-ai-services/pull/928</a></td>
-									<td>2026-06-12T10:49:30Z</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/956" target="_blank">https://github.com/IBM/project-ai-services/pull/956</a></td>
+									<td>2026-06-15T15:58:42Z</td>
 								</tr>
 								
 								<tr>
@@ -3515,6 +3508,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>add --insecure flag to catalog login cmd</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/935" target="_blank">https://github.com/IBM/project-ai-services/pull/935</a></td>
+									<td>2026-06-15T13:35:28Z</td>
+								</tr>
+								
+								<tr>
+									<td>migrate create CLI cmd to use catalog API</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/928" target="_blank">https://github.com/IBM/project-ai-services/pull/928</a></td>
+									<td>2026-06-15T12:01:46Z</td>
+								</tr>
 								
 								<tr>
 									<td>fix: modify duplicate app check to return proper error</td>
@@ -3712,20 +3719,6 @@
 									<td>2026-05-06T05:42:42Z</td>
 								</tr>
 								
-								<tr>
-									<td>feat: enable ai-services to run in non-root mode</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/682" target="_blank">https://github.com/IBM/project-ai-services/pull/682</a></td>
-									<td>2026-05-13T12:08:57Z</td>
-								</tr>
-								
-								<tr>
-									<td>feat: Catalog uninstall cmd implementation</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/677" target="_blank">https://github.com/IBM/project-ai-services/pull/677</a></td>
-									<td>2026-05-18T12:11:25Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -3779,24 +3772,10 @@
 							<tbody>
 								
 								<tr>
-									<td>[Catalog-API]: Bug - Fixing application ps endpoint</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/952" target="_blank">https://github.com/IBM/project-ai-services/pull/952</a></td>
-									<td>2026-06-14T19:00:23Z</td>
-								</tr>
-								
-								<tr>
 									<td>Migrate application info cli cmd</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/934" target="_blank">https://github.com/IBM/project-ai-services/pull/934</a></td>
-									<td>2026-06-14T18:05:56Z</td>
-								</tr>
-								
-								<tr>
-									<td>[CATALOG-CLI] Making catalog password idempotent and password reset support</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/901" target="_blank">https://github.com/IBM/project-ai-services/pull/901</a></td>
-									<td>2026-06-12T18:16:41Z</td>
+									<td>2026-06-15T15:59:52Z</td>
 								</tr>
 								
 								<tr>
@@ -3860,6 +3839,20 @@
 							<tbody>
 								
 								<tr>
+									<td>Enabling catalog password reset</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/958" target="_blank">https://github.com/IBM/project-ai-services/pull/958</a></td>
+									<td>2026-06-15T14:03:47Z</td>
+								</tr>
+								
+								<tr>
+									<td>[Catalog-API]: Bug - Fixing application ps endpoint</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/952" target="_blank">https://github.com/IBM/project-ai-services/pull/952</a></td>
+									<td>2026-06-15T14:04:09Z</td>
+								</tr>
+								
+								<tr>
 									<td>Bumpy service-base image version</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/942" target="_blank">https://github.com/IBM/project-ai-services/pull/942</a></td>
@@ -3871,6 +3864,13 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/919" target="_blank">https://github.com/IBM/project-ai-services/pull/919</a></td>
 									<td>2026-06-11T07:21:51Z</td>
+								</tr>
+								
+								<tr>
+									<td>[CATALOG-CLI] Making catalog password idempotent and password reset support</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/901" target="_blank">https://github.com/IBM/project-ai-services/pull/901</a></td>
+									<td>2026-06-15T12:57:39Z</td>
 								</tr>
 								
 								<tr>
@@ -4048,27 +4048,6 @@
 									<td>2026-04-13T15:03:19Z</td>
 								</tr>
 								
-								<tr>
-									<td>Updating opencv-python build script for version 92</td>
-									<td>build-scripts</td>
-									<td><a href="https://github.com/ppc64le/build-scripts/pull/8081" target="_blank">https://github.com/ppc64le/build-scripts/pull/8081</a></td>
-									<td>2026-04-13T08:17:23Z</td>
-								</tr>
-								
-								<tr>
-									<td>cicd: adding jenkins pipeline to sign go binaries</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/593" target="_blank">https://github.com/IBM/project-ai-services/pull/593</a></td>
-									<td>2026-04-09T10:06:40Z</td>
-								</tr>
-								
-								<tr>
-									<td>Update tools container file, to fix ppc64le build</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/565" target="_blank">https://github.com/IBM/project-ai-services/pull/565</a></td>
-									<td>2026-03-30T17:13:17Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -4159,6 +4138,13 @@
 							<tbody>
 								
 								<tr>
+									<td>pkg/api/testing: skip extensions/v1beta1 in Scale validation equivalence tests</td>
+									<td>kubernetes</td>
+									<td><a href="https://github.com/kubernetes/kubernetes/pull/139746" target="_blank">https://github.com/kubernetes/kubernetes/pull/139746</a></td>
+									<td>2026-06-15T16:07:41Z</td>
+								</tr>
+								
+								<tr>
 									<td>Add CentOS Stream 10 Kubernetes v1.34.7 DHCP image for PowerVS</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2791" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2791</a></td>
@@ -4215,7 +4201,7 @@
 									<td>OCPBUGS-80145: Replace google.golang.org/grpc with openshift-sustaining fork v1.71.3-sec.1 to v1.79.3 to fix CVE-2026-33186</td>
 									<td>cloud-provider-powervs</td>
 									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/103" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/103</a></td>
-									<td>2026-06-12T14:56:07Z</td>
+									<td>2026-06-15T19:28:45Z</td>
 								</tr>
 								
 								<tr>
@@ -4862,7 +4848,7 @@
 									<td>[WIP] Enable support for configuring Security Group for Loadbalancer</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2682" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2682</a></td>
-									<td>2026-06-05T07:00:42Z</td>
+									<td>2026-06-15T10:54:07Z</td>
 								</tr>
 								
 								<tr>
@@ -5577,6 +5563,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Use existing cluster for e2e tests</td>
+									<td>etcd-operator</td>
+									<td><a href="https://github.com/etcd-io/etcd-operator/pull/364" target="_blank">https://github.com/etcd-io/etcd-operator/pull/364</a></td>
+									<td>2026-06-15T13:54:58Z</td>
+								</tr>
+								
+								<tr>
 									<td>( :book: ) Enhancements to CLI Help</td>
 									<td>kubebuilder</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/pull/5498" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/pull/5498</a></td>
@@ -6076,13 +6069,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Bump litellm to v1.86.5 for CVE fixes</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/944" target="_blank">https://github.com/IBM/project-ai-services/pull/944</a></td>
-									<td>2026-06-12T13:08:58Z</td>
-								</tr>
-								
-								<tr>
 									<td>Minor corrections in Readme & setup file</td>
 									<td>ceph-devstack</td>
 									<td><a href="https://github.com/ceph/ceph-devstack/pull/35" target="_blank">https://github.com/ceph/ceph-devstack/pull/35</a></td>
@@ -6141,6 +6127,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Update litellm deployment manifest image to v1.86.5-0</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/961" target="_blank">https://github.com/IBM/project-ai-services/pull/961</a></td>
+									<td>2026-06-15T17:11:52Z</td>
+								</tr>
+								
+								<tr>
+									<td>Bump litellm to v1.86.5 for CVE fixes</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/944" target="_blank">https://github.com/IBM/project-ai-services/pull/944</a></td>
+									<td>2026-06-15T14:06:24Z</td>
+								</tr>
 								
 								<tr>
 									<td>Update podman sock policy for root & rootless containers</td>
@@ -7449,6 +7449,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Add retry mechanism to similarity service while connecting to opensearch</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/959" target="_blank">https://github.com/IBM/project-ai-services/pull/959</a></td>
+									<td>2026-06-15T11:24:35Z</td>
+								</tr>
+								
+								<tr>
 									<td>Update vLLM cpu image to v0.19.1 for embedding and reranker components</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/940" target="_blank">https://github.com/IBM/project-ai-services/pull/940</a></td>
@@ -7651,13 +7658,6 @@
 									<td>2026-03-13T09:10:06Z</td>
 								</tr>
 								
-								<tr>
-									<td>Asynchronous ingestion work flow</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/372" target="_blank">https://github.com/IBM/project-ai-services/pull/372</a></td>
-									<td>2026-03-06T10:11:54Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -7762,17 +7762,10 @@
 							<tbody>
 								
 								<tr>
-									<td>[Catalog-API] Update providers in GetAppByID response</td>
+									<td>[Catalog] Add RequestID in logs</td>
 									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/949" target="_blank">https://github.com/IBM/project-ai-services/pull/949</a></td>
-									<td>2026-06-14T12:35:01Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Catalog] Implement Pod-DB Periodic Status Synchronization</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/948" target="_blank">https://github.com/IBM/project-ai-services/pull/948</a></td>
-									<td>2026-06-14T12:34:30Z</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/953" target="_blank">https://github.com/IBM/project-ai-services/pull/953</a></td>
+									<td>2026-06-15T04:52:42Z</td>
 								</tr>
 								
 								<tr>
@@ -7820,6 +7813,27 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>[Catalog] Values schema updates</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/957" target="_blank">https://github.com/IBM/project-ai-services/pull/957</a></td>
+									<td>2026-06-16T03:17:05Z</td>
+								</tr>
+								
+								<tr>
+									<td>[Catalog-API] Update providers in GetAppByID response</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/949" target="_blank">https://github.com/IBM/project-ai-services/pull/949</a></td>
+									<td>2026-06-15T08:12:05Z</td>
+								</tr>
+								
+								<tr>
+									<td>[Catalog] Implement Pod-DB Periodic Status Synchronization</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/948" target="_blank">https://github.com/IBM/project-ai-services/pull/948</a></td>
+									<td>2026-06-15T08:12:00Z</td>
+								</tr>
 								
 								<tr>
 									<td>[Catalog] Backend Asset updates</td>
@@ -8008,27 +8022,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/755" target="_blank">https://github.com/IBM/project-ai-services/pull/755</a></td>
 									<td>2026-05-15T08:41:20Z</td>
-								</tr>
-								
-								<tr>
-									<td>helm: Set required validations for EPP CPU and Mem requests</td>
-									<td>gateway-api-inference-extension</td>
-									<td><a href="https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2930" target="_blank">https://github.com/kubernetes-sigs/gateway-api-inference-extension/pull/2930</a></td>
-									<td>2026-05-20T02:47:56Z</td>
-								</tr>
-								
-								<tr>
-									<td>Expose Catalog Backend port</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/737" target="_blank">https://github.com/IBM/project-ai-services/pull/737</a></td>
-									<td>2026-05-12T11:15:56Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Catalog-API] API Endpoints for Architecture & Service Deploy options</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/734" target="_blank">https://github.com/IBM/project-ai-services/pull/734</a></td>
-									<td>2026-05-18T08:54:10Z</td>
 								</tr>
 								
 							</tbody>
@@ -9539,6 +9532,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Fix truncated responses issue</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/955" target="_blank">https://github.com/IBM/project-ai-services/pull/955</a></td>
+									<td>2026-06-16T03:59:30Z</td>
+								</tr>
+								
+								<tr>
 									<td>Get Reference Doc is broken if Similarity Search Pod restarts</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/943" target="_blank">https://github.com/IBM/project-ai-services/pull/943</a></td>
@@ -9563,7 +9563,7 @@
 									<td>config: allow opt-in HTTP Prometheus endpoints</td>
 									<td>llm-d-workload-variant-autoscaler</td>
 									<td><a href="https://github.com/llm-d/llm-d-workload-variant-autoscaler/pull/1075" target="_blank">https://github.com/llm-d/llm-d-workload-variant-autoscaler/pull/1075</a></td>
-									<td>2026-06-09T01:38:59Z</td>
+									<td>2026-06-16T01:56:14Z</td>
 								</tr>
 								
 								<tr>
@@ -9856,17 +9856,17 @@
 							<tbody>
 								
 								<tr>
-									<td>Reset cert</td>
+									<td>feat: reset caddy certificate</td>
 									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/951" target="_blank">https://github.com/IBM/project-ai-services/pull/951</a></td>
-									<td>2026-06-14T13:44:14Z</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/964" target="_blank">https://github.com/IBM/project-ai-services/pull/964</a></td>
+									<td>2026-06-16T02:31:42Z</td>
 								</tr>
 								
 								<tr>
-									<td>feat: implement idempotent catalog reconfigure with validation</td>
+									<td>feat: ensure catalog configure is idempotent wrt caddy certs and routing</td>
 									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/946" target="_blank">https://github.com/IBM/project-ai-services/pull/946</a></td>
-									<td>2026-06-14T13:42:42Z</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/960" target="_blank">https://github.com/IBM/project-ai-services/pull/960</a></td>
+									<td>2026-06-15T16:39:30Z</td>
 								</tr>
 								
 								<tr>
@@ -9914,6 +9914,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Reset cert</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/951" target="_blank">https://github.com/IBM/project-ai-services/pull/951</a></td>
+									<td>2026-06-15T19:32:15Z</td>
+								</tr>
+								
+								<tr>
+									<td>feat: implement idempotent catalog reconfigure with validation</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/946" target="_blank">https://github.com/IBM/project-ai-services/pull/946</a></td>
+									<td>2026-06-15T14:43:28Z</td>
+								</tr>
 								
 								<tr>
 									<td>refactor(catalog): remove obsolete --params flag from configure command</td>
@@ -10109,20 +10123,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/544" target="_blank">https://github.com/IBM/project-ai-services/pull/544</a></td>
 									<td>2026-03-26T04:53:14Z</td>
-								</tr>
-								
-								<tr>
-									<td>Fix TestGetConntrackMax to align with capped conntrack max values</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/pull/137847" target="_blank">https://github.com/kubernetes/kubernetes/pull/137847</a></td>
-									<td>2026-03-18T15:25:07Z</td>
-								</tr>
-								
-								<tr>
-									<td>Add examples in api doc for chatbot backend chat/completion endpoint</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/493" target="_blank">https://github.com/IBM/project-ai-services/pull/493</a></td>
-									<td>2026-03-17T10:03:32Z</td>
 								</tr>
 								
 							</tbody>
@@ -10644,6 +10644,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Explore and Add Examples for Additional Model Storage Options</td>
+									<td>ai-demos</td>
+									<td><a href="https://github.com/IBM/ai-demos/issues/21" target="_blank">https://github.com/IBM/ai-demos/issues/21</a></td>
+									<td>2026-06-15T13:33:48Z</td>
+								</tr>
+								
+								<tr>
 									<td>Bug: make generate-config fails due to protoc permission error</td>
 									<td>ai-demos</td>
 									<td><a href="https://github.com/IBM/ai-demos/issues/20" target="_blank">https://github.com/IBM/ai-demos/issues/20</a></td>
@@ -10806,7 +10813,7 @@
 									<td>refactor: reorganize AI demos structure</td>
 									<td>ai-demos</td>
 									<td><a href="https://github.com/IBM/ai-demos/pull/10" target="_blank">https://github.com/IBM/ai-demos/pull/10</a></td>
-									<td>2026-06-14T18:19:13Z</td>
+									<td>2026-06-15T16:13:24Z</td>
 								</tr>
 								
 								<tr>
@@ -11546,6 +11553,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Refactor catlog configure flow including caddy</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/954" target="_blank">https://github.com/IBM/project-ai-services/pull/954</a></td>
+									<td>2026-06-15T14:04:04Z</td>
+								</tr>
+								
+								<tr>
 									<td>Provide standalone in services list API</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/937" target="_blank">https://github.com/IBM/project-ai-services/pull/937</a></td>
@@ -11746,13 +11760,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/642" target="_blank">https://github.com/IBM/project-ai-services/pull/642</a></td>
 									<td>2026-04-29T11:19:20Z</td>
-								</tr>
-								
-								<tr>
-									<td>feat: Add runtime param to catalog apiserver</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/641" target="_blank">https://github.com/IBM/project-ai-services/pull/641</a></td>
-									<td>2026-04-21T16:56:24Z</td>
 								</tr>
 								
 							</tbody>
