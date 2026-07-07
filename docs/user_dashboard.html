@@ -635,6 +635,13 @@
 							<tbody>
 								
 								<tr>
+									<td>gha: do not set PUSH=true for building podvm binaries</td>
+									<td>cloud-api-adaptor</td>
+									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/3183" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/3183</a></td>
+									<td>2026-07-06T08:42:26Z</td>
+								</tr>
+								
+								<tr>
 									<td>Bump power-go-client to 1.16.0</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2807" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2807</a></td>
@@ -837,13 +844,6 @@
 									<td>2026-05-08T12:35:19Z</td>
 								</tr>
 								
-								<tr>
-									<td>Refactor BYOM e2e</td>
-									<td>cloud-api-adaptor</td>
-									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/3006" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/3006</a></td>
-									<td>2026-05-08T05:38:46Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -917,13 +917,6 @@
 									<td>spyre-webhook-validator</td>
 									<td><a href="https://github.com/ibm-aiu/spyre-webhook-validator/pull/18" target="_blank">https://github.com/ibm-aiu/spyre-webhook-validator/pull/18</a></td>
 									<td>2026-06-05T07:01:33Z</td>
-								</tr>
-								
-								<tr>
-									<td>Move GetResourceID method to clusterScope struct</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2683" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2683</a></td>
-									<td>2026-07-03T11:52:21Z</td>
 								</tr>
 								
 							</tbody>
@@ -1078,6 +1071,13 @@
 								</tr>
 								
 								<tr>
+									<td>Move GetResourceID method to clusterScope struct</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2683" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2683</a></td>
+									<td>2026-07-06T06:42:45Z</td>
+								</tr>
+								
+								<tr>
 									<td>Optimize PowerVS method to fetch bucket region to avoid duplicacy</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2655" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2655</a></td>
@@ -1139,7 +1139,7 @@
 									<td>Hardcoded golang image tag in kubevirtci-presubmit-creator is not updated by image bumper</td>
 									<td>project-infra</td>
 									<td><a href="https://github.com/kubevirt/project-infra/issues/5215" target="_blank">https://github.com/kubevirt/project-infra/issues/5215</a></td>
-									<td>2026-07-02T12:08:04Z</td>
+									<td>2026-07-06T07:59:08Z</td>
 								</tr>
 								
 								<tr>
@@ -1235,7 +1235,7 @@
 									<td>Refactoring and incremental changes to Etcd Cluster Status reporting</td>
 									<td>etcd-operator</td>
 									<td><a href="https://github.com/etcd-io/etcd-operator/issues/357" target="_blank">https://github.com/etcd-io/etcd-operator/issues/357</a></td>
-									<td>2026-06-06T06:42:02Z</td>
+									<td>2026-07-06T15:16:12Z</td>
 								</tr>
 								
 								<tr>
@@ -1512,7 +1512,7 @@
 									<td>Complete CAPD => CAPDev transition</td>
 									<td>cluster-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api/issues/13270" target="_blank">https://github.com/kubernetes-sigs/cluster-api/issues/13270</a></td>
-									<td>2026-05-26T13:45:54Z</td>
+									<td>2026-07-06T09:53:40Z</td>
 								</tr>
 								
 								<tr>
@@ -1631,17 +1631,10 @@
 							<tbody>
 								
 								<tr>
-									<td>✨ Use in-memory template for clusterctl upgrade tests</td>
-									<td>cluster-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/13866" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/13866</a></td>
-									<td>2026-07-03T07:37:25Z</td>
-								</tr>
-								
-								<tr>
-									<td>⚠️ Update VPC, VPCSubnet and Loadbalancer field as per PowerVS API enhancement</td>
+									<td>🌱 Update field type changes in the documentation</td>
 									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2817" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2817</a></td>
-									<td>2026-07-03T11:30:54Z</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2826" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2826</a></td>
+									<td>2026-07-06T05:48:38Z</td>
 								</tr>
 								
 								<tr>
@@ -1705,10 +1698,24 @@
 							<tbody>
 								
 								<tr>
+									<td>✨ Use in-memory template for clusterctl upgrade tests</td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/13866" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/13866</a></td>
+									<td>2026-07-06T13:23:00Z</td>
+								</tr>
+								
+								<tr>
 									<td>:bug: Fix panic while validating PER availibility for a zone</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2825" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2825</a></td>
 									<td>2026-07-01T13:45:04Z</td>
+								</tr>
+								
+								<tr>
+									<td>⚠️ Update VPC, VPCSubnet and Loadbalancer field as per PowerVS API enhancement</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2817" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2817</a></td>
+									<td>2026-07-06T06:29:43Z</td>
 								</tr>
 								
 								<tr>
@@ -1898,20 +1905,6 @@
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2684" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2684</a></td>
 									<td>2026-04-14T05:51:57Z</td>
-								</tr>
-								
-								<tr>
-									<td>kubelet: deduplicate CPU conversion helper functions</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/pull/137621" target="_blank">https://github.com/kubernetes/kubernetes/pull/137621</a></td>
-									<td>2026-03-14T09:35:36Z</td>
-								</tr>
-								
-								<tr>
-									<td>test: Replace hardcoded kubelet volume paths with TestContext.KubeletRootDir in node e2e tests</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/pull/137620" target="_blank">https://github.com/kubernetes/kubernetes/pull/137620</a></td>
-									<td>2026-06-03T02:35:45Z</td>
 								</tr>
 								
 							</tbody>
@@ -2288,6 +2281,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>new AI Service Application - Translation with AI Power</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/issues/661" target="_blank">https://github.com/IBM/project-ai-services/issues/661</a></td>
+									<td>2026-07-06T08:16:42Z</td>
+								</tr>
 								
 								<tr>
 									<td>[hi] Update Hindi localisation pages with menu front matter to align with upstream</td>
@@ -2905,7 +2905,7 @@
 									<td>Cross build enablement for kubetest2-tf, New Make targets for tar/untar tf plugins, Changes to ansible install</td>
 									<td>provider-ibmcloud-test-infra</td>
 									<td><a href="https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/104" target="_blank">https://github.com/kubernetes-sigs/provider-ibmcloud-test-infra/pull/104</a></td>
-									<td>2026-07-03T08:16:58Z</td>
+									<td>2026-07-06T05:53:53Z</td>
 								</tr>
 								
 								<tr>
@@ -3756,6 +3756,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>AISERVICES-1232: Supporting caddy for non-root user</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1103" target="_blank">https://github.com/IBM/project-ai-services/pull/1103</a></td>
+									<td>2026-07-06T05:27:18Z</td>
+								</tr>
 								
 								<tr>
 									<td>Make target to update the image tag in values.yaml files</td>
@@ -5499,6 +5506,13 @@
 								</tr>
 								
 								<tr>
+									<td>Refactoring and incremental changes to Etcd Cluster Status reporting</td>
+									<td>etcd-operator</td>
+									<td><a href="https://github.com/etcd-io/etcd-operator/issues/357" target="_blank">https://github.com/etcd-io/etcd-operator/issues/357</a></td>
+									<td>2026-07-06T15:16:12Z</td>
+								</tr>
+								
+								<tr>
 									<td>[e2e] Add option to use existing clusters, this can reduce the time to run tests as cluster build and tear down are not needed for each test run</td>
 									<td>etcd-operator</td>
 									<td><a href="https://github.com/etcd-io/etcd-operator/issues/160" target="_blank">https://github.com/etcd-io/etcd-operator/issues/160</a></td>
@@ -5663,13 +5677,6 @@
 							<tbody>
 								
 								<tr>
-									<td>chore: add bump-service-version Bob skill</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1101" target="_blank">https://github.com/IBM/project-ai-services/pull/1101</a></td>
-									<td>2026-07-03T14:11:45Z</td>
-								</tr>
-								
-								<tr>
 									<td>Bug fix on destroy flow and logging improvements</td>
 									<td>project-pim</td>
 									<td><a href="https://github.com/IBM/project-pim/pull/34" target="_blank">https://github.com/IBM/project-pim/pull/34</a></td>
@@ -5721,6 +5728,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>chore: add bump-service-version Bob skill</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1101" target="_blank">https://github.com/IBM/project-ai-services/pull/1101</a></td>
+									<td>2026-07-06T06:10:34Z</td>
+								</tr>
 								
 								<tr>
 									<td>Fix job deletion affecting document due to cascade delete</td>
@@ -5925,13 +5939,6 @@
 									<td>2026-03-12T07:01:52Z</td>
 								</tr>
 								
-								<tr>
-									<td>Bug fixes on chatbot API server</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/454" target="_blank">https://github.com/IBM/project-ai-services/pull/454</a></td>
-									<td>2026-03-11T14:17:55Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -6088,7 +6095,7 @@
 									<td>parser: Migrate from docopt to argparse</td>
 									<td>teuthology</td>
 									<td><a href="https://github.com/ceph/teuthology/pull/2154" target="_blank">https://github.com/ceph/teuthology/pull/2154</a></td>
-									<td>2026-06-01T05:40:32Z</td>
+									<td>2026-07-06T13:47:28Z</td>
 								</tr>
 								
 								<tr>
@@ -8273,7 +8280,7 @@
 									<td>refactor(digitize): reorganise into packages and remove duplicate code</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1086" target="_blank">https://github.com/IBM/project-ai-services/pull/1086</a></td>
-									<td>2026-07-02T12:11:46Z</td>
+									<td>2026-07-06T09:19:46Z</td>
 								</tr>
 								
 								<tr>
@@ -8314,6 +8321,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>bump oras.land/oras-go/v2</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1102" target="_blank">https://github.com/IBM/project-ai-services/pull/1102</a></td>
+									<td>2026-07-06T04:49:40Z</td>
+								</tr>
 								
 								<tr>
 									<td>docs: add badges to README</td>
@@ -8516,13 +8530,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/572" target="_blank">https://github.com/IBM/project-ai-services/pull/572</a></td>
 									<td>2026-03-31T11:10:50Z</td>
-								</tr>
-								
-								<tr>
-									<td>Update the links and docs</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/571" target="_blank">https://github.com/IBM/project-ai-services/pull/571</a></td>
-									<td>2026-03-31T09:36:24Z</td>
 								</tr>
 								
 							</tbody>
@@ -9497,13 +9504,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Optimizations for Chatbot</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1087" target="_blank">https://github.com/IBM/project-ai-services/pull/1087</a></td>
-									<td>2026-07-02T05:13:37Z</td>
-								</tr>
-								
-								<tr>
 									<td>✨feat: Add machineNaming support to ClusterClass and Cluster topology</td>
 									<td>cluster-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/13701" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/13701</a></td>
@@ -9533,6 +9533,13 @@
 									<td>kubebuilder</td>
 									<td><a href="https://github.com/kubernetes-sigs/kubebuilder/pull/5811" target="_blank">https://github.com/kubernetes-sigs/kubebuilder/pull/5811</a></td>
 									<td>2026-07-03T09:40:21Z</td>
+								</tr>
+								
+								<tr>
+									<td>Optimizations for Chatbot</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1087" target="_blank">https://github.com/IBM/project-ai-services/pull/1087</a></td>
+									<td>2026-07-06T08:36:59Z</td>
 								</tr>
 								
 								<tr>
@@ -9731,13 +9738,6 @@
 									<td>2026-06-10T11:35:41Z</td>
 								</tr>
 								
-								<tr>
-									<td>Conversational RAG - UI Changes</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/711" target="_blank">https://github.com/IBM/project-ai-services/pull/711</a></td>
-									<td>2026-05-15T02:28:06Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -9757,23 +9757,7 @@
 						<p>No assigned issues</p>
 
 						<h3 style="background-color: #ffeeba;">Created Issues</h3>
-						
-						<table class="table table-striped">
-							<thead>
-								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
-							</thead>
-							<tbody>
-								
-								<tr>
-									<td>[e2e] error: resourceVersions never became stable</td>
-									<td>cluster-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api/issues/13754" target="_blank">https://github.com/kubernetes-sigs/cluster-api/issues/13754</a></td>
-									<td>2026-07-02T10:09:42Z</td>
-								</tr>
-								
-							</tbody>
-						</table>
-						
+						<p>No created issues</p>
 
 						<h3 style="background-color: #f8d7da;">Open PRs</h3>
 						
@@ -10556,6 +10540,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Responses API `file_search` does not populate `file_citation` annotations</td>
+									<td>ogx</td>
+									<td><a href="https://github.com/ogx-ai/ogx/issues/6242" target="_blank">https://github.com/ogx-ai/ogx/issues/6242</a></td>
+									<td>2026-07-06T09:47:16Z</td>
+								</tr>
 								
 								<tr>
 									<td>Add documentation for downloading and uploading model artifacts to S3</td>
