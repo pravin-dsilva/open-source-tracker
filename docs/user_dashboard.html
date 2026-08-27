@@ -426,7 +426,7 @@
 									<td>Onboard new machine images for Kubernetes version v1.35</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2785" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/2785</a></td>
-									<td>2026-05-28T11:35:15Z</td>
+									<td>2026-08-26T09:20:18Z</td>
 								</tr>
 								
 								<tr>
@@ -483,13 +483,6 @@
 									<td>actionspz</td>
 									<td><a href="https://github.com/IBM/actionspz/issues/44" target="_blank">https://github.com/IBM/actionspz/issues/44</a></td>
 									<td>2026-08-25T22:24:32Z</td>
-								</tr>
-								
-								<tr>
-									<td>Add feature to pass or mount user files during image qcow2ova conversion</td>
-									<td>pvsadm</td>
-									<td><a href="https://github.com/ppc64le-cloud/pvsadm/issues/811" target="_blank">https://github.com/ppc64le-cloud/pvsadm/issues/811</a></td>
-									<td>2025-09-03T08:33:22Z</td>
 								</tr>
 								
 								<tr>
@@ -561,6 +554,20 @@
 							<tbody>
 								
 								<tr>
+									<td>byom: remove obsolete kata mount service from the setup script</td>
+									<td>cloud-api-adaptor</td>
+									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/3259" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/3259</a></td>
+									<td>2026-08-27T07:02:44Z</td>
+								</tr>
+								
+								<tr>
+									<td>helm: add ssh host keys support for byom</td>
+									<td>cloud-api-adaptor</td>
+									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/3257" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/3257</a></td>
+									<td>2026-08-26T14:51:56Z</td>
+								</tr>
+								
+								<tr>
 									<td>announcement: notify addition of new /test-manual-required trigger command</td>
 									<td>prow</td>
 									<td><a href="https://github.com/kubernetes-sigs/prow/pull/863" target="_blank">https://github.com/kubernetes-sigs/prow/pull/863</a></td>
@@ -572,13 +579,6 @@
 									<td>k8s-device-plugin</td>
 									<td><a href="https://github.com/ROCm/k8s-device-plugin/pull/191" target="_blank">https://github.com/ROCm/k8s-device-plugin/pull/191</a></td>
 									<td>2026-06-30T17:08:26Z</td>
-								</tr>
-								
-								<tr>
-									<td>Add a feature to pass user provided files during qcow2ova image conversion</td>
-									<td>pvsadm</td>
-									<td><a href="https://github.com/ppc64le-cloud/pvsadm/pull/851" target="_blank">https://github.com/ppc64le-cloud/pvsadm/pull/851</a></td>
-									<td>2026-08-25T06:38:40Z</td>
 								</tr>
 								
 								<tr>
@@ -605,6 +605,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Minor Powervs fixes</td>
+									<td>cloud-api-adaptor</td>
+									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/3256" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/3256</a></td>
+									<td>2026-08-26T10:00:21Z</td>
+								</tr>
 								
 								<tr>
 									<td>:seedling: Update cluster-api to v1.14.0</td>
@@ -809,13 +816,6 @@
 									<td>2026-06-02T07:35:50Z</td>
 								</tr>
 								
-								<tr>
-									<td>caa: add BYOM provider to release builds</td>
-									<td>cloud-api-adaptor</td>
-									<td><a href="https://github.com/confidential-containers/cloud-api-adaptor/pull/3073" target="_blank">https://github.com/confidential-containers/cloud-api-adaptor/pull/3073</a></td>
-									<td>2026-05-19T12:54:47Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -886,9 +886,44 @@
 								
 								<tr>
 									<td>chore: upgrade version for cve fix</td>
+									<td>dra-driver-spyre</td>
+									<td><a href="https://github.com/ibm-aiu/dra-driver-spyre/pull/62" target="_blank">https://github.com/ibm-aiu/dra-driver-spyre/pull/62</a></td>
+									<td>2026-08-27T05:13:23Z</td>
+								</tr>
+								
+								<tr>
+									<td>chore: upgrade version for cve fix</td>
+									<td>spyre-scheduler-plugins</td>
+									<td><a href="https://github.com/ibm-aiu/spyre-scheduler-plugins/pull/40" target="_blank">https://github.com/ibm-aiu/spyre-scheduler-plugins/pull/40</a></td>
+									<td>2026-08-27T05:14:15Z</td>
+								</tr>
+								
+								<tr>
+									<td>chore: upgrade version for cve fix</td>
+									<td>spyre-operator</td>
+									<td><a href="https://github.com/ibm-aiu/spyre-operator/pull/134" target="_blank">https://github.com/ibm-aiu/spyre-operator/pull/134</a></td>
+									<td>2026-08-27T07:11:34Z</td>
+								</tr>
+								
+								<tr>
+									<td>chore: upgrade version for cve fix</td>
+									<td>spyre-device-plugin</td>
+									<td><a href="https://github.com/ibm-aiu/spyre-device-plugin/pull/46" target="_blank">https://github.com/ibm-aiu/spyre-device-plugin/pull/46</a></td>
+									<td>2026-08-27T06:31:14Z</td>
+								</tr>
+								
+								<tr>
+									<td>chore: upgrade version for cve fix</td>
+									<td>spyre-webhook-validator</td>
+									<td><a href="https://github.com/ibm-aiu/spyre-webhook-validator/pull/32" target="_blank">https://github.com/ibm-aiu/spyre-webhook-validator/pull/32</a></td>
+									<td>2026-08-27T06:39:42Z</td>
+								</tr>
+								
+								<tr>
+									<td>chore: upgrade version for cve fix</td>
 									<td>spyre-health-checker</td>
 									<td><a href="https://github.com/ibm-aiu/spyre-health-checker/pull/56" target="_blank">https://github.com/ibm-aiu/spyre-health-checker/pull/56</a></td>
-									<td>2026-08-24T07:02:14Z</td>
+									<td>2026-08-27T06:09:21Z</td>
 								</tr>
 								
 								<tr>
@@ -1547,7 +1582,7 @@
 									<td>Complete CAPD => CAPDev transition</td>
 									<td>cluster-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api/issues/13270" target="_blank">https://github.com/kubernetes-sigs/cluster-api/issues/13270</a></td>
-									<td>2026-08-20T13:56:57Z</td>
+									<td>2026-08-26T11:37:31Z</td>
 								</tr>
 								
 								<tr>
@@ -1676,14 +1711,14 @@
 									<td>🌱 PowerVS related CAPIBM book udpate</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2921" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2921</a></td>
-									<td>2026-08-24T06:18:53Z</td>
+									<td>2026-08-26T09:20:01Z</td>
 								</tr>
 								
 								<tr>
 									<td>✨ Implement v1beta2 contract for devmachinepool</td>
 									<td>cluster-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/14099" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/14099</a></td>
-									<td>2026-08-19T11:17:27Z</td>
+									<td>2026-08-26T11:31:12Z</td>
 								</tr>
 								
 								<tr>
@@ -1738,6 +1773,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>⚠️ Remove options and recorder package</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2925" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2925</a></td>
+									<td>2026-08-27T06:27:46Z</td>
+								</tr>
 								
 								<tr>
 									<td>⚠️ Reorganise the code as per CAPI reference</td>
@@ -1940,13 +1982,6 @@
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2826" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2826</a></td>
 									<td>2026-07-07T11:20:55Z</td>
-								</tr>
-								
-								<tr>
-									<td>✨ Use in-memory template for clusterctl upgrade tests</td>
-									<td>cluster-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/13866" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/13866</a></td>
-									<td>2026-07-06T13:23:00Z</td>
 								</tr>
 								
 							</tbody>
@@ -2361,10 +2396,10 @@
 							<tbody>
 								
 								<tr>
-									<td>feat(translate): Add synchronous endpoint for translate service</td>
+									<td>Add unit tests for translation service</td>
 									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1309" target="_blank">https://github.com/IBM/project-ai-services/pull/1309</a></td>
-									<td>2026-08-25T12:47:06Z</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1338" target="_blank">https://github.com/IBM/project-ai-services/pull/1338</a></td>
+									<td>2026-08-27T05:45:53Z</td>
 								</tr>
 								
 							</tbody>
@@ -2377,6 +2412,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>feat(translate): Add synchronous endpoint for translate service</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1309" target="_blank">https://github.com/IBM/project-ai-services/pull/1309</a></td>
+									<td>2026-08-26T12:57:25Z</td>
+								</tr>
 								
 								<tr>
 									<td>Core translation service logic and async endpoints.</td>
@@ -2579,13 +2621,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/55" target="_blank">https://github.com/IBM/project-ai-services/pull/55</a></td>
 									<td>2025-11-26T03:41:25Z</td>
-								</tr>
-								
-								<tr>
-									<td>UI- fix AI label</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/40" target="_blank">https://github.com/IBM/project-ai-services/pull/40</a></td>
-									<td>2025-11-26T03:41:15Z</td>
 								</tr>
 								
 							</tbody>
@@ -2975,7 +3010,7 @@
 									<td>kubelet: update ASW when CSIDriver attachment requirement changes</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/141522" target="_blank">https://github.com/kubernetes/kubernetes/pull/141522</a></td>
-									<td>2026-08-25T18:54:59Z</td>
+									<td>2026-08-27T01:48:01Z</td>
 								</tr>
 								
 								<tr>
@@ -3544,28 +3579,21 @@
 									<td>feat: align backup/restore with catalog approach</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1323" target="_blank">https://github.com/IBM/project-ai-services/pull/1323</a></td>
-									<td>2026-08-25T14:18:53Z</td>
+									<td>2026-08-27T06:48:47Z</td>
 								</tr>
 								
 								<tr>
 									<td>upgrade vllm-spyre image to 3.5.0 and increase memory to 200Gi</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1320" target="_blank">https://github.com/IBM/project-ai-services/pull/1320</a></td>
-									<td>2026-08-25T07:41:38Z</td>
-								</tr>
-								
-								<tr>
-									<td>fix: wait for inferenceService to be active before proceeding</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1319" target="_blank">https://github.com/IBM/project-ai-services/pull/1319</a></td>
-									<td>2026-08-25T07:34:41Z</td>
+									<td>2026-08-27T07:24:15Z</td>
 								</tr>
 								
 								<tr>
 									<td>feat: add must gather for openshift runtime</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1312" target="_blank">https://github.com/IBM/project-ai-services/pull/1312</a></td>
-									<td>2026-08-25T06:01:56Z</td>
+									<td>2026-08-27T06:43:16Z</td>
 								</tr>
 								
 								<tr>
@@ -3585,6 +3613,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>fix: wait for inferenceService to be active before proceeding</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1319" target="_blank">https://github.com/IBM/project-ai-services/pull/1319</a></td>
+									<td>2026-08-27T05:48:16Z</td>
+								</tr>
 								
 								<tr>
 									<td>upgrade vllm-spyre image to 3.5.0-ea.2 and increase memory to 200Gi</td>
@@ -3789,13 +3824,6 @@
 									<td>2026-06-17T08:37:00Z</td>
 								</tr>
 								
-								<tr>
-									<td>remove experimental flags and use new way of deploying application</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/983" target="_blank">https://github.com/IBM/project-ai-services/pull/983</a></td>
-									<td>2026-06-17T11:44:40Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -3849,6 +3877,13 @@
 							<tbody>
 								
 								<tr>
+									<td>AISERVICES-1573: Adding service base lite image support</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1329" target="_blank">https://github.com/IBM/project-ai-services/pull/1329</a></td>
+									<td>2026-08-26T06:08:57Z</td>
+								</tr>
+								
+								<tr>
 									<td>cve-fix: Bump up docling to v2.120.3 </td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1308" target="_blank">https://github.com/IBM/project-ai-services/pull/1308</a></td>
@@ -3866,7 +3901,7 @@
 									<td>Use Podman volume instead of host path for Caddy config storage</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1233" target="_blank">https://github.com/IBM/project-ai-services/pull/1233</a></td>
-									<td>2026-08-25T12:05:10Z</td>
+									<td>2026-08-27T05:07:37Z</td>
 								</tr>
 								
 								<tr>
@@ -4239,7 +4274,7 @@
 									<td>fix(powervs): skip busy load balancers instead of erroring, cut requeue interval to 15s</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2909" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2909</a></td>
-									<td>2026-08-24T20:19:15Z</td>
+									<td>2026-08-27T06:13:16Z</td>
 								</tr>
 								
 								<tr>
@@ -4638,7 +4673,7 @@
 									<td>Added automation for creating dev env locally</td>
 									<td>power-access-cloud</td>
 									<td><a href="https://github.com/IBM/power-access-cloud/pull/111" target="_blank">https://github.com/IBM/power-access-cloud/pull/111</a></td>
-									<td>2026-08-24T04:39:08Z</td>
+									<td>2026-08-26T05:28:34Z</td>
 								</tr>
 								
 								<tr>
@@ -5414,7 +5449,7 @@
 									<td>Add support workload custom labels for local_queue_pending_workloads</td>
 									<td>kueue</td>
 									<td><a href="https://github.com/kubernetes-sigs/kueue/pull/14167" target="_blank">https://github.com/kubernetes-sigs/kueue/pull/14167</a></td>
-									<td>2026-08-18T16:40:32Z</td>
+									<td>2026-08-26T22:01:55Z</td>
 								</tr>
 								
 								<tr>
@@ -5787,7 +5822,7 @@
 									<td>Add openshift manifests for extract and translate service</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1325" target="_blank">https://github.com/IBM/project-ai-services/pull/1325</a></td>
-									<td>2026-08-25T14:16:17Z</td>
+									<td>2026-08-26T15:57:41Z</td>
 								</tr>
 								
 								<tr>
@@ -6885,7 +6920,7 @@
 									<td>Introduce code related to ibmcloud-powervs-e2e flow</td>
 									<td>cloud-api-adaptor</td>
 									<td><a href="https://github.com/kishen-v/cloud-api-adaptor/pull/2" target="_blank">https://github.com/kishen-v/cloud-api-adaptor/pull/2</a></td>
-									<td>2026-08-25T13:50:27Z</td>
+									<td>2026-08-27T06:27:49Z</td>
 								</tr>
 								
 								<tr>
@@ -6954,6 +6989,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>MULTIARCH-6346: Rebase with upstream - go modules updates and code changes</td>
+									<td>ibm-powervs-block-csi-driver</td>
+									<td><a href="https://github.com/openshift/ibm-powervs-block-csi-driver/pull/138" target="_blank">https://github.com/openshift/ibm-powervs-block-csi-driver/pull/138</a></td>
+									<td>2026-08-26T10:05:32Z</td>
+								</tr>
 								
 								<tr>
 									<td>CI: resolve multi-arch manifest push failure</td>
@@ -7158,13 +7200,6 @@
 									<td>2026-07-22T07:52:33Z</td>
 								</tr>
 								
-								<tr>
-									<td>Revert "Restore --parallel=30 for ppc64le slow e2e job"</td>
-									<td>test-infra</td>
-									<td><a href="https://github.com/kubernetes/test-infra/pull/37065" target="_blank">https://github.com/kubernetes/test-infra/pull/37065</a></td>
-									<td>2026-05-19T05:53:07Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -7218,13 +7253,6 @@
 							<tbody>
 								
 								<tr>
-									<td>AISERVICES-1626 proposal addendum for batch file handling for extract async endpoint</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1302" target="_blank">https://github.com/IBM/project-ai-services/pull/1302</a></td>
-									<td>2026-08-25T11:27:43Z</td>
-								</tr>
-								
-								<tr>
 									<td>added golden1-de dataset in german</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/310" target="_blank">https://github.com/IBM/project-ai-services/pull/310</a></td>
@@ -7241,6 +7269,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>AISERVICES-1626 proposal addendum for batch file handling for extract async endpoint</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1302" target="_blank">https://github.com/IBM/project-ai-services/pull/1302</a></td>
+									<td>2026-08-26T16:14:02Z</td>
+								</tr>
 								
 								<tr>
 									<td>AISERVICES-1383 added async extraction background worker implementation</td>
@@ -7445,13 +7480,6 @@
 									<td>2026-03-17T14:43:22Z</td>
 								</tr>
 								
-								<tr>
-									<td>making error message for invalid files generic in summarize API</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/498" target="_blank">https://github.com/IBM/project-ai-services/pull/498</a></td>
-									<td>2026-03-17T07:57:05Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -7522,7 +7550,7 @@
 									<td>Implementation of Global Weighted Queue to process Digitize/Ingestion requests</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1280" target="_blank">https://github.com/IBM/project-ai-services/pull/1280</a></td>
-									<td>2026-08-25T06:51:59Z</td>
+									<td>2026-08-27T06:55:44Z</td>
 								</tr>
 								
 								<tr>
@@ -7878,10 +7906,17 @@
 							<tbody>
 								
 								<tr>
-									<td>[BYOS] Bundle CLI commands implementation</td>
+									<td>[BYOS] Validation Bundle - 2</td>
 									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1322" target="_blank">https://github.com/IBM/project-ai-services/pull/1322</a></td>
-									<td>2026-08-25T12:37:02Z</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1330" target="_blank">https://github.com/IBM/project-ai-services/pull/1330</a></td>
+									<td>2026-08-27T06:47:10Z</td>
+								</tr>
+								
+								<tr>
+									<td>Add UT job with coverage report for ai-services</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1328" target="_blank">https://github.com/IBM/project-ai-services/pull/1328</a></td>
+									<td>2026-08-27T05:54:51Z</td>
 								</tr>
 								
 								<tr>
@@ -7943,6 +7978,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>fix: Avoid bundles vol delete during skip-cleanup</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1331" target="_blank">https://github.com/IBM/project-ai-services/pull/1331</a></td>
+									<td>2026-08-26T10:05:06Z</td>
+								</tr>
+								
+								<tr>
+									<td>[BYOS] Bundle CLI commands implementation</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1322" target="_blank">https://github.com/IBM/project-ai-services/pull/1322</a></td>
+									<td>2026-08-27T05:53:25Z</td>
+								</tr>
 								
 								<tr>
 									<td>[BYOS] Validate Bundle</td>
@@ -8138,20 +8187,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/982" target="_blank">https://github.com/IBM/project-ai-services/pull/982</a></td>
 									<td>2026-06-17T07:19:39Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Catalog] Use common DB helper methods</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/977" target="_blank">https://github.com/IBM/project-ai-services/pull/977</a></td>
-									<td>2026-06-26T16:13:25Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Catalog] Values schema updates</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/957" target="_blank">https://github.com/IBM/project-ai-services/pull/957</a></td>
-									<td>2026-06-26T16:13:29Z</td>
 								</tr>
 								
 							</tbody>
@@ -9081,7 +9116,7 @@
 									<td>Bump to Go 1.27.0 / 1.26.7</td>
 									<td>etcd</td>
 									<td><a href="https://github.com/etcd-io/etcd/issues/22329" target="_blank">https://github.com/etcd-io/etcd/issues/22329</a></td>
-									<td>2026-08-25T04:03:26Z</td>
+									<td>2026-08-26T18:12:36Z</td>
 								</tr>
 								
 								<tr>
@@ -9131,14 +9166,14 @@
 									<td>[release-3.5] Bump go 1.26.7</td>
 									<td>etcd</td>
 									<td><a href="https://github.com/etcd-io/etcd/pull/22335" target="_blank">https://github.com/etcd-io/etcd/pull/22335</a></td>
-									<td>2026-08-25T14:52:28Z</td>
+									<td>2026-08-27T04:51:46Z</td>
 								</tr>
 								
 								<tr>
 									<td>[release-3.6] Bump go 1.26.7</td>
 									<td>etcd</td>
 									<td><a href="https://github.com/etcd-io/etcd/pull/22334" target="_blank">https://github.com/etcd-io/etcd/pull/22334</a></td>
-									<td>2026-08-25T16:04:47Z</td>
+									<td>2026-08-27T04:36:54Z</td>
 								</tr>
 								
 								<tr>
@@ -9146,34 +9181,6 @@
 									<td>gofail</td>
 									<td><a href="https://github.com/etcd-io/gofail/pull/162" target="_blank">https://github.com/etcd-io/gofail/pull/162</a></td>
 									<td>2026-08-25T09:56:01Z</td>
-								</tr>
-								
-								<tr>
-									<td>[release-1.3] bump go 1.26.7</td>
-									<td>bbolt</td>
-									<td><a href="https://github.com/etcd-io/bbolt/pull/1272" target="_blank">https://github.com/etcd-io/bbolt/pull/1272</a></td>
-									<td>2026-08-25T09:57:21Z</td>
-								</tr>
-								
-								<tr>
-									<td>[release-1.4] bump go 1.26.7</td>
-									<td>bbolt</td>
-									<td><a href="https://github.com/etcd-io/bbolt/pull/1271" target="_blank">https://github.com/etcd-io/bbolt/pull/1271</a></td>
-									<td>2026-08-25T08:54:11Z</td>
-								</tr>
-								
-								<tr>
-									<td>[release-1.5] bump go 1.26.7</td>
-									<td>bbolt</td>
-									<td><a href="https://github.com/etcd-io/bbolt/pull/1270" target="_blank">https://github.com/etcd-io/bbolt/pull/1270</a></td>
-									<td>2026-08-25T08:53:43Z</td>
-								</tr>
-								
-								<tr>
-									<td>bump go 1.26.7</td>
-									<td>bbolt</td>
-									<td><a href="https://github.com/etcd-io/bbolt/pull/1269" target="_blank">https://github.com/etcd-io/bbolt/pull/1269</a></td>
-									<td>2026-08-25T08:52:58Z</td>
 								</tr>
 								
 								<tr>
@@ -9187,7 +9194,7 @@
 									<td>bump go 1.27.0</td>
 									<td>auger</td>
 									<td><a href="https://github.com/etcd-io/auger/pull/519" target="_blank">https://github.com/etcd-io/auger/pull/519</a></td>
-									<td>2026-08-25T13:31:45Z</td>
+									<td>2026-08-27T05:23:10Z</td>
 								</tr>
 								
 							</tbody>
@@ -9213,6 +9220,34 @@
 									<td>etcd-operator</td>
 									<td><a href="https://github.com/etcd-io/etcd-operator/pull/486" target="_blank">https://github.com/etcd-io/etcd-operator/pull/486</a></td>
 									<td>2026-08-25T13:16:14Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-1.3] bump go 1.26.7</td>
+									<td>bbolt</td>
+									<td><a href="https://github.com/etcd-io/bbolt/pull/1272" target="_blank">https://github.com/etcd-io/bbolt/pull/1272</a></td>
+									<td>2026-08-26T08:50:50Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-1.4] bump go 1.26.7</td>
+									<td>bbolt</td>
+									<td><a href="https://github.com/etcd-io/bbolt/pull/1271" target="_blank">https://github.com/etcd-io/bbolt/pull/1271</a></td>
+									<td>2026-08-26T08:51:48Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-1.5] bump go 1.26.7</td>
+									<td>bbolt</td>
+									<td><a href="https://github.com/etcd-io/bbolt/pull/1270" target="_blank">https://github.com/etcd-io/bbolt/pull/1270</a></td>
+									<td>2026-08-26T08:51:13Z</td>
+								</tr>
+								
+								<tr>
+									<td>bump go 1.26.7</td>
+									<td>bbolt</td>
+									<td><a href="https://github.com/etcd-io/bbolt/pull/1269" target="_blank">https://github.com/etcd-io/bbolt/pull/1269</a></td>
+									<td>2026-08-26T08:51:03Z</td>
 								</tr>
 								
 								<tr>
@@ -9383,34 +9418,6 @@
 									<td>2026-08-14T11:53:33Z</td>
 								</tr>
 								
-								<tr>
-									<td>[release-3.6] bump go 1.25.12</td>
-									<td>raft</td>
-									<td><a href="https://github.com/etcd-io/raft/pull/468" target="_blank">https://github.com/etcd-io/raft/pull/468</a></td>
-									<td>2026-07-08T13:01:38Z</td>
-								</tr>
-								
-								<tr>
-									<td>[release-3.7] bump go 1.26.5</td>
-									<td>raft</td>
-									<td><a href="https://github.com/etcd-io/raft/pull/467" target="_blank">https://github.com/etcd-io/raft/pull/467</a></td>
-									<td>2026-07-08T13:00:38Z</td>
-								</tr>
-								
-								<tr>
-									<td>bump go 1.26.5</td>
-									<td>raft</td>
-									<td><a href="https://github.com/etcd-io/raft/pull/466" target="_blank">https://github.com/etcd-io/raft/pull/466</a></td>
-									<td>2026-07-08T13:00:15Z</td>
-								</tr>
-								
-								<tr>
-									<td>[release-1.3] bump go 1.25.12</td>
-									<td>bbolt</td>
-									<td><a href="https://github.com/etcd-io/bbolt/pull/1238" target="_blank">https://github.com/etcd-io/bbolt/pull/1238</a></td>
-									<td>2026-07-08T18:38:02Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -9438,7 +9445,7 @@
 									<td>VEP-258: Support ppc64le Architecture</td>
 									<td>enhancements</td>
 									<td><a href="https://github.com/kubevirt/enhancements/issues/265" target="_blank">https://github.com/kubevirt/enhancements/issues/265</a></td>
-									<td>2026-08-26T01:12:57Z</td>
+									<td>2026-08-26T12:56:08Z</td>
 								</tr>
 								
 								<tr>
@@ -9464,7 +9471,7 @@
 									<td>VEP-258: Support ppc64le Architecture</td>
 									<td>enhancements</td>
 									<td><a href="https://github.com/kubevirt/enhancements/issues/265" target="_blank">https://github.com/kubevirt/enhancements/issues/265</a></td>
-									<td>2026-08-26T01:12:57Z</td>
+									<td>2026-08-26T12:56:08Z</td>
 								</tr>
 								
 							</tbody>
@@ -9504,7 +9511,7 @@
 									<td>VEP-258: Support for ppc64le Arch</td>
 									<td>enhancements</td>
 									<td><a href="https://github.com/kubevirt/enhancements/pull/258" target="_blank">https://github.com/kubevirt/enhancements/pull/258</a></td>
-									<td>2026-08-25T14:17:36Z</td>
+									<td>2026-08-27T06:21:56Z</td>
 								</tr>
 								
 								<tr>
@@ -9716,7 +9723,7 @@
 									<td>Data Connectors: Misc Changes</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1317" target="_blank">https://github.com/IBM/project-ai-services/pull/1317</a></td>
-									<td>2026-08-25T16:00:12Z</td>
+									<td>2026-08-27T05:14:41Z</td>
 								</tr>
 								
 								<tr>
@@ -10014,13 +10021,6 @@
 							<tbody>
 								
 								<tr>
-									<td>feat: propagate context through Runtime interface for cancellation support</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1288" target="_blank">https://github.com/IBM/project-ai-services/pull/1288</a></td>
-									<td>2026-08-25T13:34:07Z</td>
-								</tr>
-								
-								<tr>
 									<td>testing</td>
 									<td>kata-containers</td>
 									<td><a href="https://github.com/shwetha-s-poojary/kata-containers/pull/25" target="_blank">https://github.com/shwetha-s-poojary/kata-containers/pull/25</a></td>
@@ -10065,6 +10065,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>feat: propagate context through Runtime interface for cancellation support</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1288" target="_blank">https://github.com/IBM/project-ai-services/pull/1288</a></td>
+									<td>2026-08-26T08:34:06Z</td>
+								</tr>
 								
 								<tr>
 									<td>:book: add weekly-* workflow cleanup to post-release steps</td>
@@ -10267,13 +10274,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/805" target="_blank">https://github.com/IBM/project-ai-services/pull/805</a></td>
 									<td>2026-05-26T10:39:01Z</td>
-								</tr>
-								
-								<tr>
-									<td>restrict Caddy admin port to localhost</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/801" target="_blank">https://github.com/IBM/project-ai-services/pull/801</a></td>
-									<td>2026-05-25T06:41:28Z</td>
 								</tr>
 								
 							</tbody>
@@ -10591,7 +10591,7 @@
 									<td>Kind powervs e2e </td>
 									<td>cloud-api-adaptor</td>
 									<td><a href="https://github.com/kishen-v/cloud-api-adaptor/pull/1" target="_blank">https://github.com/kishen-v/cloud-api-adaptor/pull/1</a></td>
-									<td>2026-08-25T13:50:27Z</td>
+									<td>2026-08-27T06:27:50Z</td>
 								</tr>
 								
 								<tr>
@@ -10739,13 +10739,6 @@
 								</tr>
 								
 								<tr>
-									<td>Update developers_affiliations9.txt</td>
-									<td>gitdm</td>
-									<td><a href="https://github.com/cncf/gitdm/pull/838" target="_blank">https://github.com/cncf/gitdm/pull/838</a></td>
-									<td>2025-08-26T07:21:32Z</td>
-								</tr>
-								
-								<tr>
 									<td>Add tsj-30.md to india/remote/learners</td>
 									<td>contributor-playground</td>
 									<td><a href="https://github.com/kubernetes-sigs/contributor-playground/pull/2081" target="_blank">https://github.com/kubernetes-sigs/contributor-playground/pull/2081</a></td>
@@ -10774,6 +10767,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>typo in pd-dissagregation scenario</td>
+									<td>llm-d-benchmark</td>
+									<td><a href="https://github.com/llm-d/llm-d-benchmark/issues/1849" target="_blank">https://github.com/llm-d/llm-d-benchmark/issues/1849</a></td>
+									<td>2026-08-26T04:09:40Z</td>
+								</tr>
 								
 								<tr>
 									<td>guides(tiered-prefix-cache): duplicate `env` key in lmcache-connector/cpu patch silently discards the HF_TOKEN block</td>
@@ -10828,6 +10828,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>RSCT CR image updates are not propagated to DaemonSet and Pods</td>
+									<td>rsct-operator</td>
+									<td><a href="https://github.com/ocp-power-automation/rsct-operator/issues/224" target="_blank">https://github.com/ocp-power-automation/rsct-operator/issues/224</a></td>
+									<td>2026-08-26T04:29:06Z</td>
+								</tr>
 								
 								<tr>
 									<td>docs: clarify Operator and RSCT CR namespace requirements</td>
@@ -10994,6 +11001,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>fix(scenarios): correct typo in NCCL_EXCLUDE_IB_HCA interface name</td>
+									<td>llm-d-benchmark</td>
+									<td><a href="https://github.com/llm-d/llm-d-benchmark/pull/1862" target="_blank">https://github.com/llm-d/llm-d-benchmark/pull/1862</a></td>
+									<td>2026-08-27T05:04:30Z</td>
+								</tr>
 								
 								<tr>
 									<td>fix: merge duplicate env blocks in lmcache connector patch</td>
@@ -11307,7 +11321,7 @@
 									<td>Automate centos image conversion in jenkins</td>
 									<td>power-access-cloud</td>
 									<td><a href="https://github.com/IBM/power-access-cloud/pull/162" target="_blank">https://github.com/IBM/power-access-cloud/pull/162</a></td>
-									<td>2026-08-21T09:30:58Z</td>
+									<td>2026-08-26T08:10:29Z</td>
 								</tr>
 								
 								<tr>
@@ -11663,13 +11677,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Push ibm-powervs-block-csi-driver v0.13.1</td>
-									<td>k8s.io</td>
-									<td><a href="https://github.com/kubernetes/k8s.io/pull/9869" target="_blank">https://github.com/kubernetes/k8s.io/pull/9869</a></td>
-									<td>2026-08-25T16:36:18Z</td>
-								</tr>
-								
-								<tr>
 									<td>docs: proposal document for remote podman setup</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1148" target="_blank">https://github.com/IBM/project-ai-services/pull/1148</a></td>
@@ -11693,6 +11700,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Implement httpproxy worker grpc command</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1332" target="_blank">https://github.com/IBM/project-ai-services/pull/1332</a></td>
+									<td>2026-08-26T11:31:04Z</td>
+								</tr>
+								
+								<tr>
+									<td>Push ibm-powervs-block-csi-driver v0.13.1</td>
+									<td>k8s.io</td>
+									<td><a href="https://github.com/kubernetes/k8s.io/pull/9869" target="_blank">https://github.com/kubernetes/k8s.io/pull/9869</a></td>
+									<td>2026-08-26T07:05:45Z</td>
+								</tr>
 								
 								<tr>
 									<td>don not allow active worker to re-register</td>
@@ -11888,20 +11909,6 @@
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/954" target="_blank">https://github.com/IBM/project-ai-services/pull/954</a></td>
 									<td>2026-06-15T14:04:04Z</td>
-								</tr>
-								
-								<tr>
-									<td>Provide standalone in services list API</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/937" target="_blank">https://github.com/IBM/project-ai-services/pull/937</a></td>
-									<td>2026-06-12T07:08:38Z</td>
-								</tr>
-								
-								<tr>
-									<td>fix: clean up auth-secret volume during uninstall </td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/932" target="_blank">https://github.com/IBM/project-ai-services/pull/932</a></td>
-									<td>2026-06-12T07:08:32Z</td>
 								</tr>
 								
 							</tbody>
