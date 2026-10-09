@@ -1444,6 +1444,13 @@
 							<tbody>
 								
 								<tr>
+									<td>[e2e] release-1.12 e2e jobs fail at `clusterctl init`: `unknown containerd config version: 4`</td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/issues/14336" target="_blank">https://github.com/kubernetes-sigs/cluster-api/issues/14336</a></td>
+									<td>2026-10-08T12:23:25Z</td>
+								</tr>
+								
+								<tr>
 									<td>Remove per node-data from rule.status</td>
 									<td>node-readiness-controller</td>
 									<td><a href="https://github.com/kubernetes-sigs/node-readiness-controller/issues/111" target="_blank">https://github.com/kubernetes-sigs/node-readiness-controller/issues/111</a></td>
@@ -1559,10 +1566,17 @@
 							<tbody>
 								
 								<tr>
+									<td>Revert from kubekind v2 image to v1 image on releas 1.12 branch</td>
+									<td>test-infra</td>
+									<td><a href="https://github.com/kubernetes/test-infra/pull/38006" target="_blank">https://github.com/kubernetes/test-infra/pull/38006</a></td>
+									<td>2026-10-08T08:26:43Z</td>
+								</tr>
+								
+								<tr>
 									<td>[InPlaceNodeResourceResize] Node: Integration test to verify API server accepts live Node.Status.Capacity and Allocatable mutations</td>
 									<td>kubernetes</td>
 									<td><a href="https://github.com/kubernetes/kubernetes/pull/142732" target="_blank">https://github.com/kubernetes/kubernetes/pull/142732</a></td>
-									<td>2026-10-07T19:15:50Z</td>
+									<td>2026-10-08T09:19:28Z</td>
 								</tr>
 								
 								<tr>
@@ -1624,6 +1638,27 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>[release-1.12]  🌱 Pin kind binary version and download exact version</td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/14341" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/14341</a></td>
+									<td>2026-10-08T15:38:03Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-1.13]  :seedling: Pin kind binary version and download exact version </td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/14340" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/14340</a></td>
+									<td>2026-10-08T15:36:14Z</td>
+								</tr>
+								
+								<tr>
+									<td>:seedling: Pin kind binary version and download exact version </td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/14337" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/14337</a></td>
+									<td>2026-10-08T09:31:51Z</td>
+								</tr>
 								
 								<tr>
 									<td>Migrate CAPI jobs to use kubekins v2 image</td>
@@ -1814,27 +1849,6 @@
 									<td>2026-08-10T12:24:57Z</td>
 								</tr>
 								
-								<tr>
-									<td>🌱 Update autoscaler reference links</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2875" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2875</a></td>
-									<td>2026-08-06T08:43:38Z</td>
-								</tr>
-								
-								<tr>
-									<td>:sparkles: PowerVS v1beta2 to V1beta3  documentation update</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2874" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2874</a></td>
-									<td>2026-08-05T08:20:32Z</td>
-								</tr>
-								
-								<tr>
-									<td>✨ Enable more KAL linter</td>
-									<td>cluster-api-provider-ibmcloud</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2873" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2873</a></td>
-									<td>2026-08-04T07:44:30Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -1935,7 +1949,7 @@
 									<td>OCPBUGS-95186: increases termination timeouts as API LBs use /readyz of kube-apiserver for ppc64le and s390x</td>
 									<td>cluster-kube-apiserver-operator</td>
 									<td><a href="https://github.com/openshift/cluster-kube-apiserver-operator/pull/2222" target="_blank">https://github.com/openshift/cluster-kube-apiserver-operator/pull/2222</a></td>
-									<td>2026-07-23T18:33:48Z</td>
+									<td>2026-10-08T14:02:55Z</td>
 								</tr>
 								
 								<tr>
@@ -2762,13 +2776,6 @@
 							<tbody>
 								
 								<tr>
-									<td>[Flaking tests] k8s.io/kubernetes/test/integration/scheduler/preemption/podgroup tests timing out</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/141803" target="_blank">https://github.com/kubernetes/kubernetes/issues/141803</a></td>
-									<td>2026-09-22T23:31:04Z</td>
-								</tr>
-								
-								<tr>
 									<td>Get rid of gcr.io images</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/ppc64le-cloud/test-infra/issues/540" target="_blank">https://github.com/ppc64le-cloud/test-infra/issues/540</a></td>
@@ -2792,13 +2799,6 @@
 									<td>test-infra</td>
 									<td><a href="https://github.com/ppc64le-cloud/test-infra/issues/633" target="_blank">https://github.com/ppc64le-cloud/test-infra/issues/633</a></td>
 									<td>2026-10-07T04:44:39Z</td>
-								</tr>
-								
-								<tr>
-									<td>[Flaking tests] k8s.io/kubernetes/test/integration/scheduler/preemption/podgroup tests timing out</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/issues/141803" target="_blank">https://github.com/kubernetes/kubernetes/issues/141803</a></td>
-									<td>2026-09-22T23:31:04Z</td>
 								</tr>
 								
 								<tr>
@@ -2856,13 +2856,6 @@
 							<tbody>
 								
 								<tr>
-									<td>test/integration: share API server across pod group preemption subtests</td>
-									<td>kubernetes</td>
-									<td><a href="https://github.com/kubernetes/kubernetes/pull/141851" target="_blank">https://github.com/kubernetes/kubernetes/pull/141851</a></td>
-									<td>2026-10-07T10:27:10Z</td>
-								</tr>
-								
-								<tr>
 									<td>cisearch changes and add k8s ci search dns</td>
 									<td>test-infra</td>
 									<td><a href="https://github.com/ppc64le-cloud/test-infra/pull/561" target="_blank">https://github.com/ppc64le-cloud/test-infra/pull/561</a></td>
@@ -2905,20 +2898,6 @@
 								</tr>
 								
 								<tr>
-									<td>Test prow github app</td>
-									<td>test-prow-bot</td>
-									<td><a href="https://github.com/ppc64le-cloud/test-prow-bot/pull/4" target="_blank">https://github.com/ppc64le-cloud/test-prow-bot/pull/4</a></td>
-									<td>2021-08-16T10:05:22Z</td>
-								</tr>
-								
-								<tr>
-									<td>Test github-app prow integration</td>
-									<td>test-prow-bot</td>
-									<td><a href="https://github.com/ppc64le-cloud/test-prow-bot/pull/3" target="_blank">https://github.com/ppc64le-cloud/test-prow-bot/pull/3</a></td>
-									<td>2021-08-16T07:32:01Z</td>
-								</tr>
-								
-								<tr>
 									<td>Test Prow trigger</td>
 									<td>test</td>
 									<td><a href="https://github.com/Rajalakshmi-Girish/test/pull/1" target="_blank">https://github.com/Rajalakshmi-Girish/test/pull/1</a></td>
@@ -2935,6 +2914,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Remove kubemark from postsubmit-kubernetes-build-golang-master-ppc64le job verification</td>
+									<td>test-infra</td>
+									<td><a href="https://github.com/ppc64le-cloud/test-infra/pull/635" target="_blank">https://github.com/ppc64le-cloud/test-infra/pull/635</a></td>
+									<td>2026-10-08T05:51:55Z</td>
+								</tr>
 								
 								<tr>
 									<td>Add PAT to postsubmit master golang jobs</td>
@@ -2955,6 +2941,13 @@
 									<td>k8s.io</td>
 									<td><a href="https://github.com/kubernetes/k8s.io/pull/9925" target="_blank">https://github.com/kubernetes/k8s.io/pull/9925</a></td>
 									<td>2026-09-11T17:56:38Z</td>
+								</tr>
+								
+								<tr>
+									<td>test/integration: share API server across pod group preemption subtests</td>
+									<td>kubernetes</td>
+									<td><a href="https://github.com/kubernetes/kubernetes/pull/141851" target="_blank">https://github.com/kubernetes/kubernetes/pull/141851</a></td>
+									<td>2026-10-08T15:32:18Z</td>
 								</tr>
 								
 								<tr>
@@ -3130,20 +3123,6 @@
 									<td>test-infra</td>
 									<td><a href="https://github.com/kubernetes/test-infra/pull/36425" target="_blank">https://github.com/kubernetes/test-infra/pull/36425</a></td>
 									<td>2026-02-10T11:38:06Z</td>
-								</tr>
-								
-								<tr>
-									<td>Exit with test run's return code in ppc64le e2e-node job</td>
-									<td>test-infra</td>
-									<td><a href="https://github.com/kubernetes/test-infra/pull/36404" target="_blank">https://github.com/kubernetes/test-infra/pull/36404</a></td>
-									<td>2026-02-07T02:58:40Z</td>
-								</tr>
-								
-								<tr>
-									<td>Replace lon04 DC with new region in boskos on ibm ppc64le</td>
-									<td>k8s.io</td>
-									<td><a href="https://github.com/kubernetes/k8s.io/pull/9002" target="_blank">https://github.com/kubernetes/k8s.io/pull/9002</a></td>
-									<td>2026-01-23T08:55:30Z</td>
 								</tr>
 								
 							</tbody>
@@ -3425,6 +3404,20 @@
 							<tbody>
 								
 								<tr>
+									<td>fix: delete models directory as part of worker uninstall</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1593" target="_blank">https://github.com/IBM/project-ai-services/pull/1593</a></td>
+									<td>2026-10-08T11:07:36Z</td>
+								</tr>
+								
+								<tr>
+									<td>async model download on podman worker</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1592" target="_blank">https://github.com/IBM/project-ai-services/pull/1592</a></td>
+									<td>2026-10-08T11:03:31Z</td>
+								</tr>
+								
+								<tr>
 									<td>feat: add --upgrade flag to prompt operator upgrades during ocp bootstrap</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1587" target="_blank">https://github.com/IBM/project-ai-services/pull/1587</a></td>
@@ -3700,7 +3693,7 @@
 									<td>🔒 [IBM OSPO Security Notification] — IBM/project-ai-services</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/issues/1581" target="_blank">https://github.com/IBM/project-ai-services/issues/1581</a></td>
-									<td>2026-10-07T07:08:55Z</td>
+									<td>2026-10-08T06:30:11Z</td>
 								</tr>
 								
 							</tbody>
@@ -3759,7 +3752,7 @@
 									<td>AISERVICES-1807: Migrating caddy to non root user</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1529" target="_blank">https://github.com/IBM/project-ai-services/pull/1529</a></td>
-									<td>2026-10-07T14:54:27Z</td>
+									<td>2026-10-08T20:06:46Z</td>
 								</tr>
 								
 								<tr>
@@ -4094,31 +4087,129 @@
 							<tbody>
 								
 								<tr>
-									<td>[release-4.22] OCPBUGS-102007,OCPBUGS-107718: Bump x/net and otel to address CVEs</td>
+									<td>[release-4.14] OCPBUGS-102652: Bump x/net to address CVEs</td>
 									<td>cloud-provider-powervs</td>
-									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/115" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/115</a></td>
-									<td>2026-10-07T19:32:28Z</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/122" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/122</a></td>
+									<td>2026-10-08T11:39:13Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.16] OCPBUGS-103074: Bump x/net to address CVEs</td>
+									<td>cloud-provider-powervs</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/121" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/121</a></td>
+									<td>2026-10-08T11:36:43Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.17] OCPBUGS-103288,OCPBUGS-90967,OCPBUGS-96115,OCPBUGS-101035: Bump x/net to address CVEs</td>
+									<td>cloud-provider-powervs</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/120" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/120</a></td>
+									<td>2026-10-08T11:36:37Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.18] OCPBUGS-103507,OCPBUGS-90976,OCPBUGS-96223,OCPBUGS-101150: Bump x/net to address CVEs</td>
+									<td>cloud-provider-powervs</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/119" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/119</a></td>
+									<td>2026-10-08T11:35:08Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.19] OCPBUGS-103726,OCPBUGS-91007,OCPBUGS-96329,OCPBUGS-101240: Bump x/net to address CVEs</td>
+									<td>cloud-provider-powervs</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/118" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/118</a></td>
+									<td>2026-10-08T11:32:58Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.20] OCPBUGS-103948,OCPBUGS-91090,OCPBUGS-96443,OCPBUGS-101350: Bump x/net to address CVEs</td>
+									<td>cloud-provider-powervs</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/117" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/117</a></td>
+									<td>2026-10-08T11:39:18Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.21] OCPBUGS-104164,OCPBUGS-91239,OCPBUGS-96559,OCPBUGS-101468: Bump x/net to address CVEs</td>
+									<td>cloud-provider-powervs</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/116" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/116</a></td>
+									<td>2026-10-09T02:35:03Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.14] OCPBUGS-102644,OCPBUGS-94353,OCPBUGS-95847,OCPBUGS-100779: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/161" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/161</a></td>
+									<td>2026-10-08T07:03:26Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.16] OCPBUGS-103075,OCPBUGS-94485,OCPBUGS-96020,OCPBUGS-100952: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/160" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/160</a></td>
+									<td>2026-10-08T07:04:41Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.17] OCPBUGS-103283,OCPBUGS-94573,OCPBUGS-96116,OCPBUGS-101034: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/159" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/159</a></td>
+									<td>2026-10-08T06:58:31Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.18] OCPBUGS-103511,OCPBUGS-94678,OCPBUGS-96224,OCPBUGS-101142: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/158" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/158</a></td>
+									<td>2026-10-08T07:00:31Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.19] OCPBUGS-103719,OCPBUGS-94783,OCPBUGS-96330,OCPBUGS-101245: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/157" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/157</a></td>
+									<td>2026-10-08T06:56:42Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.20] OCPBUGS-103937,OCPBUGS-94895,OCPBUGS-96444,OCPBUGS-101355: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/156" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/156</a></td>
+									<td>2026-10-08T06:56:51Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.21] OCPBUGS-104162,OCPBUGS-95010,OCPBUGS-96560,OCPBUGS-101473: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/155" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/155</a></td>
+									<td>2026-10-08T07:06:39Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-4.22] OCPBUGS-102014,OCPBUGS-96672,OCPBUGS-101584: Bump x/net to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/154" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/154</a></td>
+									<td>2026-10-08T07:00:16Z</td>
+								</tr>
+								
+								<tr>
+									<td>[release-5.0] OCPBUGS-109539,OCPBUGS-104397,OCPBUGS-96858,OCPBUGS-101735: Bump x/net and otel to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/153" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/153</a></td>
+									<td>2026-10-08T06:37:56Z</td>
 								</tr>
 								
 								<tr>
 									<td>📖 Add CentOS Stream 10 Kubernetes v1.35.9 DHCP image for PowerVS</td>
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2987" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2987</a></td>
-									<td>2026-10-07T07:52:01Z</td>
+									<td>2026-10-08T14:12:17Z</td>
 								</tr>
 								
 								<tr>
 									<td>Ignore storage type and user data drift on instances</td>
 									<td>ocp4-upi-powervs</td>
 									<td><a href="https://github.com/ocp-power-automation/ocp4-upi-powervs/pull/576" target="_blank">https://github.com/ocp-power-automation/ocp4-upi-powervs/pull/576</a></td>
-									<td>2026-10-07T22:49:06Z</td>
-								</tr>
-								
-								<tr>
-									<td>OCPBUGS-127383: Bump x/net and opentelemetry to address CVEs</td>
-									<td>machine-api-provider-powervs</td>
-									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/150" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/150</a></td>
-									<td>2026-10-08T03:41:22Z</td>
+									<td>2026-10-08T22:49:07Z</td>
 								</tr>
 								
 								<tr>
@@ -4138,6 +4229,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>[release-4.22] OCPBUGS-102007,OCPBUGS-107718: Bump x/net and otel to address CVEs</td>
+									<td>cloud-provider-powervs</td>
+									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/115" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/115</a></td>
+									<td>2026-10-09T02:34:54Z</td>
+								</tr>
 								
 								<tr>
 									<td>Run daily-ocp5.0-powervs-script-p9-min weekly</td>
@@ -4172,6 +4270,13 @@
 									<td>cloud-provider-powervs</td>
 									<td><a href="https://github.com/openshift/cloud-provider-powervs/pull/112" target="_blank">https://github.com/openshift/cloud-provider-powervs/pull/112</a></td>
 									<td>2026-10-07T19:58:05Z</td>
+								</tr>
+								
+								<tr>
+									<td>OCPBUGS-127383: Bump x/net and opentelemetry to address CVEs</td>
+									<td>machine-api-provider-powervs</td>
+									<td><a href="https://github.com/openshift/machine-api-provider-powervs/pull/150" target="_blank">https://github.com/openshift/machine-api-provider-powervs/pull/150</a></td>
+									<td>2026-10-08T06:15:30Z</td>
 								</tr>
 								
 								<tr>
@@ -4335,20 +4440,6 @@
 									<td>2026-07-27T17:43:59Z</td>
 								</tr>
 								
-								<tr>
-									<td>🌱 bump cel-go to v0.29.0 and grpc to v1.82.1 to address security advisories</td>
-									<td>cluster-api</td>
-									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/13976" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/13976</a></td>
-									<td>2026-07-27T17:42:00Z</td>
-								</tr>
-								
-								<tr>
-									<td>ci: add container smoke test (docker run --help) on every PR and push</td>
-									<td>ovatool</td>
-									<td><a href="https://github.com/aman4433/ovatool/pull/2" target="_blank">https://github.com/aman4433/ovatool/pull/2</a></td>
-									<td>2026-07-21T11:18:21Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -4507,13 +4598,6 @@
 							<tbody>
 								
 								<tr>
-									<td>Added support for RapidOCR</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/dharaneeshvrd/project-ai-services/pull/2" target="_blank">https://github.com/dharaneeshvrd/project-ai-services/pull/2</a></td>
-									<td>2026-10-08T02:57:33Z</td>
-								</tr>
-								
-								<tr>
 									<td>Updated go deps</td>
 									<td>power-access-cloud</td>
 									<td><a href="https://github.com/IBM/power-access-cloud/pull/156" target="_blank">https://github.com/IBM/power-access-cloud/pull/156</a></td>
@@ -4544,6 +4628,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Document type detection for OCR/Digital conversion</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/dharaneeshvrd/project-ai-services/pull/4" target="_blank">https://github.com/dharaneeshvrd/project-ai-services/pull/4</a></td>
+									<td>2026-10-08T12:46:14Z</td>
+								</tr>
+								
+								<tr>
+									<td>Added support for RapidOCR</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/dharaneeshvrd/project-ai-services/pull/2" target="_blank">https://github.com/dharaneeshvrd/project-ai-services/pull/2</a></td>
+									<td>2026-10-08T11:04:13Z</td>
+								</tr>
 								
 								<tr>
 									<td>fix: Rename VLLM_SPYRE to SENDNN_INFERENCE in spyre deployments</td>
@@ -5621,7 +5719,7 @@
 									<td>🔒 [IBM OSPO Security Notification] — IBM/project-ai-services</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/issues/1581" target="_blank">https://github.com/IBM/project-ai-services/issues/1581</a></td>
-									<td>2026-10-07T07:08:55Z</td>
+									<td>2026-10-08T06:30:11Z</td>
 								</tr>
 								
 							</tbody>
@@ -5670,13 +5768,6 @@
 								</tr>
 								
 								<tr>
-									<td>Add OWNERS file</td>
-									<td>ocp-ci-hacks</td>
-									<td><a href="https://github.com/ppc64le-cloud/ocp-ci-hacks/pull/8" target="_blank">https://github.com/ppc64le-cloud/ocp-ci-hacks/pull/8</a></td>
-									<td>2023-12-12T04:32:54Z</td>
-								</tr>
-								
-								<tr>
 									<td>Add hypershift-agent-automation cli application</td>
 									<td>hypershift-agent-automation</td>
 									<td><a href="https://github.com/ppc64le-cloud/hypershift-agent-automation/pull/3" target="_blank">https://github.com/ppc64le-cloud/hypershift-agent-automation/pull/3</a></td>
@@ -5707,6 +5798,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Bump opensearch py 3.2.0</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1590" target="_blank">https://github.com/IBM/project-ai-services/pull/1590</a></td>
+									<td>2026-10-08T09:59:30Z</td>
+								</tr>
 								
 								<tr>
 									<td>Remove problematic gpu flag and set kv cache space as 0 for encoder(emb & reranker) models</td>
@@ -5911,13 +6009,6 @@
 									<td>2026-06-22T04:46:16Z</td>
 								</tr>
 								
-								<tr>
-									<td>Remove old ingest-cli command </td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/970" target="_blank">https://github.com/IBM/project-ai-services/pull/970</a></td>
-									<td>2026-06-16T10:53:02Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -6048,6 +6139,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>Litellm enhancements for model management.</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1596" target="_blank">https://github.com/IBM/project-ai-services/pull/1596</a></td>
+									<td>2026-10-08T17:49:25Z</td>
+								</tr>
 								
 								<tr>
 									<td>tentacle: enable HAVE_PPC64LE flag and revert the barrett constant value</td>
@@ -6430,6 +6528,13 @@
 							<tbody>
 								
 								<tr>
+									<td>🌱 Adding AI Disclosure to PR Template</td>
+									<td>cluster-api-provider-ibmcloud</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2993" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/pull/2993</a></td>
+									<td>2026-10-08T07:05:02Z</td>
+								</tr>
+								
+								<tr>
 									<td>Torchvision 0.29.0 for UBI9</td>
 									<td>build-scripts</td>
 									<td><a href="https://github.com/ppc64le/build-scripts/pull/8805" target="_blank">https://github.com/ppc64le/build-scripts/pull/8805</a></td>
@@ -6441,13 +6546,6 @@
 									<td>build-scripts</td>
 									<td><a href="https://github.com/ppc64le/build-scripts/pull/8788" target="_blank">https://github.com/ppc64le/build-scripts/pull/8788</a></td>
 									<td>2026-09-18T10:10:10Z</td>
-								</tr>
-								
-								<tr>
-									<td>Updates to Opensearch 3.8.0</td>
-									<td>build-scripts</td>
-									<td><a href="https://github.com/ppc64le/build-scripts/pull/8774" target="_blank">https://github.com/ppc64le/build-scripts/pull/8774</a></td>
-									<td>2026-10-07T05:17:50Z</td>
 								</tr>
 								
 								<tr>
@@ -6488,6 +6586,13 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>🌱 Adding AI Disclosure to PR Template</td>
+									<td>cluster-api</td>
+									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/14334" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/14334</a></td>
+									<td>2026-10-08T10:50:05Z</td>
+								</tr>
 								
 								<tr>
 									<td>Release notes v0.4.0</td>
@@ -6690,13 +6795,6 @@
 									<td>cluster-api</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api/pull/13744" target="_blank">https://github.com/kubernetes-sigs/cluster-api/pull/13744</a></td>
 									<td>2026-05-26T06:53:21Z</td>
-								</tr>
-								
-								<tr>
-									<td>Docling parse</td>
-									<td>build-scripts</td>
-									<td><a href="https://github.com/ppc64le/build-scripts/pull/8234" target="_blank">https://github.com/ppc64le/build-scripts/pull/8234</a></td>
-									<td>2026-05-13T12:15:29Z</td>
 								</tr>
 								
 							</tbody>
@@ -7799,6 +7897,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Fix runtime panics for application image, models and parameters subcommands</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1594" target="_blank">https://github.com/IBM/project-ai-services/pull/1594</a></td>
+									<td>2026-10-08T12:15:43Z</td>
+								</tr>
+								
+								<tr>
 									<td>[Design Proposal] Cross-VM Service communication with mTLS using Caddy</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1182" target="_blank">https://github.com/IBM/project-ai-services/pull/1182</a></td>
@@ -8132,6 +8237,13 @@
 							<tbody>
 								
 								<tr>
+									<td>Cleanup: remove the code for manageIQ</td>
+									<td>power-access-cloud</td>
+									<td><a href="https://github.com/IBM/power-access-cloud/issues/182" target="_blank">https://github.com/IBM/power-access-cloud/issues/182</a></td>
+									<td>2026-10-08T06:56:22Z</td>
+								</tr>
+								
+								<tr>
 									<td>pipe_download.go: missing //go:build constraint causes compile failure on windows/amd64</td>
 									<td>ibm-cos-sdk-go</td>
 									<td><a href="https://github.com/IBM/ibm-cos-sdk-go/issues/22" target="_blank">https://github.com/IBM/ibm-cos-sdk-go/issues/22</a></td>
@@ -8332,13 +8444,6 @@
 									<td>cluster-api-provider-ibmcloud</td>
 									<td><a href="https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/533" target="_blank">https://github.com/kubernetes-sigs/cluster-api-provider-ibmcloud/issues/533</a></td>
 									<td>2026-02-18T05:00:56Z</td>
-								</tr>
-								
-								<tr>
-									<td>Create mock context for every testcase</td>
-									<td>cluster-api-provider-powervs</td>
-									<td><a href="https://github.com/openshift/cluster-api-provider-powervs/issues/34" target="_blank">https://github.com/openshift/cluster-api-provider-powervs/issues/34</a></td>
-									<td>2022-02-07T16:53:20Z</td>
 								</tr>
 								
 							</tbody>
@@ -8641,13 +8746,6 @@
 							<tbody>
 								
 								<tr>
-									<td>MULTIARCH-6023: Add RSCT to PowerVS IPI workflow</td>
-									<td>release</td>
-									<td><a href="https://github.com/openshift/release/pull/86399" target="_blank">https://github.com/openshift/release/pull/86399</a></td>
-									<td>2026-10-07T16:42:35Z</td>
-								</tr>
-								
-								<tr>
 									<td>[WIP] cluster-bot: migrate from PowerVS to Agent-based (MCE) workflow</td>
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/84249" target="_blank">https://github.com/openshift/release/pull/84249</a></td>
@@ -8727,6 +8825,20 @@
 								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
 							</thead>
 							<tbody>
+								
+								<tr>
+									<td>MULTIARCH-6023: Update ipi powervs 5.1 to run daily</td>
+									<td>release</td>
+									<td><a href="https://github.com/openshift/release/pull/86722" target="_blank">https://github.com/openshift/release/pull/86722</a></td>
+									<td>2026-10-08T12:43:28Z</td>
+								</tr>
+								
+								<tr>
+									<td>MULTIARCH-6023: Add RSCT to PowerVS IPI workflow</td>
+									<td>release</td>
+									<td><a href="https://github.com/openshift/release/pull/86399" target="_blank">https://github.com/openshift/release/pull/86399</a></td>
+									<td>2026-10-08T12:43:02Z</td>
+								</tr>
 								
 								<tr>
 									<td>MULTIARCH-6023: Update ipi powervs and powervc 4.23 to run weekly once</td>
@@ -8922,20 +9034,6 @@
 									<td>release</td>
 									<td><a href="https://github.com/openshift/release/pull/77907" target="_blank">https://github.com/openshift/release/pull/77907</a></td>
 									<td>2026-04-22T06:15:50Z</td>
-								</tr>
-								
-								<tr>
-									<td>NO-JIRA: Move IPI PowerVS 4.20 & 5.0 Jobs to new region SAO04</td>
-									<td>release</td>
-									<td><a href="https://github.com/openshift/release/pull/77409" target="_blank">https://github.com/openshift/release/pull/77409</a></td>
-									<td>2026-04-06T19:48:46Z</td>
-								</tr>
-								
-								<tr>
-									<td>[WIP] DEBUG PR: get a 4.22 Powervs ipi cluster for debugging deployments</td>
-									<td>release</td>
-									<td><a href="https://github.com/openshift/release/pull/77299" target="_blank">https://github.com/openshift/release/pull/77299</a></td>
-									<td>2026-04-23T06:49:13Z</td>
 								</tr>
 								
 							</tbody>
@@ -9497,38 +9595,31 @@
 							<tbody>
 								
 								<tr>
+									<td>Support different md5 utils</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1591" target="_blank">https://github.com/IBM/project-ai-services/pull/1591</a></td>
+									<td>2026-10-08T08:39:19Z</td>
+								</tr>
+								
+								<tr>
+									<td>Invoice Processing - Manifests and Router Logic</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/dharaneeshvrd/project-ai-services/pull/3" target="_blank">https://github.com/dharaneeshvrd/project-ai-services/pull/3</a></td>
+									<td>2026-10-08T09:04:59Z</td>
+								</tr>
+								
+								<tr>
 									<td>Connectors - Retry logic </td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1586" target="_blank">https://github.com/IBM/project-ai-services/pull/1586</a></td>
-									<td>2026-10-07T05:40:16Z</td>
-								</tr>
-								
-								<tr>
-									<td>Invoice Processing Scaffolding</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/dharaneeshvrd/project-ai-services/pull/1" target="_blank">https://github.com/dharaneeshvrd/project-ai-services/pull/1</a></td>
-									<td>2026-10-08T04:32:08Z</td>
-								</tr>
-								
-								<tr>
-									<td>Cleanup stale model references </td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1571" target="_blank">https://github.com/IBM/project-ai-services/pull/1571</a></td>
-									<td>2026-10-01T04:23:11Z</td>
+									<td>2026-10-08T08:38:10Z</td>
 								</tr>
 								
 								<tr>
 									<td>Cleanup docs table for mid-sync connector deletion</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1544" target="_blank">https://github.com/IBM/project-ai-services/pull/1544</a></td>
-									<td>2026-10-07T03:24:07Z</td>
-								</tr>
-								
-								<tr>
-									<td>ci: add PR checks</td>
-									<td>rsct-operator</td>
-									<td><a href="https://github.com/ocp-power-automation/rsct-operator/pull/222" target="_blank">https://github.com/ocp-power-automation/rsct-operator/pull/222</a></td>
-									<td>2026-10-08T04:23:16Z</td>
+									<td>2026-10-09T04:16:53Z</td>
 								</tr>
 								
 								<tr>
@@ -9568,6 +9659,20 @@
 									<td>rsct-operator</td>
 									<td><a href="https://github.com/ocp-power-automation/rsct-operator/pull/248" target="_blank">https://github.com/ocp-power-automation/rsct-operator/pull/248</a></td>
 									<td>2026-10-07T16:01:01Z</td>
+								</tr>
+								
+								<tr>
+									<td>Invoice Processing Scaffolding</td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/dharaneeshvrd/project-ai-services/pull/1" target="_blank">https://github.com/dharaneeshvrd/project-ai-services/pull/1</a></td>
+									<td>2026-10-08T05:55:00Z</td>
+								</tr>
+								
+								<tr>
+									<td>Cleanup stale model references </td>
+									<td>project-ai-services</td>
+									<td><a href="https://github.com/IBM/project-ai-services/pull/1571" target="_blank">https://github.com/IBM/project-ai-services/pull/1571</a></td>
+									<td>2026-10-08T13:05:45Z</td>
 								</tr>
 								
 								<tr>
@@ -9697,6 +9802,13 @@
 								</tr>
 								
 								<tr>
+									<td>ci: add PR checks</td>
+									<td>rsct-operator</td>
+									<td><a href="https://github.com/ocp-power-automation/rsct-operator/pull/222" target="_blank">https://github.com/ocp-power-automation/rsct-operator/pull/222</a></td>
+									<td>2026-10-08T04:52:10Z</td>
+								</tr>
+								
+								<tr>
 									<td>DSC (PR3) - Rest API Endpoints</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/pull/1211" target="_blank">https://github.com/IBM/project-ai-services/pull/1211</a></td>
@@ -9745,27 +9857,6 @@
 									<td>2026-07-20T16:45:49Z</td>
 								</tr>
 								
-								<tr>
-									<td>Onboard Paramiko to service-base</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1160" target="_blank">https://github.com/IBM/project-ai-services/pull/1160</a></td>
-									<td>2026-07-20T15:13:02Z</td>
-								</tr>
-								
-								<tr>
-									<td>Digitize focussed DS proposal </td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1158" target="_blank">https://github.com/IBM/project-ai-services/pull/1158</a></td>
-									<td>2026-08-03T05:24:07Z</td>
-								</tr>
-								
-								<tr>
-									<td>Swap image repo</td>
-									<td>project-ai-services</td>
-									<td><a href="https://github.com/IBM/project-ai-services/pull/1129" target="_blank">https://github.com/IBM/project-ai-services/pull/1129</a></td>
-									<td>2026-07-14T09:25:33Z</td>
-								</tr>
-								
 							</tbody>
 						</table>
 						
@@ -9782,7 +9873,23 @@
 				<div id="collapse-shwetha-s-poojary" class="accordion-collapse collapse" aria-labelledby="heading-shwetha-s-poojary" data-bs-parent="#usersAccordion">
 					<div class="accordion-body">
 						<h3 style="background-color: #d1e7dd;">Assigned Issues</h3>
-						<p>No assigned issues</p>
+						
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>[Flaking tests] [sig-api-machinery] k8s.io/apiextensions-apiserver/test/integration: conversion - TestWebhookConverterWithWatchCache</td>
+									<td>kubernetes</td>
+									<td><a href="https://github.com/kubernetes/kubernetes/issues/142826" target="_blank">https://github.com/kubernetes/kubernetes/issues/142826</a></td>
+									<td>2026-10-09T03:53:14Z</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						
 
 						<h3 style="background-color: #ffeeba;">Created Issues</h3>
 						<p>No created issues</p>
@@ -11067,7 +11174,7 @@
 									<td>🔒 [IBM OSPO Security Notification] — IBM/power-access-cloud</td>
 									<td>power-access-cloud</td>
 									<td><a href="https://github.com/IBM/power-access-cloud/issues/178" target="_blank">https://github.com/IBM/power-access-cloud/issues/178</a></td>
-									<td>2026-10-07T07:02:39Z</td>
+									<td>2026-10-08T06:30:38Z</td>
 								</tr>
 								
 							</tbody>
@@ -11094,7 +11201,23 @@
 						
 
 						<h3 style="background-color: #f8d7da;">Open PRs</h3>
-						<p>No open PRs</p>
+						
+						<table class="table table-striped">
+							<thead>
+								<tr><th>Title</th><th>Repository</th><th>URL</th><th>Updated At</th></tr>
+							</thead>
+							<tbody>
+								
+								<tr>
+									<td>Enable notification support for the chat messages</td>
+									<td>power-access-cloud</td>
+									<td><a href="https://github.com/IBM/power-access-cloud/pull/181" target="_blank">https://github.com/IBM/power-access-cloud/pull/181</a></td>
+									<td>2026-10-08T06:44:36Z</td>
+								</tr>
+								
+							</tbody>
+						</table>
+						
 						<h3 style="background-color: #f8d7da;">Closed PRs (past 1 year)</h3>
 						
 						<table class="table table-striped">
@@ -11340,7 +11463,7 @@
 									<td>🔒 [IBM OSPO Security Notification] — IBM/project-ai-services</td>
 									<td>project-ai-services</td>
 									<td><a href="https://github.com/IBM/project-ai-services/issues/1581" target="_blank">https://github.com/IBM/project-ai-services/issues/1581</a></td>
-									<td>2026-10-07T07:08:55Z</td>
+									<td>2026-10-08T06:30:11Z</td>
 								</tr>
 								
 								<tr>
